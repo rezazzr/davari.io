@@ -3,18 +3,18 @@
 # Site wide configuration
 ####################################
 #
-title: Leonids
-email:
-description: A simple and awesome blog theme powered by jekyll.
-url: # the base hostname & protocol for your site
-keywords: ["blog", "jekyll"]
+title: Mohammad Reza Davari
+email: mohammadreza.davari@mail.concordia.ca
+description: Mohammad Reza Davari Website
+url: https://rezazzr.github.io/
+keywords: ["Mohammd Reza Davari", "Mohammad Reza","Reza","Reza Davari","Davari","Machine Learning","NLP","AI","Artificial Intelligence"]
 
 #
 ###################################
 # Jekyll configuration
 ####################################
 #
-timezone:          Europe/Paris
+timezone:          America/Montreal
 markdown:          kramdown
 highlighter:       rouge
 excerpt_separator: <!--more-->
@@ -33,14 +33,14 @@ kramdown:
 ####################################
 #
 owner:
-  name: Leonids
-  avatar: leonids-logo.png
-  job: "A jekyll theme"
-  bio: "A simple and awesome blog theme powered by jekyll."
-  email:
+  name: Mohammad Reza Davari
+  avatar: Reza.jpg
+  job: "Master’s Student at Concordia University"
+  bio: "AI enthusiast, currently focused on NLP. Based in Montreal, QC."
+  email: mohammadreza.davari@mail.concordia.ca
   disqus-shortname:
-  twitter: #username
-  facebook: #username
+  twitter: davari_reza #username
+  facebook: rezazzr #username
   google:
     plus: #username
     analytics:
@@ -48,11 +48,11 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
+  github: rezazzr #username
   gitlab: #username
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
-  skype: #username
+  linkedin: rezadavari #username
+  skype: rezazzr #username
   xing: #username
   instagram: #username
   lastfm: #username
