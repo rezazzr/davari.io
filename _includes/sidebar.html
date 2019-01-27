@@ -2,9 +2,7 @@
 
 <div class="cover-card table-cell table-middle">
   {% if author.avatar %}
-  <a href="{{ site.url }}/">
-    <img src="{{ site.url }}/img/{{ author.avatar }}" alt="" class="avatar">
-  </a>
+  <img src="{{ site.url }}/img/{{ author.avatar }}" alt="" class="avatar">
   {% endif %}
   <a href="{{ site.url }}/" class="author_name">{{ author.name }}</a>
   <span class="author_job">{{ author.job }}</span>
