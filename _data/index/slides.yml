@@ -2,3 +2,8 @@
   descr: This tutorial covers the basics of python programming language. Note that you are required to submit your programming assignments as an ipython notebook by using Google Colab.
   url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/Intro_to_python.pdf
   year: 2019
+
+- name: Tutorial 2
+  descr: This tutorial covers Propositional Equivalences, Predeicates, and Quantifiers.
+  url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/Tutorial-2.pdf
+  year: 2019
