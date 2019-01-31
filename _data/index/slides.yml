@@ -7,3 +7,8 @@
   descr: This tutorial covers Propositional Equivalences, Predeicates, and Quantifiers.
   url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/Tutorial-2.pdf
   year: 2019
+
+- name: Tutorial 3
+  descr: This tutorial covers Nested Quantifiers and Rules of Inference.
+  url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/Tutorial-3.pdf
+  year: 2019
