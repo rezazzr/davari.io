@@ -2,6 +2,18 @@
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name: Concordia University
   link: https://www.concordia.ca/
-  date: July 2017 - <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
+  date: May 2018 - <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
   job:  Teaching Assistant
   descr: <br><ul> <li>Comp-472&#58 Artificial Intelligence </li> <li>Comp-339&#58 Combinatorics </li> <li>Comp-5361&#58 Discrete Structures and Formal Languages </li> <li>Comp-335&#58 Introduction to Theoretical Computer Science</li> </ul>
+
+- name: McGill University
+  link: https://www.mcgill.ca/
+  date: September 2015 - May 2016
+  job:  Teaching Assistant
+  descr: <br><ul> <li>Math-242&#58 Analysis 1</li> <li>Math-255&#58 Honours Analysis 2</li> </ul>
+
+- name: Dawson College
+  link: https://www.dawsoncollege.qc.ca/
+  date: September 2011 - May 2016
+  job:  Teaching Assistant
+  descr: <br><ul> <li>Linear Algebra</li> <li> Probability and Statistics</li> <li> Calculus 1, 2, and 3</li> </ul>  
