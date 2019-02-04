@@ -1,16 +1,12 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
-- name: Google
-  link: http://www.google.com/
+- name: Concordia University
+  link: https://www.concordia.ca/
   date: July 2017 - <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
-  job: Programming Internship
-
-- name: Facebook
-  link: http://www.facebook.com/
-  date: May 2014 - July 2017
-  job: Web Assistant
-
-- name: SAP
-  link: https://www.sap.com/
-  date: 2010 - 2014
-  job: Software Developer
+  job:  Teaching Assistant
+  descr: <br> Courses&#58 <ul>
+  <li>Comp-472&#58 Artificial Intelligence </li>
+  <li>Comp-339&#58 Combinatorics </li> 
+  <li>Comp-5361&#58 Discrete Structures and Formal Languages </li>  
+  <li>Comp-335&#58 Introduction to Theoretical Computer Science</li>
+  </ul>
