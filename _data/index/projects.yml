@@ -1,4 +1,3 @@
-- name: leonids
-  descr: "Bacon ipsum dolor sit amet doner meatball jowl short ribs, chicken prosciutto salami frankfurter. Pig drumstick turducken short ribs, brisket meatloaf ham hock shankle andouille corned beef strip steak. Venison ham bresaola strip steak. Pork belly ribeye prosciutto t-bone."
-  image: pong.png
-  github: https://github.com/renyuanz/leonids
+- name: Road Crossing Aid for Visually Impaired
+  descr: "There are over 37 million people across the globe who are visually impaired. Out of this population, over 15 million are from India. Living in an underdeveloped country with little infrastructure for the disables could be very harsh and isolating. We wanted to make a difference and not let their disabilities hinder their day to day life. This motivation drove us to develop the project presented here. In this project, we designed, made and tested and application that uses AI to navigate and guide the visually impaired in crossing the street. In our first attempt in solving this problem we are considering the case of zebra line crossings. The full report and implementation of the AI part of the project can be found in the github repository linked below. A demo of the application running on android platform could be seen in this" <a href="https://www.youtube.com/watch?time_continue=2&v=fUke4D1N3ss">video</a>.
+  github: https://github.com/rezazzr/Road-Crossing-Aid-For-The-Visually-Impaired
