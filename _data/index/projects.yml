@@ -13,3 +13,7 @@
 - name: General Value Functions and Successor Representation
   descr: This is a report on the topic of Successor Representation (SR). It briefly discusses the relation between SR and the General Value Functions and then proceeds to explore the properties of SR and its benefits over vanilla TD(0) methods. The experiments performed for the purposes of this study are all done on the <a href="https://gym.openai.com/envs/FrozenLake-v0/">FrozenLake</a> environment with slight modifications that are mentioned in the report.
   github: https://github.com/rezazzr/GVF_SR_reinforcement_learning
+
+- name: Policy Gradient Methods in Reinforcement Learning
+  descr: This is a report on the use of policy gradient methods in Reinforcement Learning. The focus of this report is on the experimental comparison between 3 types of Actor-Critic methods. This investigation mainly revolves around the effect of the eligibility traces on Actor-Critic methods. These methods are the followings&#58 <ol> <li>Actor-Critic with Eligibility Traces</li> <li>Actor-Critic with Eligibility Traces only on the Critic but not the Actor</li> <li>Actor-Critic Without any Eligibility Traces using one-step returns</li>  </ol> The experiments are carried on the <a href="https://gym.openai.com/envs/FrozenLake-v0/">FrozenLake</a> environment.
+  github: https://github.com/rezazzr/policy_gradient_reinforcement_learning
