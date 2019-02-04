@@ -21,3 +21,11 @@
 - name: Neural Turing Machines
   descr: This is a report on the implementation of the paper <a href="https://arxiv.org/abs/1410.5401">Neural Turing Machines</a>. The paper presents the idea of Neural Turing Machines (NTM) and the results of using NTM on a few tasks. However, it does not provide the reader with the necessary details to reproduce the results presented in the paper. In this report we tried to fill in those gaps and provide an analysis over the experiments we performed to implement NTM. Note that we chose to only implement the NTM on the copy task.
   github: https://github.com/rezazzr/neural-turing-machines
+
+- name: Function Approximation in Reinforcement Learning 
+  descr: This is a report on the use of function approixmation in Reinforcement Learning. In this report, we will implement the method of Kernel Based Reinforcement Learning (kbrl) as explained in <a href="https://link.springer.com/article/10.1023%2FA%3A1017928328829">Ormoneit and Sen (2002)</a> using a nearest neighbor measure where the neighbors are weighted via a Gaussian Kernel. The ipython notebook in this repository assumes the reader has already read Ormoneit and Sen (2002) and is familiar with the concept that are introduced in this paper. Hence, there is no introduction section in this report and it may be hard to follow if the reader is not familiar with the said paper. Therefore, it is highly suggested to read the paper before attempting to reading this report!
+  github: https://github.com/rezazzr/kernel_based_reinforcement_learning
+
+- name: Reproducing&#58 On The Convergence of ADAM and Beyond
+  descr: This is a study based on the paper <a href="https://openreview.net/pdf?id=ryQu7f-RZ">On The Convergence of ADAM and Beyond</a>. In this report we tried to present a short summery explaining what this paper is about and reproduce the results of the experiments that was shown in the paper. In addition to these experiment, we also designed an experiment of our own, and investigated the behaviour of the method proposed by the paper in a different setting.
+  github: https://github.com/rezazzr/Reproducing-Convergence-of-ADAM-and-Beyond
