@@ -1,9 +1,14 @@
-- name: Massachusets Instutite of Technology
-  link: http://web.mit.edu/
-  date: 2011 - <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
-  descr: <br> (expected graduation in 2019)
+- name: Concordia University
+  link: https://www.concordia.ca/
+  date: September 2017 - <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
+  descr: Master of Computer Science, expected graduation in 2019
 
-- name: Harvard
-  link: http://www.harvard.edu/
-  date: 2007 - 2011
-  descr: <br> (expected graduation in 2019)
+- name: McGill University
+  link: https://www.mcgill.ca/
+  date: September 2013 - December 2016
+  descr: <br> Bachelor of Science&#58 Double Major in Mathematics and Computer Science
+
+- name: Dawson College
+  link: https://www.dawsoncollege.qc.ca/
+  date: September 2011 - May 2013
+  descr: <br> DEC in Pure and Applied Science
