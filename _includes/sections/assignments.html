@@ -1,0 +1,18 @@
+<h2><span data-i18n="skills.my_skills">Assignments</span></h2>
+
+{% for assignment in site.data.index.assignments %}
+
+    <div class="row">
+            <div class="col">
+                <h3>
+                    <a href="{{ assignment.url }}"></i>{{ assignment.name }}</a>
+                </h3>
+                <div class="content">
+                    <p style="margin: 0">Due: {{ assignment.due }} @ 11:59PM</p>
+                </div>
+
+                 &nbsp;
+            </div>
+    </div>
+{% endfor %}
+<br>
