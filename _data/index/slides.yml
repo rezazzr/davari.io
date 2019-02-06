@@ -12,3 +12,8 @@
   descr: This tutorial covers Nested Quantifiers and Rules of Inference.
   url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/Tutorial-3.pdf
   year: 2019
+
+- name: Tutorial 4
+  descr: This tutorial covers Introduction to Proofs and Proof Methods and Strategies.
+  url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/Tutorial-4.pdf
+  year: 2019
