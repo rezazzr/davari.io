@@ -14,11 +14,16 @@
   year: 2019
 
 - name: Tutorial 4
-  descr: This tutorial covers Introduction to Proofs and Proof Methods and Strategies.
+  descr: This tutorial covers an Introduction to Proofs and Proof Methods and Strategies.
   url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/Tutorial-4.pdf
   year: 2019
 
 - name: Tutorial 5
-  descr: This tutorial covers Introduction to Set Theory and Set Operations.
+  descr: This tutorial covers an Introduction to Set Theory and Set Operations.
   url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/Tutorial-5.pdf
+  year: 2019
+
+- name: Tutorial 6
+  descr: This tutorial covers an Functions.
+  url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/Tutorial-6.pdf
   year: 2019
