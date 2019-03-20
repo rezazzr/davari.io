@@ -27,3 +27,8 @@
   descr: This tutorial covers an Introduction to Functions.
   url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/Tutorial-6.pdf
   year: 2019
+
+- name: Tutorial 7
+  descr: This tutorial covers the Relations and Their Properties, Closures of Relations, and Equivalence Relations.
+  url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/Tutorial-7.pdf
+  year: 2019
