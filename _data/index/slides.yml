@@ -29,6 +29,6 @@
   year: 2019
 
 - name: Tutorial 7
-  descr: This tutorial covers the Relations and Their Properties, Closures of Relations, and Equivalence Relations.
+  descr: This tutorial covers the Relations and Their Properties, Closures of Relations, Equivalence Relations, and Partial Orderings.
   url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/Tutorial-7.pdf
   year: 2019
