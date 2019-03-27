@@ -32,3 +32,8 @@
   descr: This tutorial covers the Relations and Their Properties, Closures of Relations, Equivalence Relations, and Partial Orderings.
   url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/Tutorial-7.pdf
   year: 2019
+
+- name: Tutorial 8
+  descr: This tutorial covers an introduction to Regular Languages and  Deterministic Finite Automata.
+  url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/Tutorial-8.pdf
+  year: 2019
