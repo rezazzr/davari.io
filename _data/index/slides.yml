@@ -34,6 +34,11 @@
   year: 2019
 
 - name: Tutorial 8
-  descr: This tutorial covers an introduction to Regular Languages and  Deterministic Finite Automata.
+  descr: This tutorial covers an introduction to Regular Languages and  Deterministic Finite Automata (DFA).
   url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/Tutorial-8.pdf
+  year: 2019
+
+- name: Tutorial 9
+  descr: This tutorial covers an introduction to Nondeterministic Finite Automata (NFA) and the equivalence of NFA and DFA.
+  url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/Tutorial-9.pdf
   year: 2019
