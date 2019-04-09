@@ -44,6 +44,6 @@
   year: 2019
   
 - name: Tutorial 10
-  descr: This tutorial covers the following topics: <ul><li>Introsuction to Epsilon-NFA</li> <li>Epsilon-Closure</li> <li>Conversion of Epsilon-NFA to DFA</li> <li>Introduction to Regular Expression</li> <li>Generalized NFA</li> <li>Conversion of Automata to Regular Expression</li> <li>Conversion of Regular Expression to Automata</li></ul>
+  descr: This tutorial covers the following topics, <ul><li>Introsuction to Epsilon-NFA</li> <li>Epsilon-Closure</li> <li>Conversion of Epsilon-NFA to DFA</li> <li>Introduction to Regular Expression</li> <li>Generalized NFA</li> <li>Conversion of Automata to Regular Expression</li> <li>Conversion of Regular Expression to Automata</li></ul>
   url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/Tutorial-10.pdf
   year: 2019
