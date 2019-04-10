@@ -1,49 +1,49 @@
-- name: Tutorial 1 (Introduction to python)
+- name: Lecture 1 (Introduction to python)
   descr: This tutorial covers the basics of python programming language. Note that you are required to submit your programming assignments as an ipython notebook by using Google Colab.
   url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/Intro_to_python.pdf
   year: 2019
 
-- name: Tutorial 2
+- name: Lecture 2
   descr: This tutorial covers Propositional Equivalences, Predeicates, and Quantifiers.
   url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/Tutorial-2.pdf
   year: 2019
 
-- name: Tutorial 3
+- name: Lecture 3
   descr: This tutorial covers Nested Quantifiers and Rules of Inference.
   url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/Tutorial-3.pdf
   year: 2019
 
-- name: Tutorial 4
+- name: Lecture 4
   descr: This tutorial covers an Introduction to Proofs and Proof Methods and Strategies.
   url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/Tutorial-4.pdf
   year: 2019
 
-- name: Tutorial 5
+- name: Lecture 5
   descr: This tutorial covers an Introduction to Set Theory and Set Operations.
   url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/Tutorial-5.pdf
   year: 2019
 
-- name: Tutorial 6
+- name: Lecture 6
   descr: This tutorial covers an Introduction to Functions.
   url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/Tutorial-6.pdf
   year: 2019
 
-- name: Tutorial 7
+- name: Lecture 7
   descr: This tutorial covers the Relations and Their Properties, Closures of Relations, Equivalence Relations, and Partial Orderings.
   url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/Tutorial-7.pdf
   year: 2019
 
-- name: Tutorial 8
+- name: Lecture 8
   descr: This tutorial covers an introduction to Regular Languages and  Deterministic Finite Automata (DFA).
   url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/Tutorial-8.pdf
   year: 2019
 
-- name: Tutorial 9
+- name: Lecture 9
   descr: This tutorial covers an introduction to Nondeterministic Finite Automata (NFA) and the equivalence of NFA and DFA.
   url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/Tutorial-9.pdf
   year: 2019
   
-- name: Tutorial 10
+- name: Lecture 10
   descr: This tutorial covers the following topics, <ul><li>Introsuction to Epsilon-NFA</li> <li>Epsilon-Closure</li> <li>Conversion of Epsilon-NFA to DFA</li> <li>Introduction to Regular Expression</li> <li>Generalized NFA</li> <li>Conversion of Automata to Regular Expression</li> <li>Conversion of Regular Expression to Automata</li></ul>
   url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/Tutorial-10.pdf
   year: 2019
