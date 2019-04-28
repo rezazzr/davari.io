@@ -6,7 +6,7 @@
             <div class="col">
                 <h2 style="margin: 0">{{ publication.name }}</h2>
                   {% if publication.published %}
-                  <i>{{ <publication.published }} </i><br><br>
+                  <i>{{ <publication.published }} </i><br>
                   {% endif %}        
                 {% if publication.github %}
                 <a href="{{ publication.github }} " target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a> &nbsp;
@@ -17,7 +17,7 @@
                 {% if publication.slides %}
                 <a href="{{ publication.slides }} " target="_blank"><i class="fa fa-area-chart"></i>Slides</a> &nbsp;
                 {% endif %}
-                <br>
+                <br><br>
                 <p style="margin: 0">{{ publication.descr }}</p>
             </div>
     </div>
