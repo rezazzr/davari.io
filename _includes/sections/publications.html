@@ -7,7 +7,11 @@
                 <h2 style="margin: 0">{{ publication.name }}</h2>
                   {% if publication.published %}
                   <i>{{ <publication.published }} </i><br>
-                  {% endif %}        
+                  {% endif %}
+                <button class="btn-xs btn-info collapsible">Abstract</button>
+                  <div class="content" style="display: none;">
+                    <p style="margin: 0">{{ publication.descr }}</p>
+                  </div>      
                 {% if publication.github %}
                 <a href="{{ publication.github }} " target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a> &nbsp;
                 {% endif %}
@@ -17,12 +21,6 @@
                 {% if publication.slides %}
                 <a href="{{ publication.slides }} " target="_blank"><i class="fa fa-area-chart"></i>Slides</a> &nbsp;
                 {% endif %}
-                <br>
-
-                <button class="btn-xs btn-info collapsible">Abstract</button>
-                  <div class="content" style="display: none;">
-                    <p style="margin: 0">{{ publication.descr }}</p>
-                  </div>
                 <!-- <p style="margin: 0">{{ publication.descr }}</p> -->
             </div>
     </div>
