@@ -18,7 +18,12 @@
                 <a href="{{ publication.slides }} " target="_blank"><i class="fa fa-area-chart"></i>Slides</a> &nbsp;
                 {% endif %}
                 <br>
-                <p style="margin: 0">{{ publication.descr }}</p>
+
+                <button class="btn-xs btn-info collapsible">Abstract</button>
+                  <div class="content" style="display: none;">
+                    <p style="margin: 0">{{ publication.descr }}</p>
+                  </div>
+                <!-- <p style="margin: 0">{{ publication.descr }}</p> -->
             </div>
     </div>
 {% endfor %}
