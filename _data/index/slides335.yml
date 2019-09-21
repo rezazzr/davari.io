@@ -1,0 +1,9 @@
+- name: Lecture 1
+  descr: This lecture covers examples from Sets, Functions, Relations, and Proof Techniques.
+  url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/comp335_tutorial1.pdf
+  year: 2019
+
+- name: Lecture 2
+  descr: This lecture covers examples from Regular Languages and DFA's.
+  url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/comp335_tutorial2.pdf
+  year: 2019
