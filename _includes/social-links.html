@@ -41,5 +41,7 @@
     {% if author.codepen %}<li><a href="http://codepen.io/{{ author.codepen }}" class="social-link-item" target="_blank"><i class="fa fa-fw fa-codepen"></i></a></li>{% endif %}
     {% if author.reddit %}<li><a href="https://reddit.com/user/{{ author.reddit }}" class="social-link-item" target="_blank"><i class="fa fa-fw fa-reddit"></i></a></li>{% endif %}
     {% if author.telegram %}<li><a href="https://t.me/{{ author.telegram }}" class="social-link-item" target="_blank"><i class="fa fa-fw fa-telegram"></i></a></li>{% endif %}
+    {% if author.googlescholar %}<li><a href="https://scholar.google.ca/citations?user={{ author.googlescholar }}" class="social-link-item" target="_blank"><i class="fa fa-graduation-cap"></i></a></li>
+    {% endif %}
   </ul>
 </div>
