@@ -14,6 +14,7 @@
       </li>
       {% for page in site.pages %} {% if page.title %}
       {% if page.title != "comp5361" %}
+      {% if page.title != "comp335" %}
       <li class="nav-item">
         <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
         {% unless forloop.last %}
