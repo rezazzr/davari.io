@@ -2,7 +2,13 @@
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name: Coveo Solutions Inc.
   link: https://www.coveo.com/en
-  date: May 2019 - <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
+  date: Sep 2019 - <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
+  job:  Machine Learning Developer
+  descr:
+
+- name: Coveo Solutions Inc.
+  link: https://www.coveo.com/en
+  date: May 2019 - Sep 2019
   job:  Machine Learning Developer Intern
   descr:
 
