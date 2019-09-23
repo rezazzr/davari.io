@@ -7,3 +7,8 @@
   descr: This lecture covers examples from Regular Languages and DFA's.
   url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/comp335_tutorial2.pdf
   year: 2019
+  
+- name: Lecture 3
+  descr: This lecture covers examples from conversion of NFA's to DFA's.
+  url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/comp335_tutorial3.pdf
+  year: 2019
