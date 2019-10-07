@@ -1,19 +1,24 @@
 - name: Lecture 1
   descr: This lecture covers examples from Sets, Functions, Relations, and Proof Techniques.
-  url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/comp335_tutorial1.pdf
+  url:  https://github.com/rezazzr/davari.io/raw/master/_data/slide_pdf_files/comp335_tutorial1.pdf
   year: 2019
 
 - name: Lecture 2
   descr: This lecture covers examples from Regular Languages and DFA's.
-  url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/comp335_tutorial2.pdf
+  url:  https://github.com/rezazzr/davari.io/raw/master/_data/slide_pdf_files/comp335_tutorial2.pdf
   year: 2019
   
 - name: Lecture 3
   descr: This lecture covers examples from conversion of NFA's to DFA's.
-  url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/comp335_tutorial3.pdf
+  url:  https://github.com/rezazzr/davari.io/raw/master/_data/slide_pdf_files/comp335_tutorial3.pdf
   year: 2019
   
 - name: Lecture 4
   descr: This lecture covers examples from Regular Expressions (RegEx) and conversion of FA's to RegEx.
-  url:  https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/slide_pdf_files/comp335_tutorial4.pdf
+  url:  https://github.com/rezazzr/davari.io/raw/master/_data/slide_pdf_files/comp335_tutorial4.pdf
+  year: 2019
+  
+- name: Lecture 5
+  descr: This lecture covers examples from conversion of RegEx and NFA to CFG as well as Regular Grammers to NFA.
+  url:  https://github.com/rezazzr/davari.io/raw/master/_data/slide_pdf_files/comp335_tutorial5.pdf
   year: 2019
