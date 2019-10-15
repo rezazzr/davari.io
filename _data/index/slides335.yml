@@ -22,3 +22,8 @@
   descr: This lecture covers examples from conversion of RegEx and NFA to CFG as well as Regular Grammers to NFA.
   url:  https://github.com/rezazzr/davari.io/raw/master/_data/slide_pdf_files/comp335_tutorial5.pdf
   year: 2019
+  
+- name: Lecture 6
+  descr: This lecture covers examples from Pumping Lemma on Regular Languages.
+  url:  https://github.com/rezazzr/davari.io/raw/master/_data/slide_pdf_files/comp335_tutorial6.pdf
+  year: 2019
