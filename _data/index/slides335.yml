@@ -27,3 +27,8 @@
   descr: This lecture covers examples from Pumping Lemma on Regular Languages.
   url:  https://github.com/rezazzr/davari.io/raw/master/_data/slide_pdf_files/comp335_tutorial6.pdf
   year: 2019
+  
+- name: Lecture 7
+  descr: This lecture covers examples from Contex Context Free Grammars.
+  url:  https://github.com/rezazzr/davari.io/raw/master/_data/slide_pdf_files/comp335_tutorial7.pdf
+  year: 2019
