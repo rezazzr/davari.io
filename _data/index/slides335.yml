@@ -32,3 +32,8 @@
   descr: This lecture covers examples from Contex Context Free Grammars.
   url:  https://github.com/rezazzr/davari.io/raw/master/_data/slide_pdf_files/comp335_tutorial7.pdf
   year: 2019
+  
+- name: Lecture 8
+  descr: This lecture covers examples from Parse Trees (Left Most and Right Most), Simplification of CFGs, and Chomsky Normal forms.
+  url:  https://github.com/rezazzr/davari.io/raw/master/_data/slide_pdf_files/comp335_tutorial8.pdf
+  year: 2019
