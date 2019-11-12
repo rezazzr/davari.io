@@ -42,4 +42,9 @@
   descr: This lecture covers examples from Ambiguous Grammers and their disambiguation.
   url:  https://github.com/rezazzr/davari.io/raw/master/_data/slide_pdf_files/comp335_tutorial9.pdf
   year: 2019
+  
+- name: Lecture 10
+  descr: This lecture covers examples from Pushdown Automata design.
+  url:  https://github.com/rezazzr/davari.io/raw/master/_data/slide_pdf_files/comp335_tutorial10.pdf
+  year: 2019
 
