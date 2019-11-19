@@ -48,3 +48,7 @@
   url:  https://github.com/rezazzr/davari.io/raw/master/_data/slide_pdf_files/comp335_tutorial10.pdf
   year: 2019
 
+- name: Lecture 11
+  descr: This lecture covers examples from conversions of CFGs to PDAs.
+  url:  https://github.com/rezazzr/davari.io/raw/master/_data/slide_pdf_files/comp335_tutorial11.pdf
+  year: 2019
