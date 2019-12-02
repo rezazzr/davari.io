@@ -57,3 +57,8 @@
   descr: This lecture covers examples of Pumping Lemma for CFG.
   url:  https://github.com/rezazzr/davari.io/raw/master/_data/slide_pdf_files/comp335_tutorial12.pdf
   year: 2019
+  
+- name: Lecture 13
+  descr: This lecture covers examples from Turing Machines.
+  url:  https://github.com/rezazzr/davari.io/raw/master/_data/slide_pdf_files/comp335_tutorial13.pdf
+  year: 2019
