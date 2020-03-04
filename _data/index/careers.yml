@@ -3,14 +3,14 @@
 - name: Coveo Solutions Inc.
   link: https://www.coveo.com/en
   date: Sep 2019 - <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
-  job:  Machine Learning Developer
-  descr:
+  job:  Machine Learning Scientist
+  descr: <br><ul> <li>Implemented language model based (BERT, RoBERTa, ALBERT) query retrieval system for long queries.</li>Implemented product content embedding based on product description and visual representation.<li> </li> </ul>
 
 - name: Coveo Solutions Inc.
   link: https://www.coveo.com/en
   date: May 2019 - Sep 2019
   job:  Machine Learning Developer Intern
-  descr:
+  descr: <br><ul> <li>Implemented parallel model building on EMR clusters.</li> </ul>
 
 - name: Concordia University
   link: https://www.concordia.ca/
