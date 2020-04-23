@@ -4,7 +4,7 @@
   link: https://www.coveo.com/en
   date: Sep 2019 - <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
   job:  Machine Learning Scientist
-  descr: <br><ul> <li>Implemented language model based (BERT, RoBERTa, ALBERT) query retrieval system for long queries.</li>Implemented product content embedding based on product description and visual representation.<li> </li> </ul>
+  descr: <br><ul> <li>Implemented explainable dynamic facet recognition module for multilingual queries (long and short). A probability distribution per facet over the query words showed the influence of each token in the final decision of the model.</li> <li>Implemented language model based (BERT, RoBERTa, ALBERT) query retrieval system for long queries.</li>Implemented product content embedding based on product description and visual representation.<li> </li> </ul>
 
 - name: Coveo Solutions Inc.
   link: https://www.coveo.com/en
