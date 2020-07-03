@@ -70,3 +70,8 @@ owner:
   reddit: #username
   telegram: #username
   googlescholar: 4AztFtEAAAAJ
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
