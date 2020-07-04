@@ -45,7 +45,8 @@
   }
   .author_bio {
     font-size: 90%;
-    display: block;
+    width: 200px;
+    display: inline-block;
   }
   @include media-query($medium-screen) {
     text-align: right;
