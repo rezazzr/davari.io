@@ -7,21 +7,11 @@
   <span class="author_bio mbm">{{ author.bio }}</span>
   <nav class="nav">
     <ul class="nav-list">
+      {% for page in site.data.index.nav %}
       <li class="nav-item">
-        <a href="{{ site.url }}/">Home</a>
+        <a href="{{ page.path | relative_url }}">{{ page.name }}</a>
       </li>
-      {% for page in site.pages %} {% if page.title %}
-      {% if page.title != "comp5361" %}
-      {% if page.title != "comp335" %}
-      <li class="nav-item">
-        <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
-        {% unless forloop.last %}
-          <span></span>
-        {% endunless %}
-      </li>
-      {% endif %}
-      {% endif %}
-      {% endif %} {% endfor %}
+      {% endfor %}
     </ul>
   </nav>
   {% include social-links.html %}
