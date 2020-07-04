@@ -22,7 +22,7 @@ comments: false
         {% if publication.paper %}
         <a class="btn" href="{{ publication.paper }}" target="_blank"><i class="fa fa-file-pdf-o"></i> Paper</a>
         {% endif %}
-        <button class="btn btn-warning collapsible"><i class="fa fa-newspaper-o"></i> Cite</button>
+        <button class="btn btn-warning collapsible"><i class="fa fa-list"></i> Cite</button>
         <div class="row" style="display: none;">
             {% highlight BibTeX %}
 {{ publication.cite }}
