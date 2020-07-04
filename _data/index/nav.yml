@@ -1,14 +1,17 @@
-- name: "&#127817 About"
+- name: About
   path: /
 
-- name: "&#129417 Teaching"
+- name: Publication
+  path: /publication.html
+
+- name: Teaching
   path: /teaching.html
 
-- name: "&#128373 FAQ"
+- name: FAQ
   path: /faq.html
 
-- name: "&#128451 Archive"
+- name: Archive
   path: /archive.html
 
-- name: "&#128478 Logs"
+- name: Logs
   path: /logs.html
