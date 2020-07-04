@@ -7,11 +7,12 @@
 - name: Teaching
   path: /teaching.html
 
-- name: FAQ
-  path: /faq.html
-
-- name: Archive
-  path: /archive.html
-
-- name: Logs
-  path: /logs.html
+# TODO: Implement FAQ, Archive, and Logs
+#- name: FAQ
+#  path: /faq.html
+#
+#- name: Archive
+#  path: /archive.html
+#
+#- name: Logs
+#  path: /logs.html
