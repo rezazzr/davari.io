@@ -3,3 +3,11 @@
   paper: https://arxiv.org/abs/1904.11018
   published: MohammdReza Davari, Leila Kosseim and Tien Bui, In Proceedings of the 20th International Conference on Intelligent Text Processing and Computational Linguistics (<a href="https://www.cicling.org/2019/">CICLing-2019</a>), April 2019, La Rochelle, France.
   award: Best Poster Award
+  cite: "@inproceedings{davari2019toponym,
+           title      = {Toponym Identification in Epidemiology Articles - A Deep Learning Approach},
+           author     = {Davari, MohammadReza and Kosseim, Leila and Bui, Tien D},
+           booktitle  = {Proceedings of The 20th International Conference on Computational Linguistics and Intelligent Text Processing (CICLing 2019)},
+           address    = {La Rochelle, France},
+           year       = {2019},
+           month      = {April},
+         }"
