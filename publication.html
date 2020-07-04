@@ -1,0 +1,65 @@
+---
+layout: page
+title: Publication
+permalink: /publication.html
+description: "Reza's publications."
+comments: false
+---
+<h2 style="color:#F36170">Refereed Conference Proceedings</h2>
+{% for publication in site.data.index.publication_paper %}
+
+<div class="row">
+    <div class="col">
+        <h3 style="margin: 0">{{ publication.name }}</h3>
+        <i>{{ publication.published }} </i>
+        {% if publication.award %}
+        <p>&#127942 <strong>{{ publication.award }}</strong></p>
+        {% endif %}
+        <button class="btn btn-info collapsible"><i class="fa fa-newspaper-o"></i> Abstract</button>
+        <div class="content" style="display: none;">
+            <p style="margin: 0">{{ publication.descr }}</p>
+        </div>
+        {% if publication.paper %}
+        <a class="btn" href="{{ publication.paper }}" target="_blank"><i class="fa fa-file-pdf-o"></i> Paper</a>
+        {% endif %}
+        {% if publication.slides %}
+        <a href="{{ publication.slides }} " target="_blank"><i class="fa fa-area-chart"></i>Slides</a> &nbsp;
+        {% endif %}
+        <!-- <p style="margin: 0">{{ publication.descr }}</p> -->
+    </div>
+</div>
+{% endfor %}
+
+
+<h2 style="color:#F36170">Book Chapters</h2>
+{% for publication in site.data.index.publication_book %}
+
+<div class="row">
+    <div class="col">
+        <h3 style="margin: 0">{{ publication.name }}</h3>
+        {% if publication.published %}
+        <i>{{ publication.published }} </i><br>
+        {% endif %}
+        <br>
+        {% if publication.descr %}
+        <button class="btn-xs btn-info collapsible">Abstract</button>
+        <div class="content" style="display: none;">
+            <p style="margin: 0">{{ publication.descr }}</p>
+        </div>
+        {% endif %}
+        {% if publication.github %}
+        <a href="{{ publication.github }} " target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a> &nbsp;
+        {% endif %}
+        {% if publication.paper %}
+        <a href="{{ publication.paper }} " target="_blank"><i class="fa fa-file-pdf-o"></i>Paper</a> &nbsp;
+        {% endif %}
+        {% if publication.slides %}
+        <a href="{{ publication.slides }} " target="_blank"><i class="fa fa-area-chart"></i>Slides</a> &nbsp;
+        {% endif %}
+        <!-- <p style="margin: 0">{{ publication.descr }}</p> -->
+    </div>
+</div>
+{% endfor %}
+
+<hr>
+
