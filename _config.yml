@@ -34,7 +34,7 @@ kramdown:
 #
 owner:
   name: Reza Davari
-  job: "Master’s Student at Concordia University"
+  job: ML Scientist @ <a href="https://www.coveo.com/en" target="_blank">Coveo</a>
   bio: "AI enthusiast, currently focused on NLP. A watermelon connoisseur. Based in Montreal, QC."
   email: davari.mreza@gmail.com
   disqus-shortname:
