@@ -13,7 +13,7 @@ comments: false
         <h3 style="margin: 0">{{ publication.name }}</h3>
         <i>{{ publication.published }} </i>
         {% if publication.award %}
-        <p>&#127942 <strong>{{ publication.award }}</strong></p>
+        <h4>&#127942 {{ publication.award }}</h4>
         {% endif %}
         <button class="btn btn-info collapsible"><i class="fa fa-newspaper-o"></i> Abstract</button>
         <div class="content" style="display: none;">
