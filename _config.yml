@@ -33,10 +33,10 @@ kramdown:
 ####################################
 #
 owner:
-  name: Mohammad Reza Davari
+  name: Reza Davari
   job: "Master’s Student at Concordia University"
   bio: "AI enthusiast, currently focused on NLP. A watermelon connoisseur. Based in Montreal, QC."
-  email: mohammadreza.davari@mail.concordia.ca
+  email: davari.mreza@gmail.com
   disqus-shortname:
   twitter: davari_reza #username
   facebook: #username
@@ -53,7 +53,7 @@ owner:
   linkedin: rezadavari #username
   skype: #username
   xing: #username
-  instagram: #username
+  instagram: davari_reza #username
   lastfm: #username
   tumblr: #username
   pinterest: #username
