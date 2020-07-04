@@ -1,0 +1,18 @@
+- name: About
+  path: /
+
+- name: Publication
+  path: /publication.html
+
+- name: Teaching
+  path: /teaching.html
+
+# TODO: Implement FAQ, Archive, and Logs
+#- name: FAQ
+#  path: /faq.html
+#
+#- name: Archive
+#  path: /archive.html
+#
+#- name: Logs
+#  path: /logs.html

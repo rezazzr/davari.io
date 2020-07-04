@@ -3,9 +3,9 @@ layout: default
 ---
 {% for course in site.data.index.courses %}
  <div class="row">
- 	<a href={{course.link}}> <h1> {{course.name}} </h1> </a>
- 	<h3>{{course.university}}, {{course.term}}</h3>
-</div>    
+	 <a href="{{course.link}}"><h1> {{course.name}} </h1></a>
+	 <h3>{{course.university}}, {{course.term}}</h3>
+ </div>
 
 {{ "---" | markdownify }}
 {% endfor %}
