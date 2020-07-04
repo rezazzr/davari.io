@@ -3,9 +3,9 @@
 # Site wide configuration
 ####################################
 #
-title: Mohammad Reza Davari
-email: mohammadreza.davari@mail.concordia.ca
-description: Mohammad Reza Davari Website
+title: Reza Davari
+email: davari.mreza@gmail.com
+description: Reza's notes and projects.
 url: https://davari.io
 keywords: ["Mohammd Reza Davari", "Mohammad Reza","Reza","Reza Davari","Davari","Machine Learning","NLP","AI","Artificial Intelligence"]
 
@@ -33,12 +33,11 @@ kramdown:
 ####################################
 #
 owner:
-  name: Mohammad Reza Davari
-  avatar: Reza.jpg
-  job: "Master’s Student at Concordia University"
+  name: Reza Davari
+  job: ML Scientist @ <a href="https://www.coveo.com/en" target="_blank">Coveo</a>
   bio: "AI enthusiast, currently focused on NLP. A watermelon connoisseur. Based in Montreal, QC."
-  email: mohammadreza.davari@mail.concordia.ca
-  disqus-shortname:
+  email: davari.mreza@gmail.com
+  disqus-shortname: davari-io
   twitter: davari_reza #username
   facebook: #username
   google:
@@ -54,7 +53,7 @@ owner:
   linkedin: rezadavari #username
   skype: #username
   xing: #username
-  instagram: #username
+  instagram: davari_reza #username
   lastfm: #username
   tumblr: #username
   pinterest: #username

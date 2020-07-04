@@ -2,37 +2,23 @@
 layout: default
 ---
 <div class="row">
-    <div class="col l7">
-        <div class="row">
-            <div class="col">
-                {% include sections/about.html %}        
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col">
-                {% include sections/publications.html %}
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col">
-                {% include sections/projects.html %}
-            </div>
-        </div>
+    <div class="col l7">
+        <img src="{{ '/assets/img/reza_profile.png' | relative_url }}" width="320" height="320"/>
+        {% include sections/about.html %}
     </div>
 
     <div class="col l4 offset-l1">
-        <div class="row">
-            {% include sections/skills.html %}    
-        </div>
-        <div class="row">
-            {% include sections/career.html %}    
-        </div>
-        <div class="row">
-            {% include sections/education.html %}    
-        </div>
+        {% include sections/skills.html %}
     </div>
-    
 
+</div>
+
+<div class="row">
+    <div class="col l7">
+        {% include sections/career.html %}
+    </div>
+    <div class="col l4 offset-l1">
+        {% include sections/education.html %}
+    </div>
 </div>
