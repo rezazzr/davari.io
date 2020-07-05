@@ -8,6 +8,6 @@ comments: false
 {% for question_answer in site.data.index.qas %}
     <div class="qa">
         <p class="question"><b>Q: {{ question_answer.question }}</b></p>
-        <p><b>A: </b>{{ question_answer.answer }}</p>
+        <p><b>A: </b>{{ question_answer.answer | liquify }}</p>
     </div>
 {% endfor %}
