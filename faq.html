@@ -5,9 +5,17 @@ permalink: /faq.html
 description: "Frequently Asked Questions"
 comments: false
 ---
+{% capture feed_url %}
+    {{ "/feed.xml" | relative_url }}
+{% endcapture %}
+
+{% capture about_url %}
+    {{ "/" | relative_url }}
+{% endcapture %}
+
 {% for question_answer in site.data.index.qas %}
     <div class="qa">
         <p class="question"><b>Q: {{ question_answer.question }}</b></p>
-        <p><b>A: </b>{{ question_answer.answer | liquify }}</p>
+        <p><b>A: </b>{{ question_answer.answer | replace: "!FEED_URL!", feed_url | replace: "!ABOUT_URL!", about_url }}</p>
     </div>
 {% endfor %}
