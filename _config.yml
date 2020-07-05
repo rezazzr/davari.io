@@ -53,7 +53,7 @@ owner:
   linkedin: rezadavari #username
   skype: #username
   xing: #username
-  instagram: davari_reza #username
+  instagram: #username
   lastfm: #username
   tumblr: #username
   pinterest: #username
@@ -75,3 +75,4 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-archives
+  - jekyll-liquify
