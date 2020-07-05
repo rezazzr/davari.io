@@ -99,3 +99,14 @@
     }
   }
 }
+
+div.qa {
+    margin: 10px;
+    padding: 10px;
+    .question {
+        border-radius: 5px;
+        background: $background-color;
+        padding: 5px;
+        padding-left: 20px;
+    }
+ }
