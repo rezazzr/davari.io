@@ -1,14 +1,14 @@
 - question: "How can I get an update when a new post comes out?"
   answer: 'I post about my new post on this Twitter
   <a href="https://twitter.com/davari_reza" target="_blank">@davari_reza</a> account.
-  There is also a <a href="{{ "/feed.xml" | relative_url }}" target="_blank">RSS feed</a>.</p>'
+  There is also a <a href="!FEED_URL!" target="_blank">RSS feed</a>.</p>'
 
 - question: "What tool do you use for plotting?"
   answer: 'I''m using Google Presentation (cloud version of PowerPoint) and
   <a href="http://draw.io/" target="_blank">draw.io</a>.'
 
 - question: "Can I translate your posts to another language?"
-  answer: 'Yes that would be my pleasure &#129303. But please <a href="{{ "/" | relative_url }}" target="_blank">email</a>
+  answer: 'Yes that would be my pleasure &#129303. But please <a href="!ABOUT_URL!" target="_blank">email</a>
   me in advance and please keep the original post link on top
   (rather than in tiny font at the end, and yes I do see that case and that makes me feel sad).'
 
@@ -16,4 +16,4 @@
   answer: 'As you may know, it is pretty challenging to do a comprehensive literature review given a big topic.
   There are so so many papers in the wild. With Google scholar and recursive citation search, I get to see
   quite a lot of papers but still not all of them. You are more than welcome to shoot me an
-  <a href="{{ "/" | relative_url }}" target="_blank">email</a> with pointers to interesting but missing papers. Cheers &#128522'
+  <a href="!ABOUT_URL!" target="_blank">email</a> with pointers to interesting but missing papers. Cheers &#128522'
