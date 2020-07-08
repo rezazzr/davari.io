@@ -9,9 +9,12 @@
 
 - name: FAQ
   path: /faq.html
-#  TODO: Implement Archive, and Logs
-#- name: Archive
-#  path: /archive.html
-#
-#- name: Logs
-#  path: /logs.html
+
+- name: Archive
+  path: /archive.html
+
+- name: Logs
+  path: /logs.html
+
+- name: Tags
+  path: /tags.html
