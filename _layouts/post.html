@@ -31,6 +31,13 @@ layout: default
       </span>
       •
       {% include read_time.html %}
+      •
+      {% for tag in page.tags %}
+      <a class="post-cat" href="{{ site.url }}/tags.html#{{ tag }}">{{ tag }}</a>
+      {% unless forloop.last %}
+      <span>/</span>
+      {% endunless %}
+      {% endfor %}
     </span>
 
   </header>
