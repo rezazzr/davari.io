@@ -43,6 +43,7 @@ layout: default
   </header>
 
   <article class="post-content">
+    {{ page.excerpt | prepend: '> ' | markdownify }}
     {{ content }}
   </article>
 </div>
