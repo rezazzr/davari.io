@@ -24,10 +24,7 @@ comments: false
         {% endif %}
         <button class="btn btn-warning collapsible"><i class="fa fa-list"></i> Cite</button>
         <div class="row" style="display: none;">
-            {% highlight BibTeX %}
-{{ publication.cite }}
-            {% endhighlight %}
-
+            {% highlight BibTeX %}{{ publication.cite }}{% endhighlight %}
         </div>
         <!-- <p style="margin: 0">{{ publication.descr }}</p> -->
     </div>
