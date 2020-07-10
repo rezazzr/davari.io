@@ -375,7 +375,7 @@ Cite as:
   title   = {Attention Is All You Read},
   author  = {Davari, MohammadReza},
   journal = {davari.io},
-  year    = {2019},
+  year    = {2020},
   month   = {July},
   url     = {https://davari.io/articles/2020-07/attention-is-all-you-read.html},
 }
