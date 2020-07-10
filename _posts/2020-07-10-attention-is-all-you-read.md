@@ -106,7 +106,7 @@ translating the sentence “Watermelon is delicious” to French. Bright red arr
 
 ![Bahdanau neural machine translation architecture]({{ "/assets/img/NTM_bahdanau.png" | relative_url }})
 {: style="width: 100%;" class="center"} 
-*Figure 4: Neural machine translation architecture used by [Bahdanau et al. (May 2015)](https://arxiv.org/abs/1409.0473).*
+*Figure 5: Neural machine translation architecture used by [Bahdanau et al. (May 2015)](https://arxiv.org/abs/1409.0473).*
 {: style="width: 100%;" class="center"}
 
 Since the attention mechanism was introduced in NMT, we will base the examples of this section on this task, and we will
@@ -119,7 +119,7 @@ y = \left[y_1, y_2, \dots, y_M \right]
 $$
 
 The encoder will receive the source sequence $$x$$ and will produce hidden state representations $$h_i$$ at time step $$i$$.
-As shown in Figure 4, in the architecture proposed by [Bahdanau et al. (May 2015)](https://arxiv.org/abs/1409.0473) the
+As shown in Figure 5, in the architecture proposed by [Bahdanau et al. (May 2015)](https://arxiv.org/abs/1409.0473) the
 encoder is a bidirectional RNN and $$h$$ at time $$i$$ is defined as:
 
 $$h_i = \left[\overrightarrow{h_i},\overleftarrow{h_i}\right] \hspace{0.2cm} \forall i \in \{1,2,\dots,T \}$$
@@ -160,12 +160,12 @@ $$
 Where $$v$$ and $$W$$ are weight matrices that will be learned by the network. These alignment scores define how much of
 each of the source hidden states is needed to produce each of the target outputs or in other words, how much the target
 words should attend to the source sequence in the decoding process. This concept is captured by the matrix of the
-alignment scores, explicitly showing the correlation between input and output words. Figure 5, shows the matrix of
+alignment scores, explicitly showing the correlation between input and output words. Figure 6, shows the matrix of
 alignment scores for an English-French translation.
 
 <img src="{{ "/assets/img/alignment_matrix_example.png" | relative_url }}" alt="an example of alignment score matrix" width="350"/>
 {: style="width: 100%;" class="center"} 
-*Figure 5: Matrix of alignment scores for the translation of <<“This will change my future with my family,"
+*Figure 6: Matrix of alignment scores for the translation of <<“This will change my future with my family,"
 the man said.>> to French, <<“Cela va changer mon avenir avec ma famille", a dit l'homme.>>*
 {: style="width: 100%;" class="center"}
 
@@ -288,14 +288,14 @@ times in parallel and then concatenates the results to provide a richer represen
 the attention model to capture different kinds of dependencies within the source sequence such as: semantic dependencies,
 syntactic dependencies, and grammatical gender dependencies.
 
-Figure 6 shows the different types of dependencies captured via 8 attention heads for the word _because_ in the sentence
+Figure 7 shows the different types of dependencies captured via 8 attention heads for the word _because_ in the sentence
 _The animal didn't cross the street because it was too tired_. In particular, we will focus on the contingency dependency
 in this figure. The word _because_ is an explicit discourse marker which indicates a contingency relation. The blue and
-green attention heads (marked with thicker borders) in Figure 6 have successfully captured this dependency relation.
+green attention heads (marked with thicker borders) in Figure 7 have successfully captured this dependency relation.
 
 <img src="{{ "/assets/img/multi-head-attention-example.png" | relative_url }}" alt="multi-head attention alignment score example" width="400"/>
 {: style="width: 100%;" class="center"} 
-*Figure 6: Matrix of alignment scores of the multi-head self attention model for the word <<because>> in the sentence
+*Figure 7: Matrix of alignment scores of the multi-head self attention model for the word <<because>> in the sentence
 <<The animal didn't cross the street because it was too tired>> (The image was produced using the pretrained Transformer
 via Tensor2tensor ([Vaswani et al., 2018](https://arxiv.org/abs/1803.07416))).*
 {: style="width: 100%;" class="center"}
@@ -318,12 +318,12 @@ $$
 \end{aligned}
 $$
 
-Where $$W^O$$, $$W_i^Q$$, $$W_i^K$$, and $$W_i^V$$ are matrix projections to be learned. Figure 7 shows the multi-head
+Where $$W^O$$, $$W_i^Q$$, $$W_i^K$$, and $$W_i^V$$ are matrix projections to be learned. Figure 8 shows the multi-head
 attention architecture.
 
 ![multi-head attention architecture]({{ "/assets/img/transformer-architecture.png" | relative_url }})
 {: style="width: 100%;" class="center"} 
-*Figure 7: Multi-head attention architecture. The image was taken from ([Vaswani et al., January 2017](https://arxiv.org/abs/1706.03762)).*
+*Figure 8: Multi-head attention architecture. The image was taken from ([Vaswani et al., January 2017](https://arxiv.org/abs/1706.03762)).*
 {: style="width: 100%;" class="center"}
 
 ## Model Architecture
@@ -334,10 +334,10 @@ the **encoder** and the **decoder** module.
 
 <img src="{{ "/assets/img/transformer_model_architecture.png" | relative_url }}" alt="transformer model architecture" width="400"/> 
 {: style="width: 100%;" class="center"} 
-*Figure 8: Transformer model architecture. The image was taken from ([Vaswani et al., January 2017](https://arxiv.org/abs/1706.03762)).*
+*Figure 9: Transformer model architecture. The image was taken from ([Vaswani et al., January 2017](https://arxiv.org/abs/1706.03762)).*
 {: style="width: 100%;" class="center"}
 
-The encoder module (shown on the left side of Figure 8 generates an attention-based representation. It consists of a
+The encoder module (shown on the left side of Figure 9 generates an attention-based representation. It consists of a
 stack of 6 identical layers, where each layer is composed of 2 sublayers: a multi-head attention layer, and a
 position-wise fully connected feed-forward network. In order to encourage gradient flow in each sublayer, a residual connection
 ([He et al., June 2016](http://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html))
@@ -348,8 +348,8 @@ $$\mathrm{Output} = \mathrm{LayerNorm}\left(x + \mathrm{Sublayer}(x)\right)$$
 
 Where $$\mathrm{Sublayer}(x)$$ is the function implemented by the sublayer itself.
 
-The decoder module (see the right side of Figure 8) also consists of a stack of 6 identical layers. Similar to the
-encoder, each layer is composed of sublayer, in addition to the two sublayers in each encoder layer, the decoder
+The decoder module (see the right side of Figure 9) also consists of a stack of 6 identical layers. Similar to the
+encoder, each layer is composed of sublayers, in addition to the two sublayers in each encoder layer, the decoder
 incorporates a third sublayer, which performs multi-head attention over the output of the encoder stack. Analogous to
 the encoder module, each sublayer adopts a residual connection, and a layer normalization. The first multi-head attention
 sublayer of the decoder module is modified with a masking mechanism, in order to prevent the decoder to look into the future.
