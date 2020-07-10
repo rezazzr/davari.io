@@ -38,7 +38,7 @@ layout: default
   {% if post.excerpt %}
   <div class="post-description">
     <p>
-      {{ post.excerpt }}
+      {{ post.excerpt | prepend: '> ' | markdownify }}
     </p>
   </div>
   {% endif %}
