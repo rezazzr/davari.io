@@ -42,9 +42,9 @@
   <meta name="twitter:title" content="{{ title | escape }}">
   <meta name="twitter:description" content="{{ description | escape }}">
   {% if page.image.feature %}
-    <meta property="twitter:image" content="{{ site.url }}/img/{{ page.image.feature }}">
+  <meta property="twitter:image" content="{{ site.url }}/img/{{ page.image.feature }}">
   {% else %}
-    <meta property="twitter:image" content="{{ '/assets/img/monkey_logo.png' | relative_url }}">
+  <meta content="{{ site.url }}/assets/img/monkey_logo.png" property="twitter:image">
   {% endif %}
 
   <!-- Open Graph Tags -->
@@ -52,14 +52,20 @@
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:title" content="{{ title | escape }}">
   <meta property="og:description" content="{{ description | escape }}">
+  <meta content="{{ site.title }}" property="og:site_name"/>
+  {% for tag in page.tags %}
+  <meta content="{{tag}}" property="article:tag"/>
+  {% endfor %}
   {% if page.image.feature %}
-    <meta property="og:image" content="{{ site.url }}/img/{{ page.image.feature }}">
+  <meta property="og:image" content="{{ site.url }}/img/{{ page.image.feature }}">
   {% else %}
-    <meta property="og:image" content="{{ '/assets/img/monkey_logo.png' | relative_url }}">
+  <meta content="{{ site.url }}/assets/img/monkey_logo.png" property="og:image">
   {% endif %}
   <title>{{ title }}</title>
 
-  <!-- CSS files --><script data-ad-client="ca-pub-2030323977959572" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- CSS files -->
+  <script data-ad-client="ca-pub-2030323977959572" async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <link rel="stylesheet" href="{{ '/assets/css/font-awesome.min.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
