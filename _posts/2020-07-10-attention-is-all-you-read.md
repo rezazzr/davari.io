@@ -56,7 +56,7 @@ problem it tries to solve. For this purpose, we briefly examine the sequence to 
 
 The sequence to sequence model or encoding-decoding architecture is an extension of the RNN.
 It is the standard model architecture for many NLP tasks such as: language modeling
-([Sutskeveret al., December 2014](https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf)),
+([Sutskever et al., December 2014](https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf)),
 neural machine translation
 ([Bahdanau et al., May 2015](https://arxiv.org/abs/1409.0473);
 [Cho et al., October 2014](https://arxiv.org/abs/1406.1078)), and syntactic constituency parsing
@@ -77,7 +77,7 @@ LSTM or GRU units. Figure 3 shows the encoder-decoder model used in neural machi
 ![sequence to sequence encoding-decoding architecture]({{ "/assets/img/encoder_decoder_in_seq2seq.png" | relative_url }})
 {: style="width: 100%;" class="center"}
 *Figure 3: Encoder-decoder architecture used in neural machine translation,
-translating the sentence “Watermelon is delicious” to French.*
+translating the sentence <<Watermelon is delicious>> to French.*
 {: style="width: 100%;" class="center"}
 
 [Bahdanau et al. (May 2015)](https://arxiv.org/abs/1409.0473) showed that a major drawback of using fixed-size context
@@ -99,7 +99,7 @@ augmented with an attention mechanism to construct dynamic context vectors.
 ![sequence to sequence encoding-decoding architecture with attention]({{ "/assets/img/encoder_decoder_with_attention.png" | relative_url }})
 {: style="width: 100%;" class="center"}
 *Figure 4: Encoder-decoder architecture augmented with attention mechanism used in neural machine translation,
-translating the sentence “Watermelon is delicious” to French. Bright red arrows indicate higher attention values.*
+translating the sentence <<Watermelon is delicious>> to French. Bright red arrows indicate higher attention values.*
 {: style="width: 100%;" class="center"}
 
 # Formal Definition
@@ -166,7 +166,8 @@ alignment scores for an English-French translation.
 <img src="{{ "/assets/img/alignment_matrix_example.png" | relative_url }}" alt="an example of alignment score matrix" width="350"/>
 {: style="width: 100%;" class="center"} 
 *Figure 6: Matrix of alignment scores for the translation of <<“This will change my future with my family,"
-the man said.>> to French, <<“Cela va changer mon avenir avec ma famille", a dit l'homme.>>*
+the man said.>> to French, <<“Cela va changer mon avenir avec ma famille", a dit l'homme.>>
+Figure is taken from [Bahdanau et al. (May 2015)](https://arxiv.org/abs/1409.0473)*
 {: style="width: 100%;" class="center"}
 
 # Variations of Attention Mechanism
@@ -197,7 +198,7 @@ proposed for the alignment score function. Table 1, lists a few popular alignmen
 
 Aimed to reduce the computation costs of attention mechanism, [Xu et al. (July 2015)](https://arxiv.org/abs/1502.03044)
 experimented with two kinds of attention mechanism: **soft attention** and **hard attention**. Soft attention is similar
-to the attention mechanism introduced by [Bahdanau et al. (May 2015](https://arxiv.org/abs/1410.5401)) as it assigns a
+to the attention mechanism introduced by [Bahdanau et al. (May 2015)](https://arxiv.org/abs/1410.5401) as it assigns a
 (soft) probability distribution to all the source hidden states, which makes the model smooth and differential but
 costly in the computation time.
 
@@ -207,8 +208,8 @@ probability distribution over all the source hidden states. Therefore, the vecto
 vector assigning a weight of 1 to the most relevant source hidden state and 0 to the others. 
 
 The one-hot representation of the attention is non-differentiable hence it requires more complicated techniques such as
-variance reduction or reinforcement learning to train ([Luong et al., Septem-ber 2015](https://arxiv.org/abs/1508.04025)).
-In order to remedy the non-differentiability of hard attention, [Luong et al. (September2015)](https://arxiv.org/abs/1508.04025)
+variance reduction or reinforcement learning to train ([Luong et al., September 2015](https://arxiv.org/abs/1508.04025)).
+In order to remedy the non-differentiability of hard attention, [Luong et al. (September 2015)](https://arxiv.org/abs/1508.04025)
 proposed the concept of **local attention**. In their work, they call the soft attention mechanism, the **global attention**
 since it attends to all hidden states in the source sequence. The local attention, on the other hand, only attends to a
 window of the source hidden states. This mechanism first predicts a single aligned position for the current target word
