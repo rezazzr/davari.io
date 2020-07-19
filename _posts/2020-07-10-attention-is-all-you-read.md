@@ -297,8 +297,8 @@ green attention heads (marked with thicker borders) in Figure 7 have successfull
 <img src="{{ "/assets/img/multi-head-attention-example.png" | relative_url }}" alt="multi-head attention alignment score example" width="400"/>
 {: style="width: 100%;" class="center"} 
 *Figure 7: Matrix of alignment scores of the multi-head self attention model for the word <<because>> in the sentence
-<<The animal didn't cross the street because it was too tired>> (The image was produced using the pretrained Transformer
-via Tensor2tensor ([Vaswani et al., 2018](https://arxiv.org/abs/1803.07416))).*
+<<The animal didn't cross the street because it was too tired>>. The image was produced using the pretrained Transformer
+via Tensor2tensor ([Vaswani et al., 2018](https://arxiv.org/abs/1803.07416)).*
 {: style="width: 100%;" class="center"}
 
 The scaled dot product attention is used in all instances of the attention mechanism in the Transformer model, since it
