@@ -45,7 +45,7 @@ however it does not directly attend to the word _glass_.
 {: style="width: 100%;" class="center"}
 
 In the context of learning algorithms, attention is a mechanism distributes importance weights to the components
-of an input (e.g.  pixels in the image domain and words in natural languages) in order to infer a target output.
+of an input (e.g. pixels in the image domain and words in natural languages) in order to infer a target output.
 These importance weights indicate the correlation between the input components, and the target outputs. In other words
 they specify how strong the algorithm should attend to different components of the input to infer the target outputs.
 
