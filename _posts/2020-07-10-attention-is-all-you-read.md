@@ -49,7 +49,7 @@ of an input (e.g. pixels in the image domain and words in natural languages) in 
 These importance weights indicate the correlation between the input components, and the target outputs. In other words
 they specify how strong the algorithm should attend to different components of the input to infer the target outputs.
 
-# Origin of Attention Mechanism
+# Origin of The Attention Mechanism
 
 In order to better understand the importance and advantages of the attention mechanism, we first need to look at the
 problem it tries to solve. For this purpose, we briefly examine the sequence to sequence model architecture.
