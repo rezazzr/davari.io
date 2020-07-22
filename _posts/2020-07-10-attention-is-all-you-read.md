@@ -384,68 +384,59 @@ Cite as:
 
 # References
 
-[1] Ba, J.L., Kiros, J.R., Hinton, G.E.: [Layer normalization](https://arxiv.org/abs/1607.06450).
-arXiv preprint arXiv:1607.06450 (July 2016)
+[1] Ba, J.L., Kiros, J.R., Hinton, G.E.: ["Layer normalization"](https://arxiv.org/abs/1607.06450).
+arXiv preprint arXiv:1607.06450 (2016).
 
 [2] Bahdanau, D., Cho, K., Bengio, Y.:
-[Neural machine translation by jointly learning to align and translate](https://arxiv.org/abs/1410.5401).
-In: Proceedings of the 3rd International Conference onLearning Representations (ICLR 2015). San Diego, USA (May 2015)
+["Neural machine translation by jointly learning to align and translate"](https://arxiv.org/abs/1410.5401).
+ICLR 2015.
 
 [3] Bengio, Y., Simard, P., Frasconi, P., et al.:
 [Learning long-term dependencies with gradient descent is difficult](http://www.comp.hkbu.edu.hk/~markus/teaching/comp7650/tnn-94-gradient.pdf).
-IEEE transactions on neural networks5(2), 157–166 (March 1994)
+TNNLS 1994.
 
 [4] Britz, D., Goldie, A., Luong, M.T., Le, Q.:
 [Massive exploration of neural machine translation architectures](https://arxiv.org/abs/1703.03906).
-In: Proceedings of the 2017 Conference on EmpiricalMethods in Natural Language Processing (EMNLP 2017).
-pp. 1442–1451. Association for Computational Linguistics, Copenhagen, Denmark (September 2017)
+EMNLP 2017.
 
 [5] Cho, K., Van Merri ̈enboer, B., Gulcehre, C., Bahdanau, D., Bougares, F., Schwenk,H., Bengio, Y.:
 [Learning phrase representations using rnn encoder-decoder for statistical machine translation](https://arxiv.org/abs/1406.1078).
-In: Proceedings of the 2014 Conference on EmpiricalMethods in Natural Language Processing (EMNLP 2014). Doha, Qatar (October 2014)
+EMNLP 2014.
 
 [6] Devlin, J., Chang, M.W., Lee, K., Toutanova, K.:
 [BERT: Pre-training of deep bidirectional transformers for language understanding](https://arxiv.org/abs/1810.04805).
-In: Proceedings of the 2019 Annual Conference of the North American Chapter of the Association for
-Computational Linguistics (NAACL-HLT 2019). Minneapolis, USA (June 2019)
+NAACL-HLT 2019.
 
 [7] Graves, A., Wayne, G., Danihelka, I.:
-[Neural turing machines](https://arxiv.org/abs/1410.5401). arXiv preprint arXiv:1410.5401 (December 2014)
+[Neural turing machines](https://arxiv.org/abs/1410.5401). arXiv preprint arXiv:1410.5401 (2014).
 
 [8] He, K., Zhang, X., Ren, S., Sun, J.:
 [Deep residual learning for image recognition](http://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html).
-In:Proceedings of the IEEE conference on Computer Vision and Pattern Recognition (CVPR 2016). pp.
-770–778. Las Vegas, USA (June 2016)
+CVPR 2016.
 
 [9] Hoffman, J.E., Subramaniam, B.:
 [The role of visual attention in saccadic eye movements](https://link.springer.com/article/10.3758/BF03206794).
-Perception & psychophysics 57(6), 787–795 (January 1995)
+Perception & psychophysics (1995).
 
 [10] Luong, T., Pham, H., Manning, C.D.:
 [Effective approaches to attention-based neural machine translation](https://arxiv.org/abs/1508.04025).
-In: Proceedings of the 2015 Conference on EmpiricalMethods in Natural Language Processing (EMNLP 2015).
-pp. 1412–1421. Lisbon, Portugal (September 2015)
+EMNLP 2015.
 
 [11] Sutskever, I., Vinyals, O., Le, Q.V.:
 [Sequence to sequence learning with neural networks](https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf).
-In: Proceedings of the annual conference in Advances in Neural InformationProcessing Systems (NIPS 2014).
-pp. 3104–3112. Montreal, Canada (December 2014)
+NIPS 2014.
 
 [12] Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.N., Kaiser, L., Polosukhin, I.:
-[Attention is all you need](https://arxiv.org/abs/1706.03762). In: Proceedings of the annual conference in
-Advances in Neural Information Processing Systems (NIPS 2017). pp. 5998–6008. Long Beach, USA (January 2017)
+[Attention is all you need](https://arxiv.org/abs/1706.03762). NIPS 2017.
 
 [13] Vinyals, O., Kaiser, L., Koo, T., Petrov, S., Sutskever, I., Hinton, G.:
-[Grammar as a foreign language](https://arxiv.org/abs/1412.7449). In: Proceedings of the annual conference
-in Advances in NeuralInformation Processing Systems (NIPS 2015). pp. 2773–2781. Montreal, Canada (December 2015)
+[Grammar as a foreign language](https://arxiv.org/abs/1412.7449). NIPS 2015.
 
 [14] Xu, K., Ba, J., Kiros, R., Cho, K., Courville, A., Salakhudinov, R., Zemel, R.,Bengio, Y.:
 [Show, attend and tell: Neural image caption generation with visual attention](https://arxiv.org/abs/1502.03044).
-In: Proceedings of the 32nd International Conference on Machine Learning (ICML 2015). vol. 37, pp. 2048–2057.
-Lille, France (July 2015)
+ICML 2015.
 
 [15] Yang, Z., Dai, Z., Yang, Y., Carbonell, J., Salakhutdinov, R.R., Le, Q.V.:
 [XLNet:Generalized autoregressive pretraining for language understanding](https://arxiv.org/abs/1906.08237).
-In: Proceedings of the annual conference in Advances in Neural Information Processing Systems (NIPS 2019),
-pp. 5753–5763. Curran Associates, Inc., Vancouver, Canada (June 2019)
+NIPS 2019.
 
