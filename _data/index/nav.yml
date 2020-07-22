@@ -10,11 +10,11 @@
 - name: FAQ
   path: /faq.html
 
-- name: Archive
-  path: /archive.html
+#- name: Archive
+#  path: /archive.html
 
 - name: Logs
   path: /logs.html
 
-- name: Tags
-  path: /tags.html
+#- name: Tags
+#  path: /tags.html
