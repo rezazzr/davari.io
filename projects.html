@@ -9,10 +9,10 @@ comments: false
 {% for proj in site.data.index.projects %}
 <div class="row project">
     <div class="col l4">
-        {% if proj.visual %}
-        <img style="max-hight: 320;" src="{{ site.url }}/assets/img/{{ proj.visual }}" width="320"/>
+        {% if proj.round %}
+        <img style="max-height: 320px; border-radius: 50%;" src="{{ site.url }}/assets/img/{{ proj.visual }}" width="320px"/>
         {% else %}
-        <img style="max-hight: 320;" src="{{ '/assets/img/reza_profile.png' | relative_url }}" width="320"/>
+        <img style="max-height: 320px;" src="{{ site.url }}/assets/img/{{ proj.visual }}" width="320px"/>
         {% endif %}
     </div>
     <div class="col l7 offset-l1">
