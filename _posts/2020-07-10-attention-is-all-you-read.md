@@ -392,51 +392,51 @@ arXiv preprint arXiv:1607.06450 (2016).
 ICLR 2015.
 
 [3] Bengio, Y., Simard, P., Frasconi, P., et al.:
-[Learning long-term dependencies with gradient descent is difficult](http://www.comp.hkbu.edu.hk/~markus/teaching/comp7650/tnn-94-gradient.pdf).
+["Learning long-term dependencies with gradient descent is difficult"](http://www.comp.hkbu.edu.hk/~markus/teaching/comp7650/tnn-94-gradient.pdf).
 TNNLS 1994.
 
 [4] Britz, D., Goldie, A., Luong, M.T., Le, Q.:
-[Massive exploration of neural machine translation architectures](https://arxiv.org/abs/1703.03906).
+["Massive exploration of neural machine translation architectures"](https://arxiv.org/abs/1703.03906).
 EMNLP 2017.
 
-[5] Cho, K., Van Merri ̈enboer, B., Gulcehre, C., Bahdanau, D., Bougares, F., Schwenk,H., Bengio, Y.:
-[Learning phrase representations using rnn encoder-decoder for statistical machine translation](https://arxiv.org/abs/1406.1078).
+[5] Cho, K., Van Merri enboer, B., Gulcehre, C., Bahdanau, D., Bougares, F., Schwenk,H., Bengio, Y.:
+["Learning phrase representations using rnn encoder-decoder for statistical machine translation"](https://arxiv.org/abs/1406.1078).
 EMNLP 2014.
 
 [6] Devlin, J., Chang, M.W., Lee, K., Toutanova, K.:
-[BERT: Pre-training of deep bidirectional transformers for language understanding](https://arxiv.org/abs/1810.04805).
+["BERT: Pre-training of deep bidirectional transformers for language understanding"](https://arxiv.org/abs/1810.04805).
 NAACL-HLT 2019.
 
 [7] Graves, A., Wayne, G., Danihelka, I.:
-[Neural turing machines](https://arxiv.org/abs/1410.5401). arXiv preprint arXiv:1410.5401 (2014).
+["Neural turing machines"](https://arxiv.org/abs/1410.5401). arXiv preprint arXiv:1410.5401 (2014).
 
 [8] He, K., Zhang, X., Ren, S., Sun, J.:
-[Deep residual learning for image recognition](http://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html).
+["Deep residual learning for image recognition"](http://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html).
 CVPR 2016.
 
 [9] Hoffman, J.E., Subramaniam, B.:
-[The role of visual attention in saccadic eye movements](https://link.springer.com/article/10.3758/BF03206794).
+["The role of visual attention in saccadic eye movements"](https://link.springer.com/article/10.3758/BF03206794).
 Perception & psychophysics (1995).
 
 [10] Luong, T., Pham, H., Manning, C.D.:
-[Effective approaches to attention-based neural machine translation](https://arxiv.org/abs/1508.04025).
+["Effective approaches to attention-based neural machine translation"](https://arxiv.org/abs/1508.04025).
 EMNLP 2015.
 
 [11] Sutskever, I., Vinyals, O., Le, Q.V.:
-[Sequence to sequence learning with neural networks](https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf).
+["Sequence to sequence learning with neural networks"](https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf).
 NIPS 2014.
 
 [12] Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.N., Kaiser, L., Polosukhin, I.:
-[Attention is all you need](https://arxiv.org/abs/1706.03762). NIPS 2017.
+["Attention is all you need"](https://arxiv.org/abs/1706.03762). NIPS 2017.
 
 [13] Vinyals, O., Kaiser, L., Koo, T., Petrov, S., Sutskever, I., Hinton, G.:
-[Grammar as a foreign language](https://arxiv.org/abs/1412.7449). NIPS 2015.
+["Grammar as a foreign language"](https://arxiv.org/abs/1412.7449). NIPS 2015.
 
 [14] Xu, K., Ba, J., Kiros, R., Cho, K., Courville, A., Salakhudinov, R., Zemel, R.,Bengio, Y.:
-[Show, attend and tell: Neural image caption generation with visual attention](https://arxiv.org/abs/1502.03044).
+["Show, attend and tell: Neural image caption generation with visual attention"](https://arxiv.org/abs/1502.03044).
 ICML 2015.
 
 [15] Yang, Z., Dai, Z., Yang, Y., Carbonell, J., Salakhutdinov, R.R., Le, Q.V.:
-[XLNet:Generalized autoregressive pretraining for language understanding](https://arxiv.org/abs/1906.08237).
+["XLNet:Generalized autoregressive pretraining for language understanding"](https://arxiv.org/abs/1906.08237).
 NIPS 2019.
 
