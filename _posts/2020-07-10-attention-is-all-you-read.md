@@ -449,17 +449,3 @@ Lille, France (July 2015)
 In: Proceedings of the annual conference in Advances in Neural Information Processing Systems (NIPS 2019),
 pp. 5753–5763. Curran Associates, Inc., Vancouver, Canada (June 2019)
 
----
-
-Cite as:
-```BibTeX
-@article{davari2020attention,
-  title   = {Attention Is All You Read},
-  author  = {Davari, MohammadReza},
-  journal = {davari.io},
-  year    = {2020},
-  month   = {July},
-  url     = {https://davari.io/articles/2020-07/attention-is-all-you-read.html},
-}
-```
-
