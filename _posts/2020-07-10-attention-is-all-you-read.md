@@ -234,7 +234,7 @@ RNNs have been the preferred building block for time series data. Due to their a
 of variable length and capturing the sequential dependency of the data, these architectures have been the preferred
 building block for many NLP neural approaches such as language modeling
 ([Sutskever et al., December 2014](https://arxiv.org/abs/1409.3215)),
-neural machine translation  ([Bahdanau et al., May 2015](https://arxiv.org/abs/1409.0473);
+neural machine translation ([Bahdanau et al., May 2015](https://arxiv.org/abs/1409.0473);
 [Cho et al., October 2014](https://arxiv.org/abs/1406.1078)), and syntactic constituency parsing
 ([Vinyals et al., December 2015](http://papers.nips.cc/paper/5635-grammar-as-a-foreign-language)). However, RNNs are only
 slightly parallelizable, that means the computational resources cannot be fully utilized during training and hence,
@@ -244,7 +244,7 @@ In order to mitigate this issue, [Vaswani et al. (January  2017)](https://arxiv.
 Transformer architecture. The Transformer model is solely based on the attention mechanism and uses self attention layers
 to learn word representations. In the context of sequential data, the Transformer architecture is superior to the classical
 neural architecture approaches such as RNNs or CNNs based on three important criteria: **computation complexity**,
-**parallelizability**, and **long term dependency** modeling.
+**parallelizability**, and ** long-term dependency modeling**.
 
 The computation complexity of the Transformer model is $$O(n^2.d)$$ for a sequence of length $$n$$ and hidden
 representation of size $$d$$, as opposed to RNNs and CNNs which have a computation complexity of $$O(n.d^2)$$ and
@@ -257,7 +257,7 @@ As mentioned before, RNN computations are only slightly parallelizable, leading 
 on a sequence of size $$n$$, since the model essentially needs to **loop** through the sequence. However, Transformer
 and CNN models are highly parallelizable by design, having $$O(1)$$ sequential computations.
 
-Modeling long term dependencies of a sequence input is a challenging task
+Modeling  long-term dependencies of a sequence input is a challenging task
 ([Bengio et al., March 1994](http://www.comp.hkbu.edu.hk/~markus/teaching/comp7650/tnn-94-gradient.pdf);
 [Bahdanau et al., May 2015](https://arxiv.org/abs/1409.0473)). The length of the path between long range dependencies
 has an inverse correlation with the ability of the model in learning these dependencies. Longer paths prevent the
@@ -266,8 +266,8 @@ gradient or learning signals to be transmitted smoothly
 shorter the path between long range dependencies, the better the model learns. CNNs with a kernel of size $$k$$ have a
 maximum path length of $$O(\log_k(n))$$ for a sequence of size $$n$$, while RNNs have a maximum path length of $$O(n)$$.
 Since Transformers are solely based on the attention mechanism, the maximum path length in this architecture is $$O(1)$$,
-letting the model to seamlessly capture long term dependencies of sequential inputs. Table 2, lists a summary of computation
-comparision between the Transformer model, RNN, and CNN.
+letting the model to seamlessly capture long-term dependencies of sequential inputs. Table 2, lists a summary of computation
+comparison between the Transformer model, RNN, and CNN.
 
 {: class="info"}
 |                             	| Transformer  	| RNN          	| CNN              	|
@@ -350,7 +350,7 @@ $$\mathrm{Output} = \mathrm{LayerNorm}\left(x + \mathrm{Sublayer}(x)\right)$$
 Where $$\mathrm{Sublayer}(x)$$ is the function implemented by the sublayer itself.
 
 The decoder module (see the right side of Figure 9) also consists of a stack of 6 identical layers. Similar to the
-encoder, each layer is composed of sublayers, in addition to the two sublayers in each encoder layer, the decoder
+encoder, each layer is composed of sublayers. In addition to the two sublayers in each encoder layer, the decoder
 incorporates a third sublayer, which performs multi-head attention over the output of the encoder stack. Analogous to
 the encoder module, each sublayer adopts a residual connection, and a layer normalization. The first multi-head attention
 sublayer of the decoder module is modified with a masking mechanism, in order to prevent the decoder to look into the future.
@@ -367,6 +367,73 @@ $$
       \mathrm{Positional Encoding}_{(j, 2i+1)} &= \cos \left( \frac{j}{10000^{\frac{2i}{n}}} \right)
 \end{aligned} 
 $$
+
+# References
+
+[1] Ba, J.L., Kiros, J.R., Hinton, G.E.: [Layer normalization](https://arxiv.org/abs/1607.06450).
+arXiv preprint arXiv:1607.06450 (July 2016)
+
+[2] Bahdanau, D., Cho, K., Bengio, Y.:
+[Neural machine translation by jointly learning to align and translate](https://arxiv.org/abs/1410.5401).
+In: Proceedings of the 3rd International Conference onLearning Representations (ICLR 2015). San Diego, USA (May 2015)
+
+[3] Bengio, Y., Simard, P., Frasconi, P., et al.:
+[Learning long-term dependencies with gradient descent is difficult](http://www.comp.hkbu.edu.hk/~markus/teaching/comp7650/tnn-94-gradient.pdf).
+IEEE transactions on neural networks5(2), 157–166 (March 1994)
+
+[4] Britz, D., Goldie, A., Luong, M.T., Le, Q.:
+[Massive exploration of neural machine translation architectures](https://arxiv.org/abs/1703.03906).
+In: Proceedings of the 2017 Conference on EmpiricalMethods in Natural Language Processing (EMNLP 2017).
+pp. 1442–1451. Association for Computational Linguistics, Copenhagen, Denmark (September 2017)
+
+[5] Cho, K., Van Merri ̈enboer, B., Gulcehre, C., Bahdanau, D., Bougares, F., Schwenk,H., Bengio, Y.:
+[Learning phrase representations using rnn encoder-decoder for statistical machine translation](https://arxiv.org/abs/1406.1078).
+In: Proceedings of the 2014 Conference on EmpiricalMethods in Natural Language Processing (EMNLP 2014). Doha, Qatar (October 2014)
+
+[6] Devlin, J., Chang, M.W., Lee, K., Toutanova, K.:
+[BERT: Pre-training of deep bidirectional transformers for language understanding](https://arxiv.org/abs/1810.04805).
+In: Proceedings of the 2019Annual Conference of the North American Chapter of the Association for
+Computational Linguistics (NAACL-HLT 2019). Minneapolis, USA (June 2019)
+
+[7] Graves, A., Wayne, G., Danihelka, I.:
+[Neural turing machines](https://arxiv.org/abs/1410.5401). arXiv preprint arXiv:1410.5401 (December 2014)
+
+[8] He, K., Zhang, X., Ren, S., Sun, J.:
+[Deep residual learning for image recognition](http://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html).
+In:Proceedings of the IEEE conference on Computer Vision and Pattern Recognition (CVPR 2016). pp.
+770–778. Las Vegas, USA (June 2016)
+
+[9] Hoffman, J.E., Subramaniam, B.:
+[The role of visual attention in saccadic eye movements](https://link.springer.com/article/10.3758/BF03206794).
+Perception & psychophysics 57(6), 787–795 (January 1995)
+
+[10] Luong, T., Pham, H., Manning, C.D.:
+[Effective approaches to attention-based neural machine translation](https://arxiv.org/abs/1508.04025).
+In: Proceedings of the 2015 Conference on EmpiricalMethods in Natural Language Processing (EMNLP 2015).
+pp. 1412–1421. Lisbon, Portugal (September 2015)
+
+[11] Sutskever, I., Vinyals, O., Le, Q.V.:
+[Sequence to sequence learning with neural networks](https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf).
+In: Proceedings of the annual conference in Advances in Neural InformationProcessing Systems (NIPS 2014).
+pp. 3104–3112. Montreal, Canada (December 2014)
+
+[12] Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.N., Kaiser, L., Polosukhin, I.:
+[Attention is all you need](https://arxiv.org/abs/1706.03762). In: Proceedings of the annual conference in
+Advances in Neural Information Processing Systems (NIPS 2017). pp. 5998–6008. Long Beach, USA (January 2017)
+
+[13] Vinyals, O., Kaiser, L., Koo, T., Petrov, S., Sutskever, I., Hinton, G.:
+[Grammar as a foreign language](https://arxiv.org/abs/1412.7449). In: Proceedings of the annual conference
+in Advances in NeuralInformation Processing Systems (NIPS 2015). pp. 2773–2781. Montreal, Canada (December 2015)
+
+[14] Xu, K., Ba, J., Kiros, R., Cho, K., Courville, A., Salakhudinov, R., Zemel, R.,Bengio, Y.:
+[Show, attend and tell: Neural image caption generation with visual attention](https://arxiv.org/abs/1502.03044).
+In: Proceedings of the 32nd International Conference on Machine Learning (ICML 2015). vol. 37, pp. 2048–2057.
+Lille, France (July 2015)
+
+[15] Yang, Z., Dai, Z., Yang, Y., Carbonell, J., Salakhutdinov, R.R., Le, Q.V.:
+[XLNet:Generalized autoregressive pretraining for language understanding](https://arxiv.org/abs/1906.08237).
+In: Proceedings of the annual conference in Advances in Neural Information Processing Systems (NIPS 2019),
+pp. 5753–5763. Curran Associates, Inc., Vancouver, Canada (June2019)
 
 ---
 
