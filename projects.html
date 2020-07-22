@@ -1,0 +1,29 @@
+---
+layout: page
+title: Selected Projects
+permalink: /projects.html
+description: "Reza's selected projects."
+comments: false
+---
+
+{% for proj in site.data.index.projects %}
+<div class="row project">
+    <div class="col l4">
+        {% if proj.visual %}
+        <img style="max-hight: 320;" src="{{ site.url }}/assets/img/{{ proj.visual }}" width="320"/>
+        {% else %}
+        <img style="max-hight: 320;" src="{{ '/assets/img/reza_profile.png' | relative_url }}" width="320"/>
+        {% endif %}
+    </div>
+    <div class="col l7 offset-l1">
+        <h2>{{ proj.name }}</h2>
+        {% if proj.github %}
+        <a class="btn" href="{{ proj.github }}" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+        {% endif %}
+        <button class="btn btn-info collapsible"><i class="fa fa-newspaper-o"></i> Summary</button>
+        <div class="content" style="display: none;">
+            <p style="margin: 0">{{ proj.descr }}</p>
+        </div>
+    </div>
+</div>
+{% endfor %}
