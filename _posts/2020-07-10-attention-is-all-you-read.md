@@ -368,6 +368,20 @@ $$
 \end{aligned} 
 $$
 
+---
+
+Cite as:
+```BibTeX
+@article{davari2020attention,
+  title   = {Attention Is All You Read},
+  author  = {Davari, MohammadReza},
+  journal = {davari.io},
+  year    = {2020},
+  month   = {July},
+  url     = {https://davari.io/articles/2020-07/attention-is-all-you-read.html},
+}
+```
+
 # References
 
 [1] Ba, J.L., Kiros, J.R., Hinton, G.E.: [Layer normalization](https://arxiv.org/abs/1607.06450).
@@ -392,7 +406,7 @@ In: Proceedings of the 2014 Conference on EmpiricalMethods in Natural Language P
 
 [6] Devlin, J., Chang, M.W., Lee, K., Toutanova, K.:
 [BERT: Pre-training of deep bidirectional transformers for language understanding](https://arxiv.org/abs/1810.04805).
-In: Proceedings of the 2019Annual Conference of the North American Chapter of the Association for
+In: Proceedings of the 2019 Annual Conference of the North American Chapter of the Association for
 Computational Linguistics (NAACL-HLT 2019). Minneapolis, USA (June 2019)
 
 [7] Graves, A., Wayne, G., Danihelka, I.:
