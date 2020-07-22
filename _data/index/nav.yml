@@ -16,5 +16,8 @@
 - name: Logs
   path: /logs.html
 
+- name: Projects
+  path: /projects.html
+
 #- name: Tags
 #  path: /tags.html
