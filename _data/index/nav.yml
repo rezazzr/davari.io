@@ -13,7 +13,7 @@
 #- name: Archive
 #  path: /archive.html
 
-- name: Logs
+- name: Blog
   path: /logs.html
 
 - name: Projects
