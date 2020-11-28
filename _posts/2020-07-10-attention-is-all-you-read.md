@@ -372,13 +372,12 @@ $$
 
 Cite as:
 ```BibTeX
-@article{davari2020attention,
-  title   = {Attention Is All You Read},
+@phdthesis{davari2020neural,
+  title   = {Neural Network Approaches to Medical Toponym Recognition},
   author  = {Davari, MohammadReza},
-  journal = {davari.io},
   year    = {2020},
-  month   = {July},
-  url     = {https://davari.io/articles/2020-07/attention-is-all-you-read.html},
+  month   = {April},
+  school  = {Concordia University},
 }
 ```
 
