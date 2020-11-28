@@ -1,7 +1,20 @@
+- name: TIMBERT&#58 Toponym Identifier For The Medical Domain Based on BERT
+  descr: In this paper, we propose an approach to automate the process of place name detection in the medical domain to enable epidemiologists to better study and model the spread of viruses. We created a family of Toponym Identification Models based on BERT (TIMBERT), in order to learn in an end-to-end fashion the mapping from an input sentence to the associated sentence labeled with toponyms. When evaluated with the SemEval 2019 task 12 test set (Weissenbacher et al., 2019), our best TIMBERT model achieves an F1 score of 90.85%, a significant improvement compared to the state-of-the-art of 89.10% (Wang et al., 2019).
+  paper:
+  published: MohammdReza Davari, Leila Kosseim and Tien Bui, In Proceedings of the 28th International Conference on Computational Linguistics (<a href="https://coling2020.org/">COLING 2020</a>), December 2020.
+  award:
+  cite: "@inproceedings{davari2019toponym,\n
+           title      = {TIMBERT: Toponym Identifier For The Medical Domain Based on BERT},\n
+           author     = {Davari, MohammadReza and Kosseim, Leila and Bui, Tien D},\n
+           booktitle  = {Proceedings of the 28th International Conference on Computational Linguistics (COLING 2020)},\n
+           year       = {2020},\n
+           month      = {December},\n
+         }"
+
 - name: Toponym Identification in Epidemiology Articles - A Deep Learning Approach
   descr: When analyzing the spread of viruses, epidemiologists often need to identify the location of  infected hosts. This information can be found in public databases, such as GenBank, however, information provided in these databases are usually limited to the country or state level. More fine-grained localization information requires phylogeographers to manually read relevant scientific articles. In this work we propose an approach to automate the process of place name identification from medical (epidemiology) articles. The focus of this paper is to propose a deep learning based model for toponym detection and experiment with the use of external linguistic features and domain specific information. The model was evaluated using a collection of 105 epidemiology articles from PubMed Central provided by the recent SemEval task 12. Our best detection model achieves an F1 score of 80.13%, a significant improvement compared to the state of the art of 69.84%. These results underline the importance of  domain specific embedding as well as specific linguistic features in toponym detection in medical journals.
   paper: https://arxiv.org/abs/1904.11018
-  published: MohammdReza Davari, Leila Kosseim and Tien Bui, In Proceedings of the 20th International Conference on Intelligent Text Processing and Computational Linguistics (<a href="https://www.cicling.org/2019/">CICLing-2019</a>), April 2019, La Rochelle, France.
+  published: MohammdReza Davari, Leila Kosseim and Tien Bui, In Proceedings of the 20th International Conference on Intelligent Text Processing and Computational Linguistics (<a href="https://www.cicling.org/2019/">CICLing 2019</a>), April 2019, La Rochelle, France.
   award: Best Poster Award
   cite: "@inproceedings{davari2019toponym,\n
            title      = {Toponym Identification in Epidemiology Articles - A Deep Learning Approach},\n
