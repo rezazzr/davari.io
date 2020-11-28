@@ -31,36 +31,36 @@ comments: false
 </div>
 {% endfor %}
 
-<hr>
+<!--<hr>-->
 
-<h2 style="color:#F36170">Book Chapters</h2>
-{% for publication in site.data.index.publication_book %}
+<!--<h2 style="color:#F36170">Book Chapters</h2>-->
+<!--{% for publication in site.data.index.publication_book %}-->
 
-<div class="row">
-    <div class="col">
-        <h3 style="margin: 0">{{ publication.name }}</h3>
-        {% if publication.published %}
-        <i>{{ publication.published }} </i><br>
-        {% endif %}
-        <br>
-        {% if publication.descr %}
-        <button class="btn-xs btn-info collapsible">Abstract</button>
-        <div class="content" style="display: none;">
-            <p style="margin: 0">{{ publication.descr }}</p>
-        </div>
-        {% endif %}
-        {% if publication.github %}
-        <a href="{{ publication.github }} " target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a> &nbsp;
-        {% endif %}
-        {% if publication.paper %}
-        <a href="{{ publication.paper }} " target="_blank"><i class="fa fa-file-pdf-o"></i>Paper</a> &nbsp;
-        {% endif %}
-        {% if publication.slides %}
-        <a href="{{ publication.slides }} " target="_blank"><i class="fa fa-area-chart"></i>Slides</a> &nbsp;
-        {% endif %}
-        <!-- <p style="margin: 0">{{ publication.descr }}</p> -->
-    </div>
-</div>
+<!--<div class="row">-->
+<!--    <div class="col">-->
+<!--        <h3 style="margin: 0">{{ publication.name }}</h3>-->
+<!--        {% if publication.published %}-->
+<!--        <i>{{ publication.published }} </i><br>-->
+<!--        {% endif %}-->
+<!--        <br>-->
+<!--        {% if publication.descr %}-->
+<!--        <button class="btn-xs btn-info collapsible">Abstract</button>-->
+<!--        <div class="content" style="display: none;">-->
+<!--            <p style="margin: 0">{{ publication.descr }}</p>-->
+<!--        </div>-->
+<!--        {% endif %}-->
+<!--        {% if publication.github %}-->
+<!--        <a href="{{ publication.github }} " target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a> &nbsp;-->
+<!--        {% endif %}-->
+<!--        {% if publication.paper %}-->
+<!--        <a href="{{ publication.paper }} " target="_blank"><i class="fa fa-file-pdf-o"></i>Paper</a> &nbsp;-->
+<!--        {% endif %}-->
+<!--        {% if publication.slides %}-->
+<!--        <a href="{{ publication.slides }} " target="_blank"><i class="fa fa-area-chart"></i>Slides</a> &nbsp;-->
+<!--        {% endif %}-->
+<!--        &lt;!&ndash; <p style="margin: 0">{{ publication.descr }}</p> &ndash;&gt;-->
+<!--    </div>-->
+<!--</div>-->
 {% endfor %}
 
 
