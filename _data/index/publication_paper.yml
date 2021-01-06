@@ -1,12 +1,13 @@
 - name: TIMBERT&#58 Toponym Identifier For The Medical Domain Based on BERT
   descr: In this paper, we propose an approach to automate the process of place name detection in the medical domain to enable epidemiologists to better study and model the spread of viruses. We created a family of Toponym Identification Models based on BERT (TIMBERT), in order to learn in an end-to-end fashion the mapping from an input sentence to the associated sentence labeled with toponyms. When evaluated with the SemEval 2019 task 12 test set (Weissenbacher et al., 2019), our best TIMBERT model achieves an F1 score of 90.85%, a significant improvement compared to the state-of-the-art of 89.10% (Wang et al., 2019).
-  paper:
+  paper: https://www.aclweb.org/anthology/2020.coling-main.58/
   published: MohammdReza Davari, Leila Kosseim and Tien Bui, In Proceedings of the 28th International Conference on Computational Linguistics (<a href="https://coling2020.org/">COLING 2020</a>), December 2020.
   award:
   cite: "@inproceedings{davari2019toponym,\n
            title      = {TIMBERT: Toponym Identifier For The Medical Domain Based on BERT},\n
            author     = {Davari, MohammadReza and Kosseim, Leila and Bui, Tien D},\n
            booktitle  = {Proceedings of the 28th International Conference on Computational Linguistics (COLING 2020)},\n
+           address    = {Barcelona, Spain (Online)},\n
            year       = {2020},\n
            month      = {December},\n
          }"
