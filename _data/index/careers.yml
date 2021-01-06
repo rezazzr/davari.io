@@ -2,21 +2,58 @@
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name: Coveo Solutions Inc.
   link: https://www.coveo.com/en
-  date: Sep 2019 - <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
+  date: Sep 2020 - <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
+  job:  ML Team Lead
+  descr: >-
+    <br><ul>
+    <li>Led a group of 5 ML Scientist and Engineers on several NLP projects</li>
+    <li>Collaborated with the product managers to plan road maps and communicate with customers/stakeholders</li>
+    <li>Researched and implemented multi-task learning models to improve information flow between tasks and reduce resource consumption</li>
+    <li>Researched and implemented an extractive Question Answering system for clients with minimally labeled data</li>
+    <li>Adapted Continual Learning techniques to mitigate catastrophic forgetting and reduce training costs</li>
+    </ul>
+
+- name: Coveo Solutions Inc.
+  link: https://www.coveo.com/en
+  date: Sep 2019 - Sep 2020
   job:  ML Scientist
-  descr: <br><ul> <li>Implemented explainable dynamic facet recognition module for multilingual queries (long and short). A probability distribution per facet over the query words showed the influence of each token in the final decision of the model.</li> <li>Implemented language model based (BERT, RoBERTa, ALBERT) query retrieval system for long queries.</li>Implemented product content embedding based on product description and visual representation.<li> </li> </ul>
+  descr: >-
+    <br><ul>
+    <li>Served ML models using TorchServe on Docker images in EMR</li>
+    <li>Quantized and pruned the ML models to minimize the resources used and maximize throughput</li>
+    <li>Implemented parallel and distributed model training on GPU</li>
+    <li>Implemented a dynamic taxonomy prediction for queries, and used attention mechanism to gray-box the model</li>
+    <li>Researched and implemented Transformer-based query retrieval system for long queries</li>
+    <li>Implemented product content embedding based on product description and visual representation</li>
+    <li>Participate in ML recruitment events and conduct technical interviews</li>
+    <li>Initiated and organized "paper club", a bi-weekly workshop on the recent developments in ML</li>
+    <li>Represented Coveo at NLP events such as
+        <a href="https://drive.google.com/file/d/1cqAUonunUDAymbSQlb72MVsjOl1Ykd2X/view">MILA</a>,
+        <a href="http://rali.iro.umontreal.ca/rali/?q=en">RALI</a>,
+        <a href="https://www.meetup.com/en-AU/MTL-NLP/events/268964000/">MTL-NLP</a>, etc.</li>
+    </ul>
 
 - name: Coveo Solutions Inc.
   link: https://www.coveo.com/en
   date: May 2019 - Sep 2019
   job:  ML Developer Intern
-  descr: <br><ul> <li>Implemented parallel model building on EMR clusters.</li> </ul>
+  descr: >-
+    <br><ul>
+    <li>Implemented parallel model building on EMR clusters</li>
+    <li>Implemented bigram and trigram model for product recommendation&#58 frequently bought together recommender</li>
+    </ul>
 
 - name: Concordia University
   link: https://www.concordia.ca/
   date: May 2018 - Dec 2019
   job:  Teaching Assistant
-  descr: <br><ul> <li>Comp-472&#58 Artificial Intelligence </li> <li>Comp-339&#58 Combinatorics </li> <li>Comp-5361&#58 Discrete Structures and Formal Languages </li> <li>Comp-335&#58 Introduction to Theoretical Computer Science</li> </ul>
+  descr: >-
+    <br><ul>
+    <li>Comp-472&#58 Artificial Intelligence</li>
+    <li>Comp-339&#58 Combinatorics</li>
+    <li>Comp-5361&#58 Discrete Structures and Formal Languages</li>
+    <li>Comp-335&#58 Introduction to Theoretical Computer Science</li>
+    </ul>
 
 - name: McGill University
   link: https://www.mcgill.ca/
