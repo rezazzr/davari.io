@@ -244,7 +244,7 @@ In order to mitigate this issue, [Vaswani et al. (January  2017)](https://arxiv.
 Transformer architecture. The Transformer model is solely based on the attention mechanism and uses self attention layers
 to learn word representations. In the context of sequential data, the Transformer architecture is superior to the classical
 neural architecture approaches such as RNNs or CNNs based on three important criteria: **computation complexity**,
-**parallelizability**, and ** long-term dependency modeling**.
+**parallelizability**, and **long-term dependency modeling**.
 
 The computation complexity of the Transformer model is $$O(n^2.d)$$ for a sequence of length $$n$$ and hidden
 representation of size $$d$$, as opposed to RNNs and CNNs which have a computation complexity of $$O(n.d^2)$$ and
