@@ -1,3 +1,17 @@
+- name: Semantic Similarity Matching Using Contextualized Representations
+  descr: Different approaches to address semantic similarity matching generally fall into one of the two categories of interaction-based and representation-based models. While each approach offers its own benefits and can be used in certain scenarios, using a transformer-based model with a completely interaction-based approach may not be practical in many real-life use cases. In this work, we compare the performance and inference time of interaction-based and representation-based models using contextualized representations. We also propose a novel approach which is based on the late interaction of textual representations, thus benefiting from the advantages of both model types.
+  paper: https://caiac.pubpub.org/pub/6tk0unzp/release/2
+  published: Farhood Farahnak, Elham Mohammadi<sup>*</sup>, MohammadReza Davari<sup>*</sup>, and Leila Kosseim, In Proceedings of the 34th Canadian Conference on Artificial Intelligence (<a href="https://www.caiac.ca/en/conferences/canadianai-2021/home">CAIAC 2021</a>), June 2021.\n<sup>*</sup> Equal contribution
+  award:
+  cite: "@inproceedings{Farahnak2021Semantic,\n
+           title      = {Semantic Similarity Matching Using Contextualized Representations},\n
+           author     = {Farahnak, Farhood and Mohammadi, Elham and Davari, MohammadReza and Kosseim, Leila},\n
+           booktitle  = {Proceedings of the 34th Canadian Conference on Artificial Intelligence (CAIAC 2021)},\n
+           address    = {Vancouver, Canada (Online)},\n
+           year       = {2021},\n
+           month      = {June},\n
+         }"
+
 - name: TIMBERT&#58 Toponym Identifier For The Medical Domain Based on BERT
   descr: In this paper, we propose an approach to automate the process of place name detection in the medical domain to enable epidemiologists to better study and model the spread of viruses. We created a family of Toponym Identification Models based on BERT (TIMBERT), in order to learn in an end-to-end fashion the mapping from an input sentence to the associated sentence labeled with toponyms. When evaluated with the SemEval 2019 task 12 test set (Weissenbacher et al., 2019), our best TIMBERT model achieves an F1 score of 90.85%, a significant improvement compared to the state-of-the-art of 89.10% (Wang et al., 2019).
   paper: https://www.aclweb.org/anthology/2020.coling-main.58/
