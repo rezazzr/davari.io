@@ -1,7 +1,7 @@
 - name: Semantic Similarity Matching Using Contextualized Representations
   descr: Different approaches to address semantic similarity matching generally fall into one of the two categories of interaction-based and representation-based models. While each approach offers its own benefits and can be used in certain scenarios, using a transformer-based model with a completely interaction-based approach may not be practical in many real-life use cases. In this work, we compare the performance and inference time of interaction-based and representation-based models using contextualized representations. We also propose a novel approach which is based on the late interaction of textual representations, thus benefiting from the advantages of both model types.
   paper: https://caiac.pubpub.org/pub/6tk0unzp/release/2
-  published: Farhood Farahnak, Elham Mohammadi<sup>*</sup>, MohammadReza Davari<sup>*</sup>, and Leila Kosseim, In Proceedings of the 34th Canadian Conference on Artificial Intelligence (<a href="https://www.caiac.ca/en/conferences/canadianai-2021/home">CAIAC 2021</a>), June 2021.\n<sup>*</sup> Equal contribution
+  published: Farhood Farahnak, Elham Mohammadi<sup>*</sup>, MohammadReza Davari<sup>*</sup>, and Leila Kosseim, In Proceedings of the 34th Canadian Conference on Artificial Intelligence (<a href="https://www.caiac.ca/en/conferences/canadianai-2021/home">CAIAC 2021</a>), June 2021.\n <sup>*</sup> Equal contribution
   award:
   cite: "@inproceedings{Farahnak2021Semantic,\n
            title      = {Semantic Similarity Matching Using Contextualized Representations},\n
