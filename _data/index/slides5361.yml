@@ -1,6 +1,6 @@
 - name: Lecture 1
   descr: This lecture covers the basics of python programming language. Note that you are required to submit your programming assignments as an ipython notebook by using Google Colab.
-  url:  https:/github.com/rezazzr/davari.io/raw/master/_data/slide_pdf_files/Intro_to_python.pdf
+  url:  https://github.com/rezazzr/davari.io/raw/master/_data/slide_pdf_files/Intro_to_python.pdf
   year: 2019
 
 - name: Lecture 2
@@ -15,7 +15,7 @@
 
 - name: Lecture 4
   descr: This lecture covers an Introduction to Proofs and Proof Methods and Strategies.
-  url:  https:/github.com/rezazzr/davari.io/raw/master/_data/slide_pdf_files/Tutorial-4.pdf
+  url:  https://github.com/rezazzr/davari.io/raw/master/_data/slide_pdf_files/Tutorial-4.pdf
   year: 2019
 
 - name: Lecture 5
