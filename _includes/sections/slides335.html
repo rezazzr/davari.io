@@ -10,6 +10,14 @@
                 <div class="content">
                     <p style="margin: 0">{{ slide.descr }}</p>
                 </div>
+                <button class="btn btn-info collapsible"><i class="fa fa-file-image-o"></i> Slides</button>
+                <div class="content" style="display: none;">
+                    <iframe
+                            src= {{ "/assets/pdf/fall-2019-comp335/comp335_tutorial1.pdf" | relative_url }}#page=1&view=Fit&toolbar=0
+                            width="100%"
+                            loading="eager">
+                    </iframe>
+                </div>
 
                  &nbsp;
             </div>
