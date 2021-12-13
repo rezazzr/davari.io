@@ -1,7 +1,35 @@
+- name: Mila
+  name2: Concordia University
+  link: https://mila.quebec/en/
+  link2: https://www.concordia.ca/
+  date: January 2021 - <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
+  descr: >
+    <br> <ul>
+          <li>PhD of Computer Science&#58 Continual Learning (GPA&#58 4.0)</li>
+          <li>Supervisors&#58 <a href="http://eugenium.github.io/" target="_blank">Dr. Eugene Belilovsky</a></li>
+          <li>Scholarships&#58
+              <ul>
+                <li> Concordia Merit Scholarship (2021) </li>
+                <li> Graduate Doctoral Incentive Fellowship (2021) </li>
+              </ul>
+          </li>
+        </ul>
+
 - name: Concordia University
   link: https://www.concordia.ca/
   date: September 2017 - May 2020
-  descr: <br> <ul> <li>Master of Computer Science&#58 Natural Language Processing</li> <li>Supervisors&#58 <a href="https://users.encs.concordia.ca/~kosseim/" target="_blank">Dr. Leila Kosseim</a> and <a href="https://users.encs.concordia.ca/~bui/" target="_blank">Dr. Tien Bui</a> </li> </ul>
+  descr: >
+    <br> <ul>
+          <li>Master of Computer Science&#58 Natural Language Processing (GPA&#58 3.95)</li>
+          <li>Supervisors&#58 <a href="https://users.encs.concordia.ca/~kosseim/" target="_blank">Dr. Leila Kosseim</a> and <a href="https://users.encs.concordia.ca/~bui/" target="_blank">Dr. Tien Bui</a> </li>
+          <li>Scholarships&#58
+              <ul>
+                <li> Concordia Merit Scholarship (2018 and 2019) </li>
+                <li> Concordia University Conference and Exposition Award (2019) </li>
+                <li> IVADO Student Grant (2020) </li>
+              </ul>
+          </li>
+        </ul>
   
 - name: McGill University
   link: https://www.mcgill.ca/
