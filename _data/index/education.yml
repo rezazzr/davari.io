@@ -1,14 +1,42 @@
+- name: Mila
+  name2: Concordia University
+  link: https://mila.quebec/en/
+  link2: https://www.concordia.ca/
+  date: Jan 2021 - <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
+  descr: >
+    <br> <ul>
+          <li>PhD of Computer Science&#58 Continual Learning (GPA&#58 4.0)</li>
+          <li>Supervisors&#58 <a href="http://eugenium.github.io/" target="_blank">Dr. Eugene Belilovsky</a></li>
+          <li>Scholarships&#58
+              <ul>
+                <li> Concordia Merit Scholarship (2021) </li>
+                <li> Graduate Doctoral Incentive Fellowship (2021) </li>
+              </ul>
+          </li>
+        </ul>
+
 - name: Concordia University
   link: https://www.concordia.ca/
-  date: September 2017 - May 2020
-  descr: <br> <ul> <li>Master of Computer Science&#58 Natural Language Processing</li> <li>Supervisors&#58 <a href="https://users.encs.concordia.ca/~kosseim/" target="_blank">Dr. Leila Kosseim</a> and <a href="https://users.encs.concordia.ca/~bui/" target="_blank">Dr. Tien Bui</a> </li> </ul>
+  date: Sep 2017 - May 2020
+  descr: >
+    <br> <ul>
+          <li>Master of Computer Science&#58 Natural Language Processing (GPA&#58 3.95)</li>
+          <li>Supervisors&#58 <a href="https://users.encs.concordia.ca/~kosseim/" target="_blank">Dr. Leila Kosseim</a> and <a href="https://users.encs.concordia.ca/~bui/" target="_blank">Dr. Tien Bui</a> </li>
+          <li>Scholarships&#58
+              <ul>
+                <li> Concordia Merit Scholarship (2018 and 2019) </li>
+                <li> Concordia University Conference and Exposition Award (2019) </li>
+                <li> IVADO Student Grant (2020) </li>
+              </ul>
+          </li>
+        </ul>
   
 - name: McGill University
   link: https://www.mcgill.ca/
-  date: September 2013 - December 2016
+  date: Sep 2013 - Dec 2016
   descr: <br> <ul> <li>Bachelor of Science&#58 Double Major in Mathematics and Computer Science</li> <li>Represented McGill University in Putnam Competition in both 2014 and 2015</li> </ul> 
 
 - name: Dawson College
   link: https://www.dawsoncollege.qc.ca/
-  date: September 2011 - May 2013
+  date: Sep 2011 - May 2013
   descr: <br> <ul> <li>DEC in Pure and Applied Science</li> <li>Dawson Mathematics Competition&#58 1<sup>st</sup> place in 2012 and 2<sup>nd</sup> place in 2011 </li> </ul> 

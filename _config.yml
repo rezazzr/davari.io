@@ -34,8 +34,8 @@ kramdown:
 #
 owner:
   name: Reza Davari
-  job: ML Team Lead @ <a href="https://www.coveo.com/en" target="_blank">Coveo</a>
-  bio: "AI enthusiast, currently focused on NLP. A watermelon connoisseur. Based in Montreal, QC."
+  job: PhD Student @ <a href="https://mila.quebec/en/" target="_blank">Mila</a> and <a href="https://www.concordia.ca/ginacody.html" target="_blank">Concordia University</a>
+  bio: "AI enthusiast, currently focused on NLP, CV, and CL. A watermelon connoisseur. Based in Montreal, QC."
   email: davari.mreza@gmail.com
   disqus-shortname: davari-io
   twitter: davari_reza #username
