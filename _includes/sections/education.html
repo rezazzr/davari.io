@@ -4,7 +4,16 @@
 <div class="archive">
   <div class="timeline" id="timeline">
     {% for career in site.data.index.education %}
-          <div class="archive-title bio"><div class="archive-year"><strong>{{ career.date }}</strong> <a href="{{ career.link }}" target="_blank">{{ career.name }}</a>{{ career.descr }}</div></div>
+          <div class="archive-title bio">
+              <div class="archive-year">
+                    <strong>{{ career.date }}</strong>
+                    <a href="{{ career.link }}" target="_blank">{{ career.name }}</a>
+                    {% if career.name2 %}
+                    and <a href="{{ career.link2 }}" target="_blank">{{ career.name2 }}</a>
+                    {% endif %}
+                    {{ career.descr }}
+              </div>
+          </div>
     {% endfor %}
   </div>
 </div>

@@ -1,8 +1,29 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
+- name: Ericsson
+  link: https://www.ericsson.com/en
+  date: Sep 2021 - Feb 2022
+  job:  Data Scientist Intern
+  descr: >-
+    <br><ul>
+    <li>Led the ML technical support of three projects&#58 customer service chatbot, Python code completion, and sensitive log detection</li>
+    <li>Carried out a series of NLP tutorials on the industrial applications of large scale language models</li>
+    <li>Conducted workshops on data ingestion, processing, and visualisation</li>
+    </ul>  
+
+- name: Ubisoft Divertissements Inc.
+  link: https://montreal.ubisoft.com/en/
+  date: Sep 2021 - Feb 2022
+  job:  Data Scientist Intern
+  descr: >-
+    <br><ul>
+    <li>Implemented hierarchical span-based toxicity detection model on in-game chat data</li>
+    <li>Collaborated on implementing data annotation procedures</li>
+    </ul>
+
 - name: Coveo Solutions Inc.
   link: https://www.coveo.com/en
-  date: Sep 2020 - <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
+  date: Sep 2020 - Jun 2021
   job:  ML Team Lead
   descr: >-
     <br><ul>
