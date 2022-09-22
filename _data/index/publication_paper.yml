@@ -1,3 +1,29 @@
+- name: Probing Representation Forgetting in Supervised and Unsupervised Continual Learning
+  descr: Continual Learning (CL) research typically focuses on tackling the phenomenon of catastrophic forgetting in neural networks. Catastrophic forgetting is associated with an abrupt loss of knowledge previously learned by a model when the task, or more broadly the data distribution, being trained on changes. In supervised learning problems this forgetting, resulting from a change in the model's representation, is typically measured or observed by evaluating the decrease in old task performance. However, a model's representation can change without losing knowledge about prior tasks. In this work we consider the concept of representation forgetting, observed by using the difference in performance of an optimal linear classifier before and after a new task is introduced. Using this tool we revisit a number of standard continual learning benchmarks and observe that, through this lens, model representations trained without any explicit control for forgetting often experience small representation forgetting and can sometimes be comparable to methods which explicitly control for forgetting, especially in longer task sequences. We also show that representation forgetting can lead to new insights on the effect of model capacity and loss function used in continual learning. Based on our results, we show that a simple yet competitive approach is to learn representations continually with standard supervised contrastive learning while constructing prototypes of class samples when queried on old samples.
+  paper: https://openaccess.thecvf.com/content/CVPR2022/html/Davari_Probing_Representation_Forgetting_in_Supervised_and_Unsupervised_Continual_Learning_CVPR_2022_paper.html
+  published: MohammadReza Davari<sup>*</sup>, Nader Asadi<sup>*</sup>, Sudhir Mudur, Rahaf Aljundi and Eugene Belilovsky, In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (<a href="https://cvpr2022.thecvf.com/">CVPR 2022</a>), June 2022.<br><sup>*</sup> Equal contribution
+  award:
+  cite: "@inproceedings{davari2022probing,\n
+           title      = {Probing Representation Forgetting in Supervised and Unsupervised Continual Learning},\n
+           author     = {Davari, MohammadReza and Asadi, Nader and Mudur, Sudhir and Aljundi, Rahaf and Belilovsky, Eugene},\n
+           booktitle  = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2022)},\n
+           year       = {2022},\n
+           month      = {June},\n
+         }"
+
+- name: On the Inadequacy of CKA as a Measure of Similarity in Deep Learning
+  descr: Comparing learned representations is a challenging problem which has been approached in different ways. The CKA similarity metric, particularly it's linear variant, has recently become a popular approach and has been widely used to compare representations of a network's different layers, of similar networks trained differently, or of models with different architectures trained on the same data. CKA results have been used to make a wide variety of claims about similarity and dissimilarity of these various representations. In this work we investigate several weaknesses of the CKA similarity metric, demonstrating situations in which it gives unexpected or counterintuitive results. We then study approaches for modifying representations to maintain functional behaviour while changing the CKA value. Indeed we illustrate in some cases the CKA value can be heavily manipulated without substantial changes to the functional behaviour.
+  paper: https://openreview.net/forum?id=rK841rby6xc
+  published: MohammadReza Davari<sup>*</sup>, Stefan Horoi<sup>*</sup>, Amine Natik, Guillaume Lajoie, Guy Wolf and Eugene Belilovsky, In Proceedings of the ICLR 2022 Workshop on Geometrical and Topological Representation Learning (<a href="https://gt-rl.github.io/">ICLR GTRL Workshop 2022</a>), April 2022.<br><sup>*</sup> Equal contribution
+  award:
+  cite: "@inproceedings{davari2022inadequacy,\n
+           title      = {On the Inadequacy of CKA as a Measure of Similarity in Deep Learning},\n
+           author     = {Davari, MohammadReza and Horoi, Stefan and Natik, Amine and Lajoie, Guillaume and Wolf, Guy and Belilovsky, Eugene},\n
+           booktitle  = {ICLR 2022 Workshop on Geometrical and Topological Representation Learning (ICLR GTRL Workshop 2022)},\n
+           year       = {2022},\n
+           month      = {April},\n
+         }"
+
 - name: Probing Representation Forgetting in Continual Learning
   descr: Continual Learning methods typically focus on tackling the phenomenon of catastrophic forgetting in the context of neural networks. Catastrophic forgetting is associated with an abrupt loss of knowledge previously learned by a model. In supervised learning problems this forgetting is typically measured or observed by evaluating decrease in task performance. However, a model’s representations can change without losing knowledge. In this work we consider the concept of representation forgetting, which relies on using the difference in performance of an optimal linear classifier before and after a new task is introduced. Using this tool we revisit a number of standard continual learning benchmarks and observe that through this lens, model representations trained without any special control for forgetting often experience minimal representation forgetting. Furthermore we find that many approaches to continual learning that aim to resolve the catastrophic forgetting problem do not improve the representation forgetting upon the usefulness of the representation.
   paper: https://openreview.net/forum?id=YzAZmjJ-4fL
