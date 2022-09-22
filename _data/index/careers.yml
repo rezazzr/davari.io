@@ -1,5 +1,16 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
+- name: Amazon (Science)
+  link: https://www.amazon.science/
+  date: Jun 2022 - Sep 2022
+  job: Applied Research Scientist Intern
+  descr: >-
+    <br><ul>
+    <li>Developed a novel method based on contrastive learning and self-prediction to learn universal user embeddings</li>
+    <li>Applied the proposed user embedding to in-production downstream tasks and observed boost in performance</li>
+    <li>The results were published in AMLC (Amazon internal Machine Learning Conference)</li>
+    </ul>  
+
 - name: Ericsson
   link: https://www.ericsson.com/en
   date: Sep 2021 - Feb 2022
