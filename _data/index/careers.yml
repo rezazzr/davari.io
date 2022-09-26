@@ -9,33 +9,36 @@
     <li>Developed a novel method based on contrastive learning and self-prediction to learn universal user embeddings</li>
     <li>Applied the proposed user embedding to in-production downstream tasks and observed boost in performance</li>
     <li>The results were published in AMLC (Amazon internal Machine Learning Conference)</li>
-    </ul>  
+    </ul>
+  logo_file: amazon_science.png
 
 - name: Ericsson
   link: https://www.ericsson.com/en
   date: Sep 2021 - Feb 2022
-  job:  ML Technical Support Specialist
+  job: ML Technical Support Specialist
   descr: >-
     <br><ul>
     <li>Led the ML technical support of three projects&#58 customer service chatbot, Python code completion, and sensitive log detection</li>
     <li>Carried out a series of NLP tutorials on the industrial applications of large scale language models</li>
     <li>Conducted workshops on data ingestion, processing, and visualisation</li>
-    </ul>  
+    </ul>
+  logo_file: ericsson.png
 
 - name: Ubisoft Divertissements Inc.
   link: https://montreal.ubisoft.com/en/
   date: Sep 2021 - Feb 2022
-  job:  Data Scientist Intern
+  job: Data Scientist Intern
   descr: >-
     <br><ul>
     <li>Implemented hierarchical span-based toxicity detection model on in-game chat data</li>
     <li>Collaborated on implementing data annotation procedures</li>
     </ul>
+  logo_file: ubisoft.png
 
 - name: Coveo Solutions Inc.
   link: https://www.coveo.com/en
   date: Sep 2020 - Jun 2021
-  job:  ML Team Lead
+  job: ML Team Lead
   descr: >-
     <br><ul>
     <li>Led a group of 5 ML Scientist and Engineers on several NLP projects</li>
@@ -44,11 +47,12 @@
     <li>Researched and implemented an extractive Question Answering system for clients with minimally labeled data</li>
     <li>Adapted Continual Learning techniques to mitigate catastrophic forgetting and reduce training costs</li>
     </ul>
+  logo_file: coveo.png
 
 - name: Coveo Solutions Inc.
   link: https://www.coveo.com/en
   date: Sep 2019 - Sep 2020
-  job:  ML Scientist
+  job: ML Scientist
   descr: >-
     <br><ul>
     <li>Served ML models using TorchServe on Docker images in EMR</li>
@@ -64,21 +68,23 @@
         <a href="http://rali.iro.umontreal.ca/rali/?q=en" target="_blank">RALI</a>,
         <a href="https://www.meetup.com/en-AU/MTL-NLP/events/268964000/" target="_blank">MTL-NLP</a>, etc.</li>
     </ul>
+  logo_file: coveo.png
 
 - name: Coveo Solutions Inc.
   link: https://www.coveo.com/en
   date: May 2019 - Sep 2019
-  job:  ML Developer Intern
+  job: ML Developer Intern
   descr: >-
     <br><ul>
     <li>Implemented parallel model building on EMR clusters</li>
     <li>Implemented bigram and trigram model for product recommendation&#58 frequently bought together recommender</li>
     </ul>
+  logo_file: coveo.png
 
 - name: Concordia University
   link: https://www.concordia.ca/
   date: May 2018 - Dec 2019
-  job:  Teaching Assistant
+  job: Teaching Assistant
   descr: >-
     <br><ul>
     <li>Comp-472&#58 Artificial Intelligence</li>
@@ -86,15 +92,25 @@
     <li>Comp-5361&#58 Discrete Structures and Formal Languages</li>
     <li>Comp-335&#58 Introduction to Theoretical Computer Science</li>
     </ul>
+  logo_file: concordia.png
 
 - name: McGill University
   link: https://www.mcgill.ca/
   date: September 2015 - May 2016
-  job:  Teaching Assistant
+  job: Teaching Assistant
   descr: <br><ul> <li>Math-242&#58 Analysis 1</li> <li>Math-255&#58 Honours Analysis 2</li> </ul>
+  logo_file: mcgill.png
 
 - name: Dawson College
   link: https://www.dawsoncollege.qc.ca/
   date: September 2011 - May 2016
-  job:  Teaching Assistant
-  descr: <br><ul> <li>Linear Algebra</li> <li> Probability and Statistics</li> <li> Calculus 1, 2, and 3</li> </ul>  
+  job: Teaching Assistant
+  descr: <br><ul> <li>Linear Algebra</li> <li> Probability and Statistics</li> <li> Calculus 1, 2, and 3</li> </ul>
+  logo_file: dawson.png
+
+- name: Liberty Tutoring
+  link: https://www.libertytutoring.ca/
+  date: September 2013 - May 2016
+  job: Private Tutor
+  descr: <br><ul> <li>Linear Algebra</li> <li> Probability and Statistics</li> <li> Calculus 1, 2, and 3</li> <li>Waves and Optics</li> <li>Mechanics</li> <li>Electricity and Magnetism</li> </ul>
+  logo_file: liberty.png
