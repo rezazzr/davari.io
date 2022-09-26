@@ -14,14 +14,14 @@
                 {% if career.logo_file and career.logo_file2%}
                 <img src="{{ '/assets/img/' | append: career.logo_file | relative_url }}" alt="{{career.name }} logo"
                      class="avatar"
-                     style="width: 40px;position: absolute; top:25%; float: left;left: 0;margin-left: -20px;margin-top: -10px;">
+                     style="width: 40px;position: absolute; top:25%; float: left;left: 2px;margin-left: -20px;margin-top: -10px;">
                 <img src="{{ '/assets/img/' | append: career.logo_file2 | relative_url }}" alt="{{career.name }} logo"
                      class="avatar"
-                     style="width: 40px;position: absolute; top:50%; float: left;left: 0;margin-left: -20px;margin-top: -10px;">
+                     style="width: 40px;position: absolute; top:50%; float: left;left: 2px;margin-left: -20px;margin-top: -10px;">
                 {% elsif career.logo_file %}
                 <img src="{{ '/assets/img/' | append: career.logo_file | relative_url }}" alt="{{career.name }} logo"
                      class="avatar"
-                     style="width: 40px;position: absolute; top:50%; float: left;left: 0;margin-left: -20px;margin-top: -10px;">
+                     style="width: 40px;position: absolute; top:50%; float: left;left: 2px;margin-left: -20px;margin-top: -10px;">
                 {% endif %}
                 {{ career.descr }}
             </div>
