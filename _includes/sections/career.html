@@ -6,7 +6,13 @@
         <div class="archive-title">
             <div class="archive-year"><strong>{{ career.date }}</strong> {{ career.job }} @ <a href="{{ career.link }}"
                                                                                                target="_blank">{{
-                career.name }}</a>{{ career.descr }}
+                career.name }}</a>
+                {% if career.logo_file %}
+                <img src="{{ '/assets/img/' | append: career.logo_file | relative_url }}" alt="{{career.name }} logo"
+                     class="avatar"
+                     style="width: 40px;position: absolute; top:50%; float: left;left: 0;margin-left: -20px;margin-top: -10px;">
+                {% endif %}
+                {{ career.descr }}
             </div>
         </div>
         {% endfor %}
