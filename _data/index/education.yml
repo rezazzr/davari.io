@@ -14,6 +14,8 @@
               </ul>
           </li>
         </ul>
+  logo_file: mila.png
+  logo_file2: concordia.png
 
 - name: Concordia University
   link: https://www.concordia.ca/
@@ -30,13 +32,16 @@
               </ul>
           </li>
         </ul>
+  logo_file: concordia.png
   
 - name: McGill University
   link: https://www.mcgill.ca/
   date: Sep 2013 - Dec 2016
   descr: <br> <ul> <li>Bachelor of Science&#58 Double Major in Mathematics and Computer Science</li> <li>Represented McGill University in Putnam Competition in both 2014 and 2015</li> </ul> 
+  logo_file: mcgill.png
 
 - name: Dawson College
   link: https://www.dawsoncollege.qc.ca/
   date: Sep 2011 - May 2013
   descr: <br> <ul> <li>DEC in Pure and Applied Science</li> <li>Dawson Mathematics Competition&#58 1<sup>st</sup> place in 2012 and 2<sup>nd</sup> place in 2011 </li> </ul> 
+  logo_file: dawson.png
