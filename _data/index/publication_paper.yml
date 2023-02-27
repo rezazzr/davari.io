@@ -1,7 +1,7 @@
 - name: Deceiving the CKA Similarity Measure in Deep Learning
   descr: Understanding the behaviour of trained deep neural networks is a critical step in allowing reliable deployment of these networks in critical applications. One direction for obtaining insights on neural networks is through comparison of their internal representations. Comparing neural representations in neural networks is thus a challenging but important problem, which has been approached in different ways. The Centered Kernel Alignment (CKA) similarity metric, particularly its linear variant, has recently become a popular approach and has been widely used to compare representations of a network's different layers, of architecturally similar networks trained differently, or of models with different architectures trained on the same data. A wide variety of conclusions about similarity and dissimilarity of these various representations have been made using CKA. In this work we present an analysis that formally characterizes CKA sensitivity to a large class of simple transformations, which can naturally occur in the context of modern machine learning. This provides a concrete explanation of CKA sensitivity to outliers and to transformations that preserve the linear separability of the data, an important generalization attribute. Finally we propose an optimization-based approach for modifying representations to maintain functional behaviour while changing the CKA value. Our results illustrate that, in many cases, the CKA value can be easily manipulated without substantial changes to the functional behaviour of the models, and call for caution when leveraging activation alignment metrics.
   paper: https://openreview.net/forum?id=hITONWhDIIJ
-  published: MohammadReza Davari<sup>*</sup>, Stefan Horoi<sup>*</sup>, Amine Natik, Guillaume Lajoie, Guy Wolf and Eugene Belilovsky, In Proceedings of the NeurIPS 2022 Workshop on Machine Learning Safety (<a href="https://neurips2022.mlsafety.org/" target="_blank">NeurIPS ML Safety Workshop 2022</a>), Dec 2022.<br><sup>*</sup> Equal contribution
+  published: MohammadReza Davari<sup>*</sup>, Stefan Horoi<sup>*</sup>, Amine Natik, Guillaume Lajoie, Guy Wolf and Eugene Belilovsky (<a href="https://neurips2022.mlsafety.org/" target="_blank">NeurIPS ML Safety Workshop 2022</a>)
   award:
   cite: "@inproceedings{davari2022deceiving,\n
            title      = {Deceiving the {CKA} Similarity Measure in Deep Learning},\n
@@ -10,6 +10,7 @@
            year       = {2022},\n
            month      = {December},\n
          }"
+  visual: ck_emoji_op.png
 
 - name: Probing Representation Forgetting in Supervised and Unsupervised Continual Learning
   descr: Continual Learning (CL) research typically focuses on tackling the phenomenon of catastrophic forgetting in neural networks. Catastrophic forgetting is associated with an abrupt loss of knowledge previously learned by a model when the task, or more broadly the data distribution, being trained on changes. In supervised learning problems this forgetting, resulting from a change in the model's representation, is typically measured or observed by evaluating the decrease in old task performance. However, a model's representation can change without losing knowledge about prior tasks. In this work we consider the concept of representation forgetting, observed by using the difference in performance of an optimal linear classifier before and after a new task is introduced. Using this tool we revisit a number of standard continual learning benchmarks and observe that, through this lens, model representations trained without any explicit control for forgetting often experience small representation forgetting and can sometimes be comparable to methods which explicitly control for forgetting, especially in longer task sequences. We also show that representation forgetting can lead to new insights on the effect of model capacity and loss function used in continual learning. Based on our results, we show that a simple yet competitive approach is to learn representations continually with standard supervised contrastive learning while constructing prototypes of class samples when queried on old samples.
@@ -37,6 +38,7 @@
            year       = {2022},\n
            month      = {April},\n
          }"
+  visual: cka_analytical_op.png
 
 - name: Probing Representation Forgetting in Continual Learning
   descr: Continual Learning methods typically focus on tackling the phenomenon of catastrophic forgetting in the context of neural networks. Catastrophic forgetting is associated with an abrupt loss of knowledge previously learned by a model. In supervised learning problems this forgetting is typically measured or observed by evaluating decrease in task performance. However, a model’s representations can change without losing knowledge. In this work we consider the concept of representation forgetting, which relies on using the difference in performance of an optimal linear classifier before and after a new task is introduced. Using this tool we revisit a number of standard continual learning benchmarks and observe that through this lens, model representations trained without any special control for forgetting often experience minimal representation forgetting. Furthermore we find that many approaches to continual learning that aim to resolve the catastrophic forgetting problem do not improve the representation forgetting upon the usefulness of the representation.
@@ -65,6 +67,7 @@
            year       = {2021},\n
            month      = {June},\n
          }"
+  visual: semantic_matching_op.gif
 
 - name: TIMBERT&#58 Toponym Identifier For The Medical Domain Based on BERT
   descr: In this paper, we propose an approach to automate the process of place name detection in the medical domain to enable epidemiologists to better study and model the spread of viruses. We created a family of Toponym Identification Models based on BERT (TIMBERT), in order to learn in an end-to-end fashion the mapping from an input sentence to the associated sentence labeled with toponyms. When evaluated with the SemEval 2019 task 12 test set (Weissenbacher et al., 2019), our best TIMBERT model achieves an F1 score of 90.85%, a significant improvement compared to the state-of-the-art of 89.10% (Wang et al., 2019).
@@ -79,11 +82,12 @@
            year       = {2020},\n
            month      = {December},\n
          }"
+  visual: timbert.gif
 
 - name: Toponym Identification in Epidemiology Articles - A Deep Learning Approach
   descr: When analyzing the spread of viruses, epidemiologists often need to identify the location of  infected hosts. This information can be found in public databases, such as GenBank, however, information provided in these databases are usually limited to the country or state level. More fine-grained localization information requires phylogeographers to manually read relevant scientific articles. In this work we propose an approach to automate the process of place name identification from medical (epidemiology) articles. The focus of this paper is to propose a deep learning based model for toponym detection and experiment with the use of external linguistic features and domain specific information. The model was evaluated using a collection of 105 epidemiology articles from PubMed Central provided by the recent SemEval task 12. Our best detection model achieves an F1 score of 80.13%, a significant improvement compared to the state of the art of 69.84%. These results underline the importance of  domain specific embedding as well as specific linguistic features in toponym detection in medical journals.
   paper: https://arxiv.org/abs/1904.11018
-  published: MohammdReza Davari, Leila Kosseim and Tien Bui (<a href="https://www.cicling.org/2019/">CICLing 2019</a>)
+  published: MohammdReza Davari, Leila Kosseim and Tien Bui (<a href="http://www.cicling.org/2019/">CICLing 2019</a>)
   award: Best Poster Award
   cite: "@inproceedings{davari2019toponym,\n
            title      = {Toponym Identification in Epidemiology Articles - A Deep Learning Approach},\n
