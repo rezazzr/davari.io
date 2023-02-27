@@ -6,10 +6,15 @@ description: "Reza's publications."
 comments: false
 ---
 <h2 style="color:#F36170">Refereed Conference Proceedings</h2>
+<p>Publications in chronological order. <span style="color:#F36170">*</span> indicates that authors contributed equally.<br><br></p>
+
 {% for publication in site.data.index.publication_paper %}
 
-<div class="row">
-    <div class="col">
+<div class="row project">
+    <div class="col l4">
+        <img style="max-height: 320px; border-radius: 2%;" src="{{ site.url }}/assets/img/{{ publication.visual }}" width="fit-content"/>
+    </div>
+    <div class="col l7 offset-l1">
         <h3 style="margin: 0">{{ publication.name }}</h3>
         <i>{{ publication.published }} </i>
         {% if publication.award %}

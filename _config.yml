@@ -32,6 +32,13 @@ kramdown:
 # Site Owner configuration
 ####################################
 #
+
+jekyll_analytics:
+  GoogleAnalytics:          # Add, if you want to track with Google Analytics
+    id: UA-148531218-1          # Required - replace with your tracking id
+    anonymizeIp: false      # Optional - Default: false - set to true for anonymized tracking
+
+
 owner:
   name: Reza Davari
   job: PhD Student @ <a href="https://mila.quebec/en/" target="_blank">Mila</a> and <a href="https://www.concordia.ca/ginacody.html" target="_blank">Concordia University</a>
@@ -75,3 +82,5 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-archives
+  - jekyll-analytics
+  - jekyll-target-blank
