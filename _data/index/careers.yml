@@ -1,5 +1,44 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
+- name: Microsoft
+  link: https://www.microsoft.com/en-us
+  date: Jun 2024 - Aug 2024
+  job: Applied Scientist Intern
+  descr: >-
+    <br>
+    <ul>
+    <li>Developed a novel method for system prompt migration and optimization, achieving SOTA on multiple NLP benchmarks</li>
+    <li>Implemented automatic LLM-based metric creation and metric evaluation given a target feature</li>
+    <li>Observed product lift for prompt migration, reducing manual migration time</li>
+    </ul>
+  logo_file: msft_logo.png
+
+- name: Concordia Applied AI Institute
+  link: https://www.concordia.ca/research/applied-ai-institute.html
+  date: Nov 2023 - May 2024
+  job: Data Scientist
+  descr: >-
+    <br>
+    <ul>
+    <li>Developed and helped deploy an NLP solution using BERT to automatically populate evaluation forms of long complex legal government contracts</li>
+    <li>Implemented content highlighting to help users verify the context used by the model to reach a decision for each evaluation criterion</li>
+    <li>Contributed to scoping new projects and writing NLP project proposals for new clients and feature requests</li>
+    </ul>
+  logo_file: concordia.png
+
+- name: Eiffel MedTech
+  link: https://www.eiffelmedtech.com/?lang=en
+  date: Mar 2023 - Oct 2023
+  job: Data Scientist
+  descr: >-
+    <br>
+    <ul>
+    <li>Developed an EOS X-ray image processing pipeline for 3D lower limb point cloud reconstruction, including bone and prosthetic segmentation</li>
+    <li>Implemented fine-tuned Segment Anything Model (SAM) with manually labelled data for precise segmentation</li>
+    <li>Created a Transformer-based neural network for 3D bone reconstruction from DRR and CT scan pairs. Deployed the pipeline on local servers for practical use</li>
+    </ul>
+  logo_file: EiffelMedTech.png
+
 - name: Amazon (Science)
   link: https://www.amazon.science/
   date: Jun 2022 - Sep 2022
