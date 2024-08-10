@@ -1,1 +1,8 @@
 /_site/
+Gemfile.lock
+.gitignore
+.idea/misc.xml
+.idea/davari.io.iml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/inspectionProfiles/profiles_settings.xml
