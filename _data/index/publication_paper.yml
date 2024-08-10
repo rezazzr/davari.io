@@ -10,7 +10,7 @@
            year       = {2022},\n
            month      = {December},\n
          }"
-  visual: ck_emoji_op.png
+  visual: cka_comical_op.gif
 
 - name: Probing Representation Forgetting in Supervised and Unsupervised Continual Learning
   descr: Continual Learning (CL) research typically focuses on tackling the phenomenon of catastrophic forgetting in neural networks. Catastrophic forgetting is associated with an abrupt loss of knowledge previously learned by a model when the task, or more broadly the data distribution, being trained on changes. In supervised learning problems this forgetting, resulting from a change in the model's representation, is typically measured or observed by evaluating the decrease in old task performance. However, a model's representation can change without losing knowledge about prior tasks. In this work we consider the concept of representation forgetting, observed by using the difference in performance of an optimal linear classifier before and after a new task is introduced. Using this tool we revisit a number of standard continual learning benchmarks and observe that, through this lens, model representations trained without any explicit control for forgetting often experience small representation forgetting and can sometimes be comparable to methods which explicitly control for forgetting, especially in longer task sequences. We also show that representation forgetting can lead to new insights on the effect of model capacity and loss function used in continual learning. Based on our results, we show that a simple yet competitive approach is to learn representations continually with standard supervised contrastive learning while constructing prototypes of class samples when queried on old samples.
@@ -38,7 +38,7 @@
            year       = {2022},\n
            month      = {April},\n
          }"
-  visual: cka_analytical_op.png
+  visual: cka_analytical_op.gif
 
 - name: Probing Representation Forgetting in Continual Learning
   descr: Continual Learning methods typically focus on tackling the phenomenon of catastrophic forgetting in the context of neural networks. Catastrophic forgetting is associated with an abrupt loss of knowledge previously learned by a model. In supervised learning problems this forgetting is typically measured or observed by evaluating decrease in task performance. However, a model’s representations can change without losing knowledge. In this work we consider the concept of representation forgetting, which relies on using the difference in performance of an optimal linear classifier before and after a new task is introduced. Using this tool we revisit a number of standard continual learning benchmarks and observe that through this lens, model representations trained without any special control for forgetting often experience minimal representation forgetting. Furthermore we find that many approaches to continual learning that aim to resolve the catastrophic forgetting problem do not improve the representation forgetting upon the usefulness of the representation.
