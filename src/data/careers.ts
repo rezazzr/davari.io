@@ -1,0 +1,152 @@
+/**
+ * Career data — converted from _data/index/careers.yml.
+ *
+ * Note: The 'descr' fields contain raw HTML (e.g., <ul><li>).
+ * This is fine because all content is author-controlled (not user input).
+ * We render it using dangerouslySetInnerHTML in React.
+ */
+
+export interface Career {
+  name: string;
+  link: string;
+  date: string;
+  job: string;
+  descr: string;
+  logoFile: string;
+}
+
+export const careers: Career[] = [
+  {
+    name: "Microsoft",
+    link: "https://www.microsoft.com/en-us",
+    date: "Aug 2025 - Present",
+    job: "Senior Applied Scientist",
+    descr: `<br>
+    <ul>
+    <li>Developing evaluation metrics and framework for agentic workflows</li>
+    <li>Implementing agentic approaches for interactive information retrieval flows</li>
+    <li>Analyzing and optimizing agentic flows</li>
+    </ul>`,
+    logoFile: "msft_logo.png",
+  },
+  {
+    name: "Microsoft",
+    link: "https://www.microsoft.com/en-us",
+    date: "Jun 2024 - Aug 2024",
+    job: "Applied Scientist Intern",
+    descr: `<br>
+    <ul>
+    <li>Developed a novel method for system prompt migration and optimization, achieving SOTA on multiple NLP benchmarks</li>
+    <li>Implemented automatic LLM-based metric creation and metric evaluation given a target feature</li>
+    <li>Observed product lift for prompt migration, reducing manual migration time</li>
+    </ul>`,
+    logoFile: "msft_logo.png",
+  },
+  {
+    name: "Concordia Applied AI Institute",
+    link: "https://www.concordia.ca/research/applied-ai-institute.html",
+    date: "Nov 2023 - May 2024",
+    job: "Data Scientist",
+    descr: `<br>
+    <ul>
+    <li>Developed and helped deploy an NLP solution using BERT to automatically populate evaluation forms of long complex legal government contracts</li>
+    <li>Implemented content highlighting to help users verify the context used by the model to reach a decision for each evaluation criterion</li>
+    <li>Contributed to scoping new projects and writing NLP project proposals for new clients and feature requests</li>
+    </ul>`,
+    logoFile: "concordia.png",
+  },
+  {
+    name: "Eiffel MedTech",
+    link: "https://www.eiffelmedtech.com/?lang=en",
+    date: "Mar 2023 - Oct 2023",
+    job: "Data Scientist",
+    descr: `<br>
+    <ul>
+    <li>Developed an EOS X-ray image processing pipeline for 3D lower limb point cloud reconstruction, including bone and prosthetic segmentation</li>
+    <li>Implemented fine-tuned Segment Anything Model (SAM) with manually labelled data for precise segmentation</li>
+    <li>Created a Transformer-based neural network for 3D bone reconstruction from DRR and CT scan pairs. Deployed the pipeline on local servers for practical use</li>
+    </ul>`,
+    logoFile: "EiffelMedTech.png",
+  },
+  {
+    name: "Amazon (Science)",
+    link: "https://www.amazon.science/",
+    date: "Jun 2022 - Sep 2022",
+    job: "Applied Research Scientist Intern",
+    descr: `<br><ul>
+    <li>Developed a novel method based on contrastive learning and self-prediction to learn universal user embeddings</li>
+    <li>Applied the proposed user embedding to in-production downstream tasks and observed boost in performance</li>
+    <li>The results were published in AMLC (Amazon internal Machine Learning Conference)</li>
+    </ul>`,
+    logoFile: "amazon_science.png",
+  },
+  {
+    name: "Ericsson",
+    link: "https://www.ericsson.com/en",
+    date: "Sep 2021 - Feb 2022",
+    job: "ML Technical Support Specialist",
+    descr: `<br><ul>
+    <li>Led the ML technical support of three projects: customer service chatbot, Python code completion, and sensitive log detection</li>
+    <li>Carried out a series of NLP tutorials on the industrial applications of large scale language models</li>
+    <li>Conducted workshops on data ingestion, processing, and visualisation</li>
+    </ul>`,
+    logoFile: "ericsson.png",
+  },
+  {
+    name: "Ubisoft Divertissements Inc.",
+    link: "https://montreal.ubisoft.com/en/",
+    date: "Sep 2021 - Feb 2022",
+    job: "Data Scientist Intern",
+    descr: `<br><ul>
+    <li>Implemented hierarchical span-based toxicity detection model on in-game chat data</li>
+    <li>Collaborated on implementing data annotation procedures</li>
+    </ul>`,
+    logoFile: "ubisoft.png",
+  },
+  {
+    name: "Coveo Solutions Inc.",
+    link: "https://www.coveo.com/en",
+    date: "Sep 2020 - Jun 2021",
+    job: "ML Team Lead",
+    descr: `<br><ul>
+    <li>Led a group of 5 ML Scientist and Engineers on several NLP projects</li>
+    <li>Collaborated with the product managers to plan road maps and communicate with customers/stakeholders</li>
+    <li>Researched and implemented multi-task learning models to improve information flow between tasks and reduce resource consumption</li>
+    <li>Researched and implemented an extractive Question Answering system for clients with minimally labeled data</li>
+    <li>Adapted Continual Learning techniques to mitigate catastrophic forgetting and reduce training costs</li>
+    </ul>`,
+    logoFile: "coveo.png",
+  },
+  {
+    name: "Coveo Solutions Inc.",
+    link: "https://www.coveo.com/en",
+    date: "Sep 2019 - Sep 2020",
+    job: "ML Scientist",
+    descr: `<br><ul>
+    <li>Served ML models using TorchServe on Docker images in EMR</li>
+    <li>Quantized and pruned the ML models to minimize the resources used and maximize throughput</li>
+    <li>Implemented parallel and distributed model training on GPU</li>
+    <li>Implemented a dynamic taxonomy prediction for queries, and used attention mechanism to gray-box the model</li>
+    <li>Researched and implemented Transformer-based query retrieval system for long queries</li>
+    <li>Implemented product content embedding based on product description and visual representation</li>
+    <li>Participate in ML recruitment events and conduct technical interviews</li>
+    <li>Initiated and organized "paper club", a bi-weekly workshop on the recent developments in ML</li>
+    <li>Represented Coveo at NLP events such as
+        <a href="https://drive.google.com/file/d/1cqAUonunUDAymbSQlb72MVsjOl1Ykd2X/view" target="_blank">MILA</a>,
+        <a href="http://rali.iro.umontreal.ca/rali/?q=en" target="_blank">RALI</a>,
+        <a href="https://www.meetup.com/en-AU/MTL-NLP/events/268964000/" target="_blank">MTL-NLP</a>, etc.</li>
+    </ul>`,
+    logoFile: "coveo.png",
+  },
+  {
+    name: "Coveo Solutions Inc.",
+    link: "https://www.coveo.com/en",
+    date: "May 2019 - Sep 2019",
+    job: "ML Developer Intern",
+    descr: `<br><ul>
+    <li>Implemented parallel model building on EMR clusters</li>
+    <li>Implemented bigram and trigram model for product recommendation: frequently bought together recommender</li>
+    </ul>`,
+    logoFile: "coveo.png",
+  },
+];

@@ -1,0 +1,14 @@
+import { Slide } from "./slides335";
+
+export const slides5361: Slide[] = [
+  { name: "Lecture 1", descr: "This lecture covers the basics of python programming language. Note that you are required to submit your programming assignments as an ipython notebook by using Google Colab.", url: "https://github.com/rezazzr/davari.io/raw/master/_data/slide_pdf_files/Intro_to_python.pdf" },
+  { name: "Lecture 2", descr: "This lecture covers Propositional Equivalences, Predicates, and Quantifiers.", url: "https://github.com/rezazzr/davari.io/raw/master/_data/slide_pdf_files/Tutorial-2.pdf" },
+  { name: "Lecture 3", descr: "This lecture covers Nested Quantifiers and Rules of Inference.", url: "https://github.com/rezazzr/davari.io/raw/master/_data/slide_pdf_files/Tutorial-3.pdf" },
+  { name: "Lecture 4", descr: "This lecture covers an Introduction to Proofs and Proof Methods and Strategies.", url: "https://github.com/rezazzr/davari.io/raw/master/_data/slide_pdf_files/Tutorial-4.pdf" },
+  { name: "Lecture 5", descr: "This lecture covers an Introduction to Set Theory and Set Operations.", url: "https://github.com/rezazzr/davari.io/raw/master/_data/slide_pdf_files/Tutorial-5.pdf" },
+  { name: "Lecture 6", descr: "This lecture covers an Introduction to Functions.", url: "https://github.com/rezazzr/davari.io/raw/master/_data/slide_pdf_files/Tutorial-6.pdf" },
+  { name: "Lecture 7", descr: "This lecture covers the Relations and Their Properties, Closures of Relations, Equivalence Relations, and Partial Orderings.", url: "https://github.com/rezazzr/davari.io/raw/master/_data/slide_pdf_files/Tutorial-7.pdf" },
+  { name: "Lecture 8", descr: "This lecture covers an introduction to Regular Languages and Deterministic Finite Automata (DFA).", url: "https://github.com/rezazzr/davari.io/raw/master/_data/slide_pdf_files/Tutorial-8.pdf" },
+  { name: "Lecture 9", descr: "This lecture covers an introduction to Nondeterministic Finite Automata (NFA) and the equivalence of NFA and DFA.", url: "https://github.com/rezazzr/davari.io/raw/master/_data/slide_pdf_files/Tutorial-9.pdf" },
+  { name: "Lecture 10", descr: "This lecture covers Epsilon-NFA, Epsilon-Closure, conversion of Epsilon-NFA to DFA, Regular Expressions, Generalized NFA, and conversions between Automata and Regular Expressions.", url: "https://github.com/rezazzr/davari.io/raw/master/_data/slide_pdf_files/Tutorial-10.pdf" },
+];
