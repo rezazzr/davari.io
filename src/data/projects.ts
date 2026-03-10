@@ -1,0 +1,68 @@
+export interface Project {
+  name: string;
+  descr: string;
+  github?: string;
+  fullReport?: string;
+  visual: string;
+  round?: boolean;
+}
+
+export const projects: Project[] = [
+  {
+    name: "Variational Auto Encoders (VAE)",
+    descr: 'This is a report on the development of a VAE model and experiments performed on it to better understand its functionality and properties. The first 2 sections of the report are dedicated to the development of the model and the choices that came along with it. A general overview of the architecture is presented in section 1. Section 2 demonstrates the different methods that could be used to increase the feature map size. The analysis presented in this section is both from a visual aspect and mathematical one. Section 3 explores the properties of VAE for a better understanding of its functionality and presents some analysis between the vanilla VAE and <a href="https://arxiv.org/abs/1509.00519" target="_blank">IWAE</a>. Finally, in section 4 the model presented in the report will be evaluated in a more quantitative setting for future comparisons.',
+    github: "https://github.com/rezazzr/variational-auto-encoders",
+    fullReport: "https://github.com/rezazzr/variational-auto-encoders/blob/master/Experimenting_With_Variational_Auto_Encoders.pdf",
+    visual: "vae.gif",
+    round: true,
+  },
+  {
+    name: "Reproducing: On The Convergence of ADAM and Beyond",
+    descr: 'This is a study based on the paper <a href="https://openreview.net/pdf?id=ryQu7f-RZ" target="_blank">On The Convergence of ADAM and Beyond</a>. In this report we present a short summery explaining what the paper is about and reproduce the results of the experiments that was shown in the paper. In addition to these experiment, we also designed an experiment of our own, and investigated the behaviour of the method proposed by the paper in a different setting.',
+    fullReport: "https://github.com/rezazzr/Reproducing-Convergence-of-ADAM-and-Beyond/blob/master/Reproducing_On_The_Convergence_of_ADAM_and_Beyond.pdf",
+    github: "https://github.com/rezazzr/Reproducing-Convergence-of-ADAM-and-Beyond",
+    visual: "adam_and_beyond.gif",
+  },
+  {
+    name: "Reinforcement Learning in Sports: Cricket",
+    descr: 'Reinforcement learning has already made its mark of expertise in two player strategy games such as chess and GO that require sequential decision making. The game of cricket is also a game between two high level entities (teams) and involves sequential decision making under uncertainty. It requires customizing one\'s strategy according to the situation they are facing. At the heart of it, we can view it with similar reinforcement learning problem formulation where the teams can be modeled as agents. In this project we are aiming to find the optimal strategy, using reinforcement learning techniques, for the 2 teams playing against each other. If you are not familiar with the game of cricket, you can read more about the game, <a href="https://en.wikipedia.org/wiki/Cricket" target="_blank">here</a>.',
+    fullReport: "https://github.com/rezazzr/AI-in-Sports-Cricket/blob/master/reinforcement-learning-sports.pdf",
+    github: "https://github.com/rezazzr/AI-in-Sports-Cricket",
+    visual: "cricket_rl.png",
+  },
+  {
+    name: "General Value Functions and Successor Representation",
+    descr: 'This is a report on the topic of Successor Representation (SR). It briefly discusses the relation between SR and the General Value Functions and then proceeds to explore the properties of SR and its benefits over vanilla TD(0) methods. The experiments performed for the purposes of this study are all done on the <a href="https://gym.openai.com/envs/FrozenLake-v0/" target="_blank">FrozenLake</a> environment with slight modifications that are mentioned in the report.',
+    fullReport: "https://github.com/rezazzr/GVF_SR_reinforcement_learning/blob/master/GVF_SR.ipynb",
+    github: "https://github.com/rezazzr/GVF_SR_reinforcement_learning",
+    visual: "successor_representation.png",
+  },
+  {
+    name: "Policy Gradient Methods in Reinforcement Learning",
+    descr: 'This is a report on the use of policy gradient methods in Reinforcement Learning. The focus of this report is on the experimental comparison between 3 types of Actor-Critic methods. This investigation mainly revolves around the effect of the eligibility traces on Actor-Critic methods. These methods are the followings: <ol> <li>Actor-Critic with Eligibility Traces</li> <li>Actor-Critic with Eligibility Traces only on the Critic but not the Actor</li> <li>Actor-Critic Without any Eligibility Traces using one-step returns</li> </ol> The experiments are carried on the <a href="https://gym.openai.com/envs/FrozenLake-v0/" target="_blank">FrozenLake</a> environment.',
+    fullReport: "https://github.com/rezazzr/policy_gradient_reinforcement_learning/blob/master/policy_gradient_traces.ipynb",
+    github: "https://github.com/rezazzr/policy_gradient_reinforcement_learning",
+    visual: "actor_critic.gif",
+  },
+  {
+    name: "Neural Turing Machines",
+    descr: 'This is a report on the implementation of the paper <a href="https://arxiv.org/abs/1410.5401" target="_blank">Neural Turing Machines</a>. The paper presents the idea of Neural Turing Machines (NTM) and the results of using NTM on a few tasks. However, it does not provide the readers with the necessary details to reproduce the results presented in the paper. In this report we tried to fill in those gaps and provide an analysis over the experiments we performed to implement NTM. For this report we chose to only implement the NTM on the copy task.',
+    fullReport: "https://github.com/rezazzr/neural-turing-machines/blob/master/Neural_Turing_Machines_Reports_and_Discussion.ipynb",
+    github: "https://github.com/rezazzr/neural-turing-machines",
+    visual: "ntm.jpeg",
+  },
+  {
+    name: "Function Approximation in Reinforcement Learning",
+    descr: 'This is a report on the use of function approximation in Reinforcement Learning. In this report, we implement the method of Kernel Based Reinforcement Learning (kbrl) as explained in <a href="https://link.springer.com/article/10.1023%2FA%3A1017928328829" target="_blank">Ormoneit and Sen (2002)</a> using a nearest neighbor measure where the neighbors are weighted via a Gaussian Kernel. The report assumes the reader has already read <a href="https://link.springer.com/article/10.1023%2FA%3A1017928328829" target="_blank">Ormoneit and Sen (2002)</a> and is familiar with the concepts that are introduced in the paper. Hence, there is no introduction section in this report and it may be hard to follow if the reader is not familiar with the said paper. Therefore, it is highly suggested to read the paper before reading this report!',
+    fullReport: "https://github.com/rezazzr/kernel_based_reinforcement_learning/blob/master/kbrl.ipynb",
+    github: "https://github.com/rezazzr/kernel_based_reinforcement_learning",
+    visual: "pendulum.gif",
+  },
+  {
+    name: "Road Crossing Aid for Visually Impaired",
+    descr: 'There are over 37 million people across the globe who are visually impaired. Out of this population, over 15 million are from India. Living in an underdeveloped country with little infrastructure for the disables could be very harsh and isolating. We wanted to make a difference and not let their disabilities hinder their day to day life. This motivation drove us to develop the project presented here. In this project, we designed, made and tested and application that uses AI to navigate and guide the visually impaired in crossing the street. In our first attempt in solving this problem we are considering the case of zebra line crossings. A demo of the application running on android platform could be seen in this <a href="https://www.youtube.com/watch?time_continue=2&v=fUke4D1N3ss" target="_blank">video</a>.',
+    fullReport: "https://github.com/rezazzr/Road-Crossing-Aid-For-The-Visually-Impaired/blob/master/Visually_Impaired_Road_Crossing_Aid.ipynb",
+    github: "https://github.com/rezazzr/Road-Crossing-Aid-For-The-Visually-Impaired",
+    visual: "road_crossing.gif",
+  },
+];

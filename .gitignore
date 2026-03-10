@@ -1,8 +1,32 @@
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# Environment variables (never commit secrets)
+.env
+.env.local
+.env.production
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+
+# Jekyll (legacy)
 /_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
 Gemfile.lock
-.gitignore
-.idea/misc.xml
-.idea/davari.io.iml
-.idea/modules.xml
-.idea/vcs.xml
-.idea/inspectionProfiles/profiles_settings.xml
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Debug
+npm-debug.log*
