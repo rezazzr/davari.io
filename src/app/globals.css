@@ -1,0 +1,74 @@
+/*
+ * Global CSS file.
+ *
+ * The @import "tailwindcss" directive loads all of Tailwind's utility classes.
+ * In Tailwind v4, this single import replaces the old @tailwind directives.
+ *
+ * The @theme block defines your design tokens (colors, fonts, etc.).
+ * These become available as Tailwind classes like `text-primary`, `bg-background`, etc.
+ *
+ * Dark mode uses class-based toggling: a "dark" class on <html> overrides
+ * the CSS custom properties defined in @theme, so all utilities that reference
+ * these variables (e.g. bg-background, text-text-muted) automatically adapt.
+ */
+
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/*
+ * Override Tailwind's default dark variant (prefers-color-scheme) with class-based.
+ * This lets us toggle dark mode via JavaScript by adding/removing "dark" on <html>.
+ */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Colors — carried over from the Jekyll site's SCSS variables, refined for modern look */
+  --color-primary: #42b983;
+  --color-secondary: #8d7edc;
+  --color-success: #65e892;
+  --color-danger: #f83e4b;
+  --color-warning: #F5A623;
+  --color-info: #09ABF6;
+  --color-background: #f8f9fa;
+  --color-surface: #ffffff;
+  --color-text: rgba(0, 0, 0, 0.87);
+  --color-text-muted: rgba(0, 0, 0, 0.54);
+  --color-background-light: #f8f9fa;
+
+  /* Fonts — loaded via next/font in layout.tsx for optimal performance */
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-roboto-mono);
+}
+
+/* Smooth scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base body styling */
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+/*
+ * Dark mode color overrides.
+ * Since Tailwind utilities like bg-background use var(--color-background),
+ * overriding the CSS variable here makes ALL usages adapt automatically.
+ * No need to add dark: prefixes for these semantic colors.
+ */
+.dark {
+  --color-background: #0f172a;
+  --color-surface: #1e293b;
+  --color-text: rgba(255, 255, 255, 0.87);
+  --color-text-muted: rgba(255, 255, 255, 0.6);
+}
+
+/* Job title styling for dark mode */
+.dark .job-title span {
+  color: #b8a3e0;
+}
+
+.dark .job-title a {
+  color: #7fd47d;
+}

@@ -1,0 +1,18 @@
+export interface Assignment {
+  name: string;
+  url: string;
+  due: string;
+}
+
+export const assignments: Assignment[] = [
+  {
+    name: "Assignment 1",
+    url: "https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/assignmnet_files/Programming_Assignment1_Comp5361.zip",
+    due: "February, 27th, 2019",
+  },
+  {
+    name: "Assignment 2",
+    url: "https://raw.githubusercontent.com/rezazzr/rezazzr.github.io/master/_data/assignmnet_files/Programming_Assignment2_Comp5361.pdf",
+    due: "April, 1st, 2019",
+  },
+];
