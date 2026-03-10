@@ -1,11 +1,3 @@
-/**
- * CollapsibleButton — a styled toggle button for collapsible sections.
- *
- * This is a presentational component: the parent manages the open/close state
- * and renders the expanded content separately, so buttons stay in a fixed row
- * and content always appears below all buttons.
- */
-
 export const variantStyles = {
   info: "bg-info/10 text-info hover:bg-info/20",
   warning: "bg-warning/10 text-warning hover:bg-warning/20",

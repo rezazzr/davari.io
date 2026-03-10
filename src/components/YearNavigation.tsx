@@ -10,7 +10,6 @@ export default function YearNavigation({ years }: YearNavigationProps) {
   const [activeYear, setActiveYear] = useState<number | null>(null);
 
   useEffect(() => {
-    // Create Intersection Observer to track which year section is in view
     const observers = years.map((year) => {
       const element = document.getElementById(`year-${year}`);
       if (!element) return null;

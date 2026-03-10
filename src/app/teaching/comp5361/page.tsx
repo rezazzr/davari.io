@@ -14,7 +14,6 @@ export default function Comp5361Page() {
         COMP-5361: Discrete Structures and Formal Languages
       </h1>
 
-      {/* Assignment submission instructions */}
       <section className="mt-8 rounded-xl border border-black/5 dark:border-white/5 bg-surface p-6">
         <h2 className="text-lg font-semibold">
           Assignment Submission Instructions
@@ -88,7 +87,6 @@ export default function Comp5361Page() {
         </div>
       </section>
 
-      {/* Tutorial slides */}
       <section className="mt-8">
         <h2 className="text-lg font-semibold">Tutorial Slides</h2>
         <div className="mt-4 space-y-3">
@@ -110,7 +108,6 @@ export default function Comp5361Page() {
         </div>
       </section>
 
-      {/* Programming assignments */}
       <section className="mt-8">
         <h2 className="text-lg font-semibold">Programming Assignments</h2>
         <div className="mt-4 space-y-3">

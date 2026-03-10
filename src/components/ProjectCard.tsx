@@ -9,7 +9,6 @@ interface ProjectCardProps {
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div className="flex flex-col gap-6 rounded-xl border border-black/5 dark:border-white/5 bg-surface p-6 shadow-sm transition-shadow hover:shadow-md md:flex-row">
-      {/* Project visual */}
       <div className="shrink-0 md:w-48">
         <Image
           src={`/assets/img/${project.visual}`}
@@ -21,7 +20,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         />
       </div>
 
-      {/* Project details */}
       <div className="flex-1">
         <h3 className="text-lg font-semibold">{project.name}</h3>
         <p

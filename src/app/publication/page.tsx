@@ -15,13 +15,8 @@ function extractYear(publication: typeof publications[0]): number {
 }
 
 export default function PublicationPage() {
-  // Create a map of publication to its global index for lazy loading
-  const pubIndexMap = new Map<typeof publications[0], number>();
-  publications.forEach((pub, index) => {
-    pubIndexMap.set(pub, index);
-  });
+  const pubIndexMap = new Map(publications.map((pub, i) => [pub, i]));
 
-  // Group publications by year
   const publicationsByYear = publications.reduce(
     (acc, pub) => {
       const year = extractYear(pub);
@@ -34,7 +29,6 @@ export default function PublicationPage() {
     {} as Record<number, typeof publications>
   );
 
-  // Sort years in descending order
   const sortedYears = Object.keys(publicationsByYear)
     .map(Number)
     .sort((a, b) => b - a);
@@ -50,18 +44,14 @@ export default function PublicationPage() {
         contributed equally.
       </p>
 
-      {/* Mobile-only sticky dropdown */}
       <div className="mt-8 sticky top-0 z-10 lg:hidden bg-background py-4">
         <MobileYearDropdown years={sortedYears} />
       </div>
 
-      {/* Two-column layout with sticky sidebar (desktop only) */}
       <div className="mt-12 flex gap-8">
-        {/* Left column: publications */}
         <div className="flex-1 min-w-0 space-y-12 scroll-smooth">
           {sortedYears.map((year) => (
             <div key={year} id={`year-${year}`}>
-              {/* Year header with accent line */}
               <div className="mb-8 flex items-center gap-4">
                 <h2 className="text-3xl font-bold" style={{ color: "#42b983" }}>
                   {year}
@@ -69,7 +59,6 @@ export default function PublicationPage() {
                 <div className="flex-1 h-px bg-linear-to-r from-current to-transparent opacity-30" />
               </div>
 
-              {/* Publications for this year */}
               <div className="space-y-6 pl-0 lg:pl-8">
                 {publicationsByYear[year].map((pub) => (
                   <PublicationCard
@@ -83,7 +72,6 @@ export default function PublicationPage() {
           ))}
         </div>
 
-        {/* Right column: sticky year sidebar */}
         <YearNavigation years={sortedYears} />
       </div>
     </div>

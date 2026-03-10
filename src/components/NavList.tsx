@@ -1,13 +1,3 @@
-/**
- * NavList — navigation link list.
- *
- * KEY CONCEPT: next/link
- * Unlike a regular <a> tag that causes a full page reload,
- * Next.js <Link> performs client-side navigation — it only fetches
- * the new page's content and swaps it in, keeping the layout mounted.
- * This makes navigation feel instant.
- */
-
 "use client";
 
 import Link from "next/link";
@@ -15,8 +5,6 @@ import { usePathname } from "next/navigation";
 import { navItems } from "@/data/nav";
 
 export default function NavList() {
-  // usePathname() returns the current URL path (e.g., "/publication").
-  // We use it to highlight the active nav item.
   const pathname = usePathname();
 
   return (

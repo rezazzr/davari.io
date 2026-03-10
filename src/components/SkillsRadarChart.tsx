@@ -1,15 +1,3 @@
-/**
- * SkillsRadarChart — radar/spider chart of technical skills.
- *
- * KEY CONCEPT: 'use client' is required here because Chart.js
- * needs the browser's <canvas> API to render. Server Components
- * can't use browser APIs — they run at build time on Node.js.
- *
- * KEY CONCEPT: Third-party library integration
- * react-chartjs-2 is a React wrapper around Chart.js. We import
- * and register the specific Chart.js modules we need (tree-shaking).
- */
-
 "use client";
 
 import { useEffect, useState } from "react";
@@ -24,12 +12,9 @@ import {
 import { Radar } from "react-chartjs-2";
 import { skills } from "@/data/skills";
 
-// Register the Chart.js modules we need (tree-shaking: only include what we use)
 ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip);
 
 export default function SkillsRadarChart() {
-  // Chart.js uses Canvas (not CSS), so we detect dark mode in JS
-  // and use a MutationObserver to re-render when the theme changes.
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {

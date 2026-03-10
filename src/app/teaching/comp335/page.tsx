@@ -13,7 +13,6 @@ export default function Comp335Page() {
         COMP-335: Introduction to Theoretical Computer Science
       </h1>
 
-      {/* Assignment submission instructions */}
       <section className="mt-8 rounded-xl border border-black/5 dark:border-white/5 bg-surface p-6">
         <h2 className="text-lg font-semibold">
           Assignment Submission Instructions
@@ -42,7 +41,6 @@ export default function Comp335Page() {
         </div>
       </section>
 
-      {/* Tutorial slides */}
       <section className="mt-8">
         <h2 className="text-lg font-semibold">Tutorial Slides</h2>
         <div className="mt-4 space-y-3">

@@ -1,11 +1,3 @@
-/**
- * Site-wide configuration — converted from Jekyll's _config.yml.
- *
- * This single file replaces the owner/site sections of _config.yml.
- * In Jekyll, you accessed these values with {{ site.owner.name }}.
- * In Next.js, you import them: import { siteConfig } from '@/data/site-config';
- */
-
 export const siteConfig = {
   title: "Reza Davari",
   email: "davari.mreza@gmail.com",

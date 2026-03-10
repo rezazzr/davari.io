@@ -1,26 +1,21 @@
 {
   "compilerOptions": {
-    /* TypeScript tells the editor and build tool how to interpret your code.
-       These settings are Next.js defaults — you rarely need to change them. */
-
-    "target": "ES2017",           /* JavaScript version to compile to */
-    "lib": ["dom", "dom.iterable", "esnext"],  /* Browser + modern JS APIs available */
-    "allowJs": true,              /* Allow .js files alongside .ts files */
-    "skipLibCheck": true,         /* Skip type-checking node_modules (faster builds) */
-    "strict": true,               /* Enable all strict type-checking options */
-    "noEmit": true,               /* Don't output .js files — Next.js handles that */
-    "esModuleInterop": true,      /* Better compatibility with CommonJS modules */
-    "module": "esnext",           /* Use modern ES module syntax (import/export) */
-    "moduleResolution": "bundler", /* Let the bundler resolve module paths */
-    "resolveJsonModule": true,    /* Allow importing .json files */
-    "isolatedModules": true,      /* Ensure each file can be independently compiled */
-    "jsx": "preserve",            /* Let Next.js handle JSX transformation */
-    "incremental": true,          /* Cache type-checking results for faster rebuilds */
-    "plugins": [
-      { "name": "next" }          /* Next.js TypeScript plugin for enhanced editor support */
-    ],
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [{ "name": "next" }],
     "paths": {
-      "@/*": ["./src/*"]          /* '@/components/Sidebar' maps to 'src/components/Sidebar' */
+      "@/*": ["./src/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

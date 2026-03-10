@@ -1,11 +1,3 @@
-/**
- * Blog listing page — shows all posts sorted by date.
- *
- * KEY CONCEPT: This is a Server Component that reads from the file system.
- * getAllPosts() uses fs.readFileSync — this works because Server Components
- * run at build time on Node.js, not in the browser.
- */
-
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllPosts } from "@/lib/posts";

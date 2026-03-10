@@ -1,15 +1,6 @@
-export interface Education {
-  name: string;
-  name2?: string;
-  link: string;
-  link2?: string;
-  date: string;
-  descr: string;
-  logoFile: string;
-  logoFile2?: string;
-}
+import type { TimelineItem } from "@/components/Timeline";
 
-export const education: Education[] = [
+export const education: TimelineItem[] = [
   {
     name: "Mila",
     name2: "Concordia University",

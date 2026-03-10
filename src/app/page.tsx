@@ -1,13 +1,3 @@
-/**
- * Home Page — the resume/about page at "/".
- *
- * KEY CONCEPT: Server Components importing Client Components.
- * This page is a Server Component (no 'use client'). It imports
- * SkillsRadarChart which IS a Client Component. Next.js handles
- * this seamlessly: the page renders to HTML at build time, and
- * only SkillsRadarChart's JavaScript is sent to the browser.
- */
-
 import Image from "next/image";
 import { siteConfig } from "@/data/site-config";
 import { careers } from "@/data/careers";
@@ -19,7 +9,6 @@ import Timeline from "@/components/Timeline";
 export default function HomePage() {
   return (
     <div className="space-y-12">
-      {/* Hero section: profile + skills */}
       <div className="flex flex-col gap-8 lg:flex-row">
         <div className="flex flex-col items-center lg:w-7/12">
           <Image
@@ -63,7 +52,6 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Timelines section */}
       <div className="flex flex-col gap-12 lg:flex-row">
         <div className="lg:w-7/12">
           <Timeline title="Career" items={careers} />

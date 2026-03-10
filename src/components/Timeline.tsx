@@ -1,18 +1,3 @@
-/**
- * Timeline — a reusable timeline component for career, education, and teaching.
- *
- * KEY CONCEPT: Reusable components with props
- * Instead of creating three separate timeline components (CareerTimeline,
- * EducationTimeline, TeachingTimeline), we create ONE generic Timeline
- * that accepts different data through props. This avoids code duplication.
- *
- * KEY CONCEPT: dangerouslySetInnerHTML
- * Some data fields (e.g., career descriptions) contain raw HTML.
- * React escapes HTML by default for security (prevents XSS attacks).
- * dangerouslySetInnerHTML bypasses this escaping. It's safe here because
- * all content is author-controlled — never user input.
- */
-
 import Image from "next/image";
 
 export interface TimelineItem {
@@ -42,10 +27,8 @@ export default function Timeline({ title, items }: TimelineProps) {
             key={`${item.name}-${item.date}-${index}`}
             className="relative border-l-2 border-primary/30 pl-6"
           >
-            {/* Timeline dot */}
             <div className="absolute -left-[5px] top-1 h-2 w-2 rounded-full bg-primary" />
 
-            {/* Header: logo(s) + name + date */}
             <div className="flex items-center gap-3">
               <div className="flex shrink-0 gap-2">
                 <a href={item.link} target="_blank" rel="noopener noreferrer">
@@ -111,7 +94,6 @@ export default function Timeline({ title, items }: TimelineProps) {
               </div>
             </div>
 
-            {/* Description (raw HTML) */}
             <div
               className="mt-1 text-sm text-text-muted [&_a]:text-primary [&_a]:underline [&_li]:ml-4 [&_li]:list-disc [&_ul]:mt-1"
               dangerouslySetInnerHTML={{ __html: item.descr }}

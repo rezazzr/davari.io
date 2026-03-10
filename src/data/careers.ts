@@ -1,21 +1,6 @@
-/**
- * Career data — converted from _data/index/careers.yml.
- *
- * Note: The 'descr' fields contain raw HTML (e.g., <ul><li>).
- * This is fine because all content is author-controlled (not user input).
- * We render it using dangerouslySetInnerHTML in React.
- */
+import type { TimelineItem } from "@/components/Timeline";
 
-export interface Career {
-  name: string;
-  link: string;
-  date: string;
-  job: string;
-  descr: string;
-  logoFile: string;
-}
-
-export const careers: Career[] = [
+export const careers: TimelineItem[] = [
   {
     name: "Microsoft",
     link: "https://www.microsoft.com/en-us",

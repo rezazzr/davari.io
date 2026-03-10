@@ -1,12 +1,3 @@
-/**
- * PublicationCard — displays a single publication with collapsible sections.
- *
- * KEY CONCEPT: Lifting state up
- * The open/close state lives here (not in CollapsibleButton) so we can
- * render the buttons in a fixed row and the expanded content below,
- * preventing buttons from shifting when content opens.
- */
-
 "use client";
 
 import { useState } from "react";
@@ -30,7 +21,6 @@ export default function PublicationCard({ publication, priority = false }: Publi
 
   return (
     <div className="flex flex-col gap-6 rounded-xl border border-black/5 dark:border-white/5 bg-surface p-6 shadow-sm transition-shadow hover:shadow-md lg:flex-row">
-      {/* Publication visual */}
       <div className="shrink-0 lg:w-72">
         <Image
           src={`/assets/img/${publication.visual}`}
@@ -43,7 +33,6 @@ export default function PublicationCard({ publication, priority = false }: Publi
         />
       </div>
 
-      {/* Publication details */}
       <div className="flex-1">
         <h3 className="text-lg font-semibold">{publication.name}</h3>
         <p
@@ -58,7 +47,6 @@ export default function PublicationCard({ publication, priority = false }: Publi
           </p>
         )}
 
-        {/* Buttons row — always stays in place */}
         <div className="mt-3 flex flex-wrap items-start gap-2">
           <CollapsibleButton
             buttonLabel="Abstract"
@@ -87,7 +75,6 @@ export default function PublicationCard({ publication, priority = false }: Publi
           />
         </div>
 
-        {/* Expanded content — always renders below the button row */}
         {openSection === "abstract" && (
           <div className="mt-3 rounded-lg border border-black/10 dark:border-white/10 bg-black/2 dark:bg-white/5 p-4">
             <p className="text-sm leading-relaxed">{publication.descr}</p>

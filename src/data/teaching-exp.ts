@@ -1,13 +1,6 @@
-export interface TeachingExp {
-  name: string;
-  link: string;
-  date: string;
-  job: string;
-  descr: string;
-  logoFile: string;
-}
+import type { TimelineItem } from "@/components/Timeline";
 
-export const teachingExp: TeachingExp[] = [
+export const teachingExp: TimelineItem[] = [
   {
     name: "Concordia University",
     link: "https://www.concordia.ca/",

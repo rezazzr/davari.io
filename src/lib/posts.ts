@@ -1,18 +1,3 @@
-/**
- * Blog post loading utilities.
- *
- * KEY CONCEPT: Markdown processing pipeline
- * We use unified/remark/rehype to convert Markdown → HTML:
- * 1. remarkParse: parses Markdown into an AST (abstract syntax tree)
- * 2. remarkGfm: adds support for GFM tables, strikethrough, etc.
- * 3. remarkMath: extracts math expressions ($...$ and $$...$$)
- * 4. remarkRehype: converts Markdown AST → HTML AST
- * 5. rehypeKatex: renders math to KaTeX HTML
- * 6. rehypeStringify: converts HTML AST → HTML string
- *
- * This all runs at BUILD time (Server Components use Node.js fs APIs).
- */
-
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -34,9 +19,6 @@ export interface PostMeta {
   tags: string[];
 }
 
-/**
- * Get metadata for all blog posts, sorted by date (newest first).
- */
 export function getAllPosts(): PostMeta[] {
   if (!fs.existsSync(postsDirectory)) return [];
 
@@ -63,9 +45,6 @@ export function getAllPosts(): PostMeta[] {
   );
 }
 
-/**
- * Get a single post's rendered HTML and metadata by slug.
- */
 export async function getPostBySlug(slug: string) {
   const extensions = [".mdx", ".md"];
   let fullPath = "";
@@ -80,7 +59,6 @@ export async function getPostBySlug(slug: string) {
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
-  // Process Markdown → HTML
   const result = await unified()
     .use(remarkParse)
     .use(remarkGfm)

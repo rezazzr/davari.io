@@ -1,11 +1,3 @@
-/**
- * SocialLinks — renders icon links to social profiles.
- *
- * KEY CONCEPT: This is a Server Component (no 'use client').
- * It renders static HTML at build time — no JavaScript shipped to the browser.
- * This is ideal for content that never changes after the page loads.
- */
-
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiGooglescholar } from "react-icons/si";

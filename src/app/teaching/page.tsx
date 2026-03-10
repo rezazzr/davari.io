@@ -1,15 +1,3 @@
-/**
- * Teaching page — lists courses with links to detail pages.
- *
- * KEY CONCEPT: Nested routes.
- * This file is at src/app/teaching/page.tsx → URL: /teaching
- * The course detail pages are at:
- *   src/app/teaching/comp335/page.tsx → URL: /teaching/comp335
- *   src/app/teaching/comp5361/page.tsx → URL: /teaching/comp5361
- *
- * The folder structure mirrors the URL structure.
- */
-
 import type { Metadata } from "next";
 import Link from "next/link";
 import { courses } from "@/data/courses";
