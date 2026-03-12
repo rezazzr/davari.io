@@ -4,6 +4,7 @@ import { siteConfig } from "@/data/site-config";
 import NavList from "./NavList";
 import SocialLinks from "./SocialLinks";
 import ThemeToggle from "./ThemeToggle";
+import TypewriterText from "./TypewriterText";
 
 export default function Sidebar() {
   return (
@@ -26,7 +27,9 @@ export default function Sidebar() {
             dangerouslySetInnerHTML={{ __html: siteConfig.owner.job }}
           />
         </div>
-        <p className="text-sm text-text-muted">{siteConfig.owner.bio}</p>
+        <p className="text-sm text-text-muted">
+          <TypewriterText text={siteConfig.owner.bio} speed={25} delay={300} />
+        </p>
       </div>
 
       <a
