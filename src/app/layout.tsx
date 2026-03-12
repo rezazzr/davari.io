@@ -34,6 +34,9 @@ export const metadata: Metadata = {
     apple: "/assets/img/monkey_logo.png",
   },
   metadataBase: new URL(siteConfig.url),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",

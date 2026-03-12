@@ -5,6 +5,8 @@ import ProjectCard from "@/components/ProjectCard";
 export const metadata: Metadata = {
   title: "Projects",
   description: "Selected projects by Reza Davari.",
+  alternates: { canonical: "/projects" },
+  openGraph: { title: "Projects | Reza Davari", description: "Selected projects by Reza Davari.", url: "/projects" },
 };
 
 export default function ProjectsPage() {

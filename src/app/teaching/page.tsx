@@ -6,6 +6,8 @@ import TiltCard from "@/components/TiltCard";
 export const metadata: Metadata = {
   title: "Teaching",
   description: "Courses and teaching materials.",
+  alternates: { canonical: "/teaching" },
+  openGraph: { title: "Teaching | Reza Davari", description: "Courses and teaching materials.", url: "/teaching" },
 };
 
 export default function TeachingPage() {
