@@ -23,7 +23,7 @@ export default function HomePage() {
             <h2 className="text-xl font-bold">About</h2>
             <p className="mt-2 leading-relaxed text-text-muted">
               I am a Senior Applied Scientist at{" "}
-              <a href="https://www.microsoft.com" target="_blank" style={{ color: "#42b983" }} className="hover:underline">Microsoft</a>,
+              <a href="https://www.microsoft.com" target="_blank" className="text-primary hover:underline">Microsoft</a>,
               working on the Office Word team 🤖 My focus is on building agentic
               systems that are better at personalization, context management, and
               tool use. I also research multimodal evaluation methods and design
@@ -32,17 +32,17 @@ export default function HomePage() {
             </p>
             <p className="mt-3 leading-relaxed text-text-muted">
               Before Microsoft, I did my PhD at{" "}
-              <a href="https://mila.quebec" target="_blank" style={{ color: "#42b983" }} className="hover:underline">Mila</a> and{" "}
-              <a href="https://www.concordia.ca" target="_blank" style={{ color: "#42b983" }} className="hover:underline">Concordia University</a>,
+              <a href="https://mila.quebec" target="_blank" className="text-primary hover:underline">Mila</a> and{" "}
+              <a href="https://www.concordia.ca" target="_blank" className="text-primary hover:underline">Concordia University</a>,
               where I studied continual, federated, and self-supervised learning
               for NLP and Computer Vision 📚 under the supervision of{" "}
-              <a href="http://eugenium.github.io/" target="_blank" style={{ color: "#42b983" }} className="hover:underline">Dr. Eugene Belilovsky</a>.
+              <a href="http://eugenium.github.io/" target="_blank" className="text-primary hover:underline">Dr. Eugene Belilovsky</a>.
             </p>
             <p className="mt-3 leading-relaxed text-text-muted">
               Outside of work, I am an avid sourdough baker 🍞 If you want
               tips, need help debugging your bake, or are in the Redmond, WA
               area and would like a starter, feel free to{" "}
-              <a href={`mailto:${siteConfig.email}`} style={{ color: "#42b983" }} className="hover:underline">reach out</a> 😊
+              <a href={`mailto:${siteConfig.email}`} className="text-primary hover:underline">reach out</a> 😊
             </p>
           </div>
         </div>

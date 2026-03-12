@@ -10,9 +10,7 @@ export const metadata: Metadata = {
 export default function TeachingPage() {
   return (
     <div>
-      <h1 className="text-2xl font-bold">
-        <span style={{ color: "#F36170" }}>Teaching</span>
-      </h1>
+      <h1 className="text-2xl font-bold text-heading">Teaching</h1>
 
       <div className="mt-8 space-y-4">
         {courses.map((course) => (
