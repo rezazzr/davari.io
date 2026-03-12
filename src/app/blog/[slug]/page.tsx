@@ -18,17 +18,21 @@ export async function generateMetadata({
   return {
     title: meta.title,
     description: meta.excerpt,
+    alternates: { canonical: `/blog/${slug}` },
     openGraph: {
-      title: meta.title,
+      title: `${meta.title} | Reza Davari`,
       description: meta.excerpt,
       type: "article",
       publishedTime: meta.date,
       tags: meta.tags,
+      url: `/blog/${slug}`,
+      images: [{ url: "/assets/img/reza_profile.png", width: 320, height: 320, alt: meta.title }],
     },
     twitter: {
       card: "summary_large_image",
       title: meta.title,
       description: meta.excerpt,
+      images: ["/assets/img/reza_profile.png"],
     },
   };
 }
@@ -112,7 +116,7 @@ export default async function BlogPostPage({
       <TableOfContents items={toc} />
 
       <div
-        className="prose dark:prose-invert max-w-none [&_a]:text-primary [&_blockquote]:border-primary/30 [&_code]:rounded [&_code]:bg-slate-100 dark:[&_code]:bg-slate-800 [&_code]:text-slate-900 dark:[&_code]:text-slate-100 [&_code]:px-1 [&_code]:py-0.5 [&_code]:text-sm [&_img]:block [&_img]:mx-auto [&_img]:rounded-lg [&_pre]:overflow-x-auto [&_pre]:rounded-lg [&_pre]:bg-slate-100 dark:[&_pre]:bg-slate-900 [&_pre]:text-slate-900 dark:[&_pre]:text-slate-100 [&_pre]:p-4 [&_table]:w-full [&_td]:border [&_td]:border-black/10 dark:[&_td]:border-white/10 [&_td]:px-3 [&_td]:py-2 [&_th]:border [&_th]:border-black/10 dark:[&_th]:border-white/10 [&_th]:bg-black/3 dark:[&_th]:bg-white/5 [&_th]:px-3 [&_th]:py-2"
+        className="prose dark:prose-invert max-w-none [&_a]:text-primary [&_blockquote]:border-primary/30 [&_code]:rounded [&_code]:bg-slate-100 dark:[&_code]:bg-slate-800 [&_code]:text-slate-900 dark:[&_code]:text-slate-100 [&_code]:px-1 [&_code]:py-0.5 [&_code]:text-sm [&_img]:block [&_img]:mx-auto [&_img]:max-w-full [&_img]:h-auto [&_img]:rounded-lg [&_pre]:overflow-x-auto [&_pre]:rounded-lg [&_pre]:bg-slate-100 dark:[&_pre]:bg-slate-900 [&_pre]:text-slate-900 dark:[&_pre]:text-slate-100 [&_pre]:p-4 [&_table]:w-full [&_td]:border [&_td]:border-black/10 dark:[&_td]:border-white/10 [&_td]:px-3 [&_td]:py-2 [&_th]:border [&_th]:border-black/10 dark:[&_th]:border-white/10 [&_th]:bg-black/3 dark:[&_th]:bg-white/5 [&_th]:px-3 [&_th]:py-2"
         dangerouslySetInnerHTML={{ __html: htmlWithIds }}
       />
     </article>

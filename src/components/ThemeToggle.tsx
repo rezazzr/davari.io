@@ -2,22 +2,15 @@
 
 import { useEffect, useState } from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
+import { useTheme } from "@/hooks/useTheme";
 
 export default function ThemeToggle() {
-  const [isDark, setIsDark] = useState(false);
+  const { isDark, toggle } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
-    setIsDark(document.documentElement.classList.contains("dark"));
   }, []);
-
-  const toggle = () => {
-    const next = !isDark;
-    setIsDark(next);
-    document.documentElement.classList.toggle("dark", next);
-    localStorage.setItem("theme", next ? "dark" : "light");
-  };
 
   if (!mounted) return <div className="h-8 w-8" />;
 

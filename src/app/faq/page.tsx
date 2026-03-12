@@ -4,6 +4,8 @@ import { qas } from "@/data/qas";
 export const metadata: Metadata = {
   title: "FAQ",
   description: "Frequently asked questions.",
+  alternates: { canonical: "/faq" },
+  openGraph: { title: "FAQ | Reza Davari", description: "Frequently asked questions.", url: "/faq" },
 };
 
 export default function FaqPage() {
