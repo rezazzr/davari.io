@@ -18,6 +18,18 @@ export async function generateMetadata({
   return {
     title: meta.title,
     description: meta.excerpt,
+    openGraph: {
+      title: meta.title,
+      description: meta.excerpt,
+      type: "article",
+      publishedTime: meta.date,
+      tags: meta.tags,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: meta.title,
+      description: meta.excerpt,
+    },
   };
 }
 
