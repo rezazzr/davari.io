@@ -30,3 +30,16 @@ next-env.d.ts
 
 # Debug
 npm-debug.log*
+
+# LaTeX intermediate files (keep .pdf)
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.dpth
+*.md5
+*.auxlock

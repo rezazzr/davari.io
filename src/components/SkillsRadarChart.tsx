@@ -69,7 +69,9 @@ export default function SkillsRadarChart() {
   return (
     <div className="mx-auto max-w-md">
       <h2 className="mb-4 text-xl font-bold">Skills</h2>
-      <Radar data={data} options={options} />
+      <div role="img" aria-label={`Skills radar chart: ${skills.aspects.map((s, i) => `${s} ${skills.percentages[i]}%`).join(", ")}`}>
+        <Radar data={data} options={options} />
+      </div>
     </div>
   );
 }

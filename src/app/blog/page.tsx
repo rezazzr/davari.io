@@ -12,9 +12,7 @@ export default function BlogPage() {
 
   return (
     <div>
-      <h1 className="text-2xl font-bold">
-        <span style={{ color: "#F36170" }}>Blog</span>
-      </h1>
+      <h1 className="text-2xl font-bold text-heading">Blog</h1>
 
       <div className="mt-8 space-y-6">
         {posts.map((post) => (

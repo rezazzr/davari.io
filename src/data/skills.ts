@@ -1,16 +1,16 @@
 export const skills = {
   label: "Ability",
   aspects: [
-    "C++",
+    "C",
     "Python",
     "Leadership",
     "PyTorch",
     "TensorFlow",
-    "C",
+    "C#",
     "Keras",
-    "HTML",
+    "TypeScript",
     "Java",
     "JavaScript",
   ],
-  percentages: [55, 95, 90, 95, 95, 80, 95, 75, 70, 80],
+  percentages: [55, 95, 95, 95, 80, 80, 80, 80, 75, 80],
 } as const;

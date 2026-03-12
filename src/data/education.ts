@@ -14,6 +14,7 @@ export const education: TimelineItem[] = [
               <ul>
                 <li> Concordia Merit Scholarship (2021) </li>
                 <li> Graduate Doctoral Incentive Fellowship (2021) </li>
+                <li> Concordia University Conference and Exposition Award (2022) </li>
               </ul>
           </li>
         </ul>`,

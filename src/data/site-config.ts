@@ -14,7 +14,7 @@ export const siteConfig = {
 
   owner: {
     name: "Reza Davari",
-    job: '<span style="color: #8d7edc">Senior Applied Scientist @</span> <a href="https://www.microsoft.com/en-us" target="_blank" style="color: #42b983; text-decoration: none; font-weight: 500">Microsoft</a>',
+    job: '<span class="text-secondary dark:text-[#b8a3e0]">Senior Applied Scientist @</span> <a href="https://www.microsoft.com/en-us" target="_blank" class="text-primary dark:text-[#7fd47d]" style="text-decoration: none; font-weight: 500">Microsoft</a>',
     bio: "AI enthusiast, currently focused on Agentic Systems, Multimodal Models, and Continual Learning. A watermelon connoisseur. Based in Redmond, WA.",
     avatar: "/assets/img/reza_avatar.jpg",
   },
@@ -27,6 +27,6 @@ export const siteConfig = {
   },
 
   analytics: {
-    gaId: "UA-148531218-1",
+    gaId: "G-3ME7D3DYYZ",
   },
 } as const;

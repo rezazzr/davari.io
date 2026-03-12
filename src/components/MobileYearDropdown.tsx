@@ -20,27 +20,21 @@ export default function MobileYearDropdown({ years }: MobileYearDropdownProps) {
   return (
     <div className="relative lg:hidden">
       <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 border"
-        style={{
-          borderColor: "#42b983",
-          color: "#42b983",
-        }}
+        onClick={() => setIsOpen((prev) => !prev)}
+        className="px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 border border-primary text-primary"
       >
         Jump to year ▼
       </button>
 
       {isOpen && (
         <div
-          className="absolute top-full mt-2 left-0 bg-surface border rounded-lg shadow-lg z-20"
-          style={{ borderColor: "#42b983" }}
+          className="absolute top-full mt-2 left-0 bg-surface border border-primary rounded-lg shadow-lg z-20"
         >
           {years.map((year) => (
             <button
               key={year}
               onClick={() => handleSelect(year)}
-              className="w-full text-left px-4 py-2 text-sm hover:bg-primary/10 first:rounded-t-lg last:rounded-b-lg transition-colors"
-              style={{ color: "#42b983" }}
+              className="w-full text-left px-4 py-2 text-sm text-primary hover:bg-primary/10 first:rounded-t-lg last:rounded-b-lg transition-colors"
             >
               {year}
             </button>
