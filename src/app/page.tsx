@@ -5,20 +5,24 @@ import { education } from "@/data/education";
 import { teachingExp } from "@/data/teaching-exp";
 import SkillsRadarChart from "@/components/SkillsRadarChart";
 import Timeline from "@/components/Timeline";
+import ParticleNetwork from "@/components/ParticleNetwork";
 
 export default function HomePage() {
   return (
     <div className="space-y-12">
       <div className="flex flex-col gap-8 lg:flex-row">
         <div className="flex flex-col items-center lg:w-7/12">
-          <Image
-            src="/assets/img/reza_profile.png"
-            alt={siteConfig.owner.name}
-            width={320}
-            height={320}
-            className="rounded-2xl"
-            priority
-          />
+          <div className="relative inline-block">
+            <ParticleNetwork />
+            <Image
+              src="/assets/img/reza_profile.png"
+              alt={siteConfig.owner.name}
+              width={320}
+              height={320}
+              className="rounded-2xl"
+              priority
+            />
+          </div>
           <div className="mt-6">
             <h2 className="text-xl font-bold">About</h2>
             <p className="mt-2 leading-relaxed text-text-muted">
@@ -54,12 +58,12 @@ export default function HomePage() {
 
       <div className="flex flex-col gap-12 lg:flex-row">
         <div className="lg:w-7/12">
-          <Timeline title="Career" items={careers} />
+          <Timeline animated title="Career" items={careers} />
         </div>
 
         <div className="space-y-12 lg:w-5/12">
-          <Timeline title="Education" items={education} />
-          <Timeline title="Teaching Experience" items={teachingExp} />
+          <Timeline animated title="Education" items={education} />
+          <Timeline animated title="Teaching Experience" items={teachingExp} />
         </div>
       </div>
     </div>
