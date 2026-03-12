@@ -54,7 +54,6 @@ export default function ParticleNetwork({ imageSrc = "/assets/img/reza_profile.p
 
     const isMobile = () => window.innerWidth < MOBILE_BREAKPOINT;
 
-    const getPairCount = () => isMobile() ? 12 : 25;
 
     const resize = () => {
       const parent = canvas.parentElement;
@@ -73,43 +72,47 @@ export default function ParticleNetwork({ imageSrc = "/assets/img/reza_profile.p
       return { r: imageData.data[i], g: imageData.data[i + 1], b: imageData.data[i + 2] };
     };
 
+    // Ring band: particles live in an annular region around the image edge
+    const INNER_RATIO = 0.35; // how far inside the image half-size
+    const OUTER_RATIO = 0.30; // how far outside the image half-size
+
+    let ringInner = 0;
+    let ringOuter = 0;
+    let cx = 0;
+    let cy = 0;
+
+    const updateRing = () => {
+      cx = canvas.width / 2;
+      cy = canvas.height / 2;
+      const halfSize = Math.min(canvas.width, canvas.height) / 2;
+      ringInner = halfSize * (1 - INNER_RATIO);
+      ringOuter = halfSize * (1 + OUTER_RATIO);
+    };
+
     const createParticles = () => {
       particles = [];
-      const pairCount = getPairCount();
+      updateRing();
+      const total = isMobile() ? 24 : 50;
+      const scale = canvas.height / imgH;
 
-      for (let i = 0; i < pairCount; i++) {
-        const imgOffsetX = (canvas.width - imgW * (canvas.height / imgH)) / 2;
-        const scale = canvas.height / imgH;
-        const displayW = imgW * scale;
+      for (let i = 0; i < total; i++) {
+        const angle = Math.random() * Math.PI * 2;
+        const radius = ringInner + Math.random() * (ringOuter - ringInner);
+        const px = cx + Math.cos(angle) * radius;
+        const py = cy + Math.sin(angle) * radius;
 
-        const canvasImgX = imgOffsetX + Math.random() * displayW;
-        const canvasImgY = Math.random() * canvas.height;
-        const srcX = (canvasImgX - imgOffsetX) / scale;
-        const srcY = canvasImgY / scale;
+        // Sample color from image at this position
+        const imgOffsetX = (canvas.width - imgW * scale) / 2;
+        const srcX = (px - imgOffsetX) / scale;
+        const srcY = py / scale;
         const color = samplePixel(srcX, srcY);
 
         particles.push({
-          id: particles.length,
-          x: canvasImgX,
-          y: canvasImgY,
-          vx: (Math.random() - 0.5) * 0.3,
-          vy: (Math.random() - 0.5) * 0.3,
-          color,
-          cellX: 0,
-          cellY: 0,
-        });
-
-        const angle = Math.random() * Math.PI * 2;
-        const minR = Math.min(canvas.width, canvas.height) * 0.4;
-        const maxR = Math.min(canvas.width, canvas.height) * 0.5;
-        const radius = minR + Math.random() * (maxR - minR);
-
-        particles.push({
-          id: particles.length,
-          x: canvas.width / 2 + Math.cos(angle) * radius,
-          y: canvas.height / 2 + Math.sin(angle) * radius,
-          vx: (Math.random() - 0.5) * 0.5,
-          vy: (Math.random() - 0.5) * 0.5,
+          id: i,
+          x: px,
+          y: py,
+          vx: (Math.random() - 0.5) * 0.4,
+          vy: (Math.random() - 0.5) * 0.4,
           color,
           cellX: 0,
           cellY: 0,
@@ -152,12 +155,25 @@ export default function ParticleNetwork({ imageSrc = "/assets/img/reza_profile.p
       const connDistSq = CONNECTION_DISTANCE * CONNECTION_DISTANCE;
       const n = particles.length;
 
-      // Update positions
+      // Update positions — constrain to ring band
       for (const p of particles) {
         p.x += p.vx;
         p.y += p.vy;
-        if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
-        if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+        const dx = p.x - cx;
+        const dy = p.y - cy;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < ringInner || dist > ringOuter) {
+          // Reflect velocity radially
+          const nx = dx / dist;
+          const ny = dy / dist;
+          const dot = p.vx * nx + p.vy * ny;
+          p.vx -= 2 * dot * nx;
+          p.vy -= 2 * dot * ny;
+          // Push back inside the ring
+          const clampedDist = Math.max(ringInner, Math.min(dist, ringOuter));
+          p.x = cx + nx * clampedDist;
+          p.y = cy + ny * clampedDist;
+        }
       }
 
       // Build spatial hash
