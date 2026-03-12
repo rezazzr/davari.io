@@ -37,3 +37,70 @@ body {
   --color-text: rgba(255, 255, 255, 0.87);
   --color-text-muted: rgba(255, 255, 255, 0.6);
 }
+
+/* View Transitions API */
+::view-transition-old(main-content) {
+  animation: fade-out 150ms ease-in;
+}
+
+::view-transition-new(main-content) {
+  animation: fade-in 200ms ease-out;
+}
+
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 11pt;
+  }
+
+  /* Hide non-essential UI */
+  nav,
+  aside,
+  footer,
+  button,
+  .scroll-to-top,
+  [data-theme-toggle] {
+    display: none !important;
+  }
+
+  /* Sidebar becomes hidden, main content takes full width */
+  .md\:fixed {
+    position: static !important;
+    display: none !important;
+  }
+
+  .md\:ml-64 {
+    margin-left: 0 !important;
+  }
+
+  /* Ensure links show their URL */
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+  }
+
+  /* Clean card styling */
+  [class*="rounded"] {
+    border: 1px solid #ddd !important;
+    box-shadow: none !important;
+  }
+
+  /* Avoid page breaks inside cards/sections */
+  article,
+  section,
+  [class*="card"] {
+    break-inside: avoid;
+  }
+}
