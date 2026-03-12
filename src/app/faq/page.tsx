@@ -9,9 +9,7 @@ export const metadata: Metadata = {
 export default function FaqPage() {
   return (
     <div>
-      <h1 className="text-2xl font-bold">
-        <span style={{ color: "#F36170" }}>FAQ</span>
-      </h1>
+      <h1 className="text-2xl font-bold text-heading">FAQ</h1>
 
       <div className="mt-8 space-y-8">
         {qas.map((qa, index) => (
