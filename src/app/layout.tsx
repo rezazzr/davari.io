@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+import { siteConfig } from "@/data/site-config";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -18,24 +20,38 @@ const robotoMono = Roboto_Mono({
 export const metadata: Metadata = {
   title: {
     default: "Reza Davari",
-    template: "%s | Reza Davari", // e.g. "Publications | Reza Davari"
+    template: "%s | Reza Davari",
   },
   description: "Reza's notes and projects.",
-  keywords: [
-    "Mohammad Reza Davari",
-    "Reza Davari",
-    "Machine Learning",
-    "NLP",
-    "AI",
-    "Artificial Intelligence",
-  ],
+  keywords: [...siteConfig.keywords],
+  icons: {
+    icon: "/assets/img/monkey_logo.png",
+    apple: "/assets/img/monkey_logo.png",
+  },
+  metadataBase: new URL(siteConfig.url),
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteConfig.url,
+    siteName: siteConfig.title,
+    title: "Reza Davari",
+    description: siteConfig.description,
+    images: [{ url: "/assets/img/reza_profile.png", width: 320, height: 320, alt: "Reza Davari" }],
+  },
+  twitter: {
+    card: "summary",
+    creator: `@${siteConfig.social.twitter}`,
+    title: "Reza Davari",
+    description: siteConfig.description,
+    images: ["/assets/img/reza_profile.png"],
+  },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+interface RootLayoutProps {
+  readonly children: React.ReactNode;
+}
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
@@ -61,6 +77,14 @@ export default function RootLayout({
         </div>
 
         <ScrollToTop />
+
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.analytics.gaId}`}
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${siteConfig.analytics.gaId}');`}
+        </Script>
       </body>
     </html>
   );
