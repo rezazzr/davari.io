@@ -27,6 +27,7 @@ export default function PublicationCard({ publication, priority = false }: Publi
           alt={publication.name}
           width={320}
           height={320}
+          loading={priority ? "eager" : "lazy"}
           priority={priority}
           className="rounded-lg"
           style={{ maxHeight: "320px", objectFit: "contain" }}
@@ -75,17 +76,15 @@ export default function PublicationCard({ publication, priority = false }: Publi
           />
         </div>
 
-        {openSection === "abstract" && (
+        {openSection !== null && (
           <div className="mt-3 rounded-lg border border-black/10 dark:border-white/10 bg-black/2 dark:bg-white/5 p-4">
-            <p className="text-sm leading-relaxed">{publication.descr}</p>
-          </div>
-        )}
-
-        {openSection === "cite" && (
-          <div className="mt-3 rounded-lg border border-black/10 dark:border-white/10 bg-black/2 dark:bg-white/5 p-4">
-            <pre className="overflow-x-auto whitespace-pre-wrap font-mono text-xs">
-              {publication.cite}
-            </pre>
+            {openSection === "abstract" ? (
+              <p className="text-sm leading-relaxed">{publication.descr}</p>
+            ) : (
+              <pre className="overflow-x-auto whitespace-pre-wrap font-mono text-xs">
+                {publication.cite}
+              </pre>
+            )}
           </div>
         )}
       </div>

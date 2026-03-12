@@ -15,6 +15,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           alt={project.name}
           width={200}
           height={200}
+          loading="lazy"
           className={project.round ? "rounded-full" : "rounded-lg"}
           style={{ objectFit: "contain" }}
         />
@@ -22,7 +23,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
       <div className="flex-1">
         <h3 className="text-lg font-semibold">{project.name}</h3>
-        <p
+        <div
           className="mt-2 text-sm leading-relaxed text-text-muted [&_a]:text-primary [&_a]:underline [&_li]:ml-4 [&_li]:list-decimal [&_ol]:mt-1"
           dangerouslySetInnerHTML={{ __html: project.descr }}
         />
