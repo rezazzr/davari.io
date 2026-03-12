@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import {
   Chart as ChartJS,
   RadialLinearScale,
@@ -11,23 +10,12 @@ import {
 } from "chart.js";
 import { Radar } from "react-chartjs-2";
 import { skills } from "@/data/skills";
+import { useTheme } from "@/hooks/useTheme";
 
 ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip);
 
 export default function SkillsRadarChart() {
-  const [isDark, setIsDark] = useState(false);
-
-  useEffect(() => {
-    const check = () =>
-      setIsDark(document.documentElement.classList.contains("dark"));
-    check();
-    const observer = new MutationObserver(check);
-    observer.observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ["class"],
-    });
-    return () => observer.disconnect();
-  }, []);
+  const { isDark } = useTheme();
 
   const textColor = isDark ? "rgba(255,255,255,0.7)" : "rgba(0,0,0,0.6)";
   const gridColor = isDark ? "rgba(255,255,255,0.1)" : "rgba(0,0,0,0.1)";
