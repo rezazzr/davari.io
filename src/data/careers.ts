@@ -9,7 +9,7 @@ export const careers: TimelineItem[] = [
     descr: `<br>
     <ul>
     <li>Developing evaluation metrics and framework for agentic workflows</li>
-    <li>Implementing agentic approaches for interactive information retrieval flows</li>
+    <li>Implementing agentic approaches for information retrieval, document interaction, and context management</li>
     <li>Analyzing and optimizing agentic flows</li>
     </ul>`,
     logoFile: "msft_logo.png",
@@ -21,7 +21,7 @@ export const careers: TimelineItem[] = [
     job: "Applied Scientist Intern",
     descr: `<br>
     <ul>
-    <li>Developed a novel method for system prompt migration and optimization, achieving SOTA on multiple NLP benchmarks</li>
+    <li>Developed a novel method for LLM system prompt migration and optimization, achieving SOTA on multiple NLP benchmarks</li>
     <li>Implemented automatic LLM-based metric creation and metric evaluation given a target feature</li>
     <li>Observed product lift for prompt migration, reducing manual migration time</li>
     </ul>`,
@@ -44,7 +44,7 @@ export const careers: TimelineItem[] = [
     name: "Eiffel MedTech",
     link: "https://www.eiffelmedtech.com/?lang=en",
     date: "Mar 2023 - Oct 2023",
-    job: "Data Scientist",
+    job: "Machine Learning Project Contractor",
     descr: `<br>
     <ul>
     <li>Developed an EOS X-ray image processing pipeline for 3D lower limb point cloud reconstruction, including bone and prosthetic segmentation</li>
@@ -94,7 +94,7 @@ export const careers: TimelineItem[] = [
     date: "Sep 2020 - Jun 2021",
     job: "ML Team Lead",
     descr: `<br><ul>
-    <li>Led a group of 5 ML Scientist and Engineers on several NLP projects</li>
+    <li>Led a group of 6 ML Scientist and Engineers on several NLP projects</li>
     <li>Collaborated with the product managers to plan road maps and communicate with customers/stakeholders</li>
     <li>Researched and implemented multi-task learning models to improve information flow between tasks and reduce resource consumption</li>
     <li>Researched and implemented an extractive Question Answering system for clients with minimally labeled data</li>
