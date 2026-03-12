@@ -5,6 +5,8 @@ import PublicationSearch from "@/components/PublicationSearch";
 export const metadata: Metadata = {
   title: "Publication",
   description: "Reza's publications.",
+  alternates: { canonical: "/publication" },
+  openGraph: { title: "Publications | Reza Davari", description: "Reza's publications.", url: "/publication" },
 };
 
 function extractYear(publication: (typeof publications)[0]): number {
