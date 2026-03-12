@@ -38,16 +38,30 @@ export default function YearNavigation({ years }: YearNavigationProps) {
     };
   }, [years]);
 
+  const handleKeyDown = (e: React.KeyboardEvent, index: number) => {
+    let nextIndex = index;
+    if (e.key === "ArrowDown") nextIndex = Math.min(index + 1, years.length - 1);
+    else if (e.key === "ArrowUp") nextIndex = Math.max(index - 1, 0);
+    else if (e.key === "Home") nextIndex = 0;
+    else if (e.key === "End") nextIndex = years.length - 1;
+    else return;
+
+    e.preventDefault();
+    const links = e.currentTarget.parentElement?.querySelectorAll("a");
+    (links?.[nextIndex] as HTMLElement)?.focus();
+  };
+
   return (
     <aside className="hidden lg:flex flex-col gap-4 sticky top-8 h-fit">
-      <div className="text-xs font-semibold text-text-muted uppercase tracking-wider">
+      <div className="text-xs font-semibold text-text-muted uppercase tracking-wider" id="year-nav-label">
         Years
       </div>
-      <nav className="flex flex-col gap-1">
-        {years.map((year) => (
+      <nav className="flex flex-col gap-1" role="navigation" aria-labelledby="year-nav-label">
+        {years.map((year, i) => (
           <a
             key={year}
             href={`#year-${year}`}
+            onKeyDown={(e) => handleKeyDown(e, i)}
             className={`py-1.5 px-3 rounded-md text-sm transition-colors ${
               activeYear === year
                 ? "bg-primary/10 text-primary font-semibold"
