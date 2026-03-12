@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback, useRef, useEffect } from "react";
 import Image from "next/image";
-import { FaFilePdf, FaTrophy } from "react-icons/fa";
+import { FaFilePdf, FaTrophy, FaCopy, FaCheck } from "react-icons/fa";
 import CollapsibleButton from "./CollapsibleSection";
 import TiltCard from "./TiltCard";
 import type { Publication } from "@/data/publications";
@@ -16,9 +16,33 @@ interface PublicationCardProps {
 
 export default function PublicationCard({ publication, priority = false }: PublicationCardProps) {
   const [openSection, setOpenSection] = useState<OpenSection>(null);
+  const [copied, setCopied] = useState(false);
+  const copyTimerRef = useRef<ReturnType<typeof setTimeout>>(undefined);
+
+  useEffect(() => {
+    return () => clearTimeout(copyTimerRef.current);
+  }, []);
 
   const toggle = (section: OpenSection) =>
     setOpenSection((prev) => (prev === section ? null : section));
+
+  const copyCitation = useCallback(async () => {
+    try {
+      await navigator.clipboard.writeText(publication.cite);
+    } catch {
+      const ta = document.createElement("textarea");
+      ta.value = publication.cite;
+      ta.style.position = "fixed";
+      ta.style.opacity = "0";
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand("copy");
+      document.body.removeChild(ta);
+    }
+    setCopied(true);
+    clearTimeout(copyTimerRef.current);
+    copyTimerRef.current = setTimeout(() => setCopied(false), 2000);
+  }, [publication.cite]);
 
   return (
     <TiltCard className="rounded-xl border border-black/5 dark:border-white/5 bg-surface p-6 shadow-sm transition-shadow hover:shadow-md">
@@ -83,9 +107,18 @@ export default function PublicationCard({ publication, priority = false }: Publi
               {openSection === "abstract" ? (
                 <p className="text-sm leading-relaxed">{publication.descr}</p>
               ) : (
-                <pre className="overflow-x-auto whitespace-pre-wrap font-mono text-xs">
-                  {publication.cite}
-                </pre>
+                <div className="relative">
+                  <button
+                    onClick={copyCitation}
+                    className="absolute right-0 top-0 inline-flex items-center gap-1 rounded-md px-2 py-1 text-xs font-medium text-text-muted transition-colors hover:text-text"
+                    aria-label="Copy citation"
+                  >
+                    {copied ? <><FaCheck size={12} className="text-green-500" /> Copied</> : <><FaCopy size={12} /> Copy</>}
+                  </button>
+                  <pre className="overflow-x-auto whitespace-pre-wrap font-mono text-xs pr-16">
+                    {publication.cite}
+                  </pre>
+                </div>
               )}
             </div>
           )}
