@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
 import { FaSearch } from "react-icons/fa";
 import type { Publication } from "@/data/publications";
 import PublicationCard from "./PublicationCard";
@@ -13,25 +13,42 @@ interface PublicationSearchProps {
   sortedYears: number[];
 }
 
+function useDebouncedValue<T>(value: T, delay: number): T {
+  const [debounced, setDebounced] = useState(value);
+  const timerRef = useRef<ReturnType<typeof setTimeout>>(undefined);
+
+  useEffect(() => {
+    timerRef.current = setTimeout(() => setDebounced(value), delay);
+    return () => clearTimeout(timerRef.current);
+  }, [value, delay]);
+
+  return debounced;
+}
+
 export default function PublicationSearch({
   publications,
   publicationsByYear,
   sortedYears,
 }: PublicationSearchProps) {
   const [query, setQuery] = useState("");
+  const debouncedQuery = useDebouncedValue(query, 250);
 
-  const lowerQuery = query.toLowerCase().trim();
+  const lowerQuery = debouncedQuery.toLowerCase().trim();
   const isSearching = lowerQuery.length > 0;
 
-  const filteredPubs = isSearching
-    ? publications.filter(
-        (pub) =>
-          pub.name.toLowerCase().includes(lowerQuery) ||
-          pub.descr.toLowerCase().includes(lowerQuery) ||
-          pub.published.toLowerCase().includes(lowerQuery) ||
-          pub.cite.toLowerCase().includes(lowerQuery)
-      )
-    : [];
+  const filteredPubs = useMemo(
+    () =>
+      isSearching
+        ? publications.filter(
+            (pub) =>
+              pub.name.toLowerCase().includes(lowerQuery) ||
+              pub.descr.toLowerCase().includes(lowerQuery) ||
+              pub.published.toLowerCase().includes(lowerQuery) ||
+              pub.cite.toLowerCase().includes(lowerQuery)
+          )
+        : [],
+    [publications, lowerQuery]
+  );
 
   return (
     <>
