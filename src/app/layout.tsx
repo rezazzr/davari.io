@@ -5,16 +5,21 @@ import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+import PageTransition from "@/components/PageTransition";
 import { siteConfig } from "@/data/site-config";
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
+  preload: true,
 });
 
 const robotoMono = Roboto_Mono({
   variable: "--font-roboto-mono",
   subsets: ["latin"],
+  display: "swap",
+  preload: true,
 });
 
 export const metadata: Metadata = {
@@ -52,11 +57,36 @@ interface RootLayoutProps {
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Reza Davari",
+    url: siteConfig.url,
+    image: `${siteConfig.url}/assets/img/reza_profile.png`,
+    jobTitle: "Senior Applied Scientist",
+    worksFor: { "@type": "Organization", name: "Microsoft", url: "https://www.microsoft.com" },
+    alumniOf: [
+      { "@type": "CollegeOrUniversity", name: "Concordia University" },
+      { "@type": "ResearchOrganization", name: "Mila - Quebec AI Institute" },
+    ],
+    sameAs: [
+      `https://twitter.com/${siteConfig.social.twitter}`,
+      `https://github.com/${siteConfig.social.github}`,
+      `https://linkedin.com/in/${siteConfig.social.linkedin}`,
+      `https://scholar.google.com/citations?user=${siteConfig.social.googleScholar}`,
+    ],
+    knowsAbout: ["Machine Learning", "NLP", "Artificial Intelligence", "Continual Learning", "Agentic Systems"],
+  };
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${inter.variable} ${robotoMono.variable} font-sans antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){try{var t=localStorage.getItem("theme");if(t==="dark"||(!t&&matchMedia("(prefers-color-scheme:dark)").matches)){document.documentElement.classList.add("dark")}}catch(e){}})()`,
@@ -70,7 +100,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
           <div className="flex min-h-screen flex-1 flex-col md:ml-64">
             <main className="flex-1 px-6 py-8 md:px-12 md:py-12">
-              {children}
+              <PageTransition>{children}</PageTransition>
             </main>
             <Footer />
           </div>
