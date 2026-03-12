@@ -7,7 +7,7 @@ export const qas: QA[] = [
   {
     question: "How can I get an update when a new post comes out?",
     answer:
-      'I post about my new post on this Twitter <a href="https://twitter.com/davari_reza" target="_blank">@davari_reza</a> account. There is also a <a href="/feed.xml" target="_blank">RSS feed</a>.',
+      'I post about my new post on this Twitter <a href="https://twitter.com/davari_reza" target="_blank">@davari_reza</a> account.',
   },
   {
     question: "What tool do you use for plotting?",
