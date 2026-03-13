@@ -49,7 +49,7 @@ export default function PublicationSearch({
               pub.cite.toLowerCase().includes(lowerQuery)
           )
         : [],
-    [publications, lowerQuery]
+    [publications, lowerQuery, isSearching]
   );
 
   return (

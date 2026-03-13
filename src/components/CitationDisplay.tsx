@@ -13,7 +13,7 @@ function parseBibtex(citation: string): {
   key: string;
   fields: Array<[string, string]>;
 } | null {
-  const headerMatch = citation.match(/@(\w+)\{\s*([^,\s]+)\s*,/s);
+  const headerMatch = citation.match(/@(\w+)\{\s*([^,\s]+)\s*,/);
   if (!headerMatch) return null;
 
   const [, type, key] = headerMatch;
@@ -66,12 +66,10 @@ export default function CitationDisplay({ citation }: CitationDisplayProps) {
   const { isDark } = useTheme();
 
   const parsed = useMemo(() => parseBibtex(citation), [citation]);
-  if (!parsed) return <pre className="whitespace-pre-wrap">{citation}</pre>;
 
-  const { type, key, fields } = parsed;
-
+  const fields = useMemo(() => parsed?.fields ?? [], [parsed]);
   const maxKeyLen = useMemo(
-    () => Math.max(...fields.map(([k]) => k.length)),
+    () => (fields.length ? Math.max(...fields.map(([k]) => k.length)) : 0),
     [fields]
   );
 
@@ -85,6 +83,10 @@ export default function CitationDisplay({ citation }: CitationDisplayProps) {
     }),
     [isDark]
   );
+
+  if (!parsed) return <pre className="whitespace-pre-wrap">{citation}</pre>;
+
+  const { type, key } = parsed;
 
   return (
     <pre className="whitespace-pre-wrap text-xs leading-relaxed">
