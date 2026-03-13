@@ -25,7 +25,7 @@ interface ParticleNetworkProps {
 }
 
 const CONNECTION_DISTANCE = 130;
-const MOBILE_BREAKPOINT = 768;
+const PARTICLE_COUNT = 24;
 
 export default function ParticleNetwork({ imageSrc = "/assets/img/reza_profile.png" }: ParticleNetworkProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -51,8 +51,6 @@ export default function ParticleNetwork({ imageSrc = "/assets/img/reza_profile.p
     let gridCols = 0;
     let gridRows = 0;
     const grid: Map<number, Particle[]> = new Map();
-
-    const isMobile = () => window.innerWidth < MOBILE_BREAKPOINT;
 
     const resize = () => {
       const parent = canvas.parentElement;
@@ -91,7 +89,7 @@ export default function ParticleNetwork({ imageSrc = "/assets/img/reza_profile.p
     const createParticles = () => {
       particles = [];
       updateRing();
-      const total = isMobile() ? 24 : 50;
+      const total = PARTICLE_COUNT;
       const scale = canvas.height / imgH;
 
       for (let i = 0; i < total; i++) {
