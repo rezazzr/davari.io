@@ -48,12 +48,12 @@ export default function MobileNavMenu() {
           />
 
           {/* Dropdown Menu */}
-          <nav className="absolute left-0 top-full z-50 mt-2 w-48 rounded-lg border border-black/10 bg-surface dark:border-white/10 dark:bg-surface shadow-xl">
+          <nav className="absolute left-0 top-full z-50 mt-2 w-40 rounded-lg border border-black/10 bg-surface dark:border-white/10 dark:bg-surface shadow-xl">
             <div className="space-y-1 p-2" onClick={handleNavClick}>
               <NavList />
             </div>
-            <div className="flex justify-center border-t border-black/10 px-3 py-2 dark:border-white/10">
-              <SocialLinks size={14} />
+            <div className="border-t border-black/10 px-3 py-3 dark:border-white/10">
+              <SocialLinks size={16} />
             </div>
           </nav>
         </>
