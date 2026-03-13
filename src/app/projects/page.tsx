@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { projects } from "@/data/projects";
 import ProjectCard from "@/components/ProjectCard";
+import RevealOnScroll from "@/components/RevealOnScroll";
+import { REVEAL_ANIMATION_DELAY_INCREMENT_MS } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -15,8 +17,10 @@ export default function ProjectsPage() {
       <h1 className="text-2xl font-bold text-heading">Selected Projects</h1>
 
       <div className="mt-8 space-y-8">
-        {projects.map((project) => (
-          <ProjectCard key={project.name} project={project} />
+        {projects.map((project, i) => (
+          <RevealOnScroll key={project.name} delay={i * REVEAL_ANIMATION_DELAY_INCREMENT_MS}>
+            <ProjectCard project={project} />
+          </RevealOnScroll>
         ))}
       </div>
     </div>

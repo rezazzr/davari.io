@@ -20,7 +20,7 @@ export default function CollapsibleButton({
   return (
     <button
       onClick={onClick}
-      className={`mr-2 mt-2 inline-flex items-center gap-1 rounded-md px-3 py-1.5 text-sm font-medium transition-colors ${variantStyles[variant]} ${isOpen ? "ring-2 ring-current/30" : ""}`}
+      className={`mr-2 mt-2 inline-flex items-center gap-1 rounded-md px-3 py-1.5 text-sm font-medium transition-all active:scale-95 ${variantStyles[variant]} ${isOpen ? "ring-2 ring-current/30" : ""}`}
     >
       {buttonLabel}
     </button>

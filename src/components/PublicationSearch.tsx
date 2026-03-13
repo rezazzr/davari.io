@@ -4,8 +4,10 @@ import { useState, useMemo, useEffect, useRef } from "react";
 import { FaSearch } from "react-icons/fa";
 import type { Publication } from "@/data/publications";
 import PublicationCard from "./PublicationCard";
+import RevealOnScroll from "./RevealOnScroll";
 import YearNavigation from "./YearNavigation";
 import MobileYearDropdown from "./MobileYearDropdown";
+import { REVEAL_ANIMATION_DELAY_INCREMENT_MS } from "@/lib/constants";
 
 interface PublicationSearchProps {
   publications: Publication[];
@@ -100,11 +102,12 @@ export default function PublicationSearch({
 
                   <div className="space-y-6 pl-0 lg:pl-8">
                     {publicationsByYear[year].map((pub, i) => (
-                      <PublicationCard
-                        key={pub.name}
-                        publication={pub}
-                        priority={i < 5}
-                      />
+                      <RevealOnScroll key={pub.name} delay={i * REVEAL_ANIMATION_DELAY_INCREMENT_MS}>
+                        <PublicationCard
+                          publication={pub}
+                          priority={i < 5}
+                        />
+                      </RevealOnScroll>
                     ))}
                   </div>
                 </div>

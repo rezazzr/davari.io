@@ -5,6 +5,7 @@ import Image from "next/image";
 import { FaFilePdf, FaTrophy, FaCopy, FaCheck } from "react-icons/fa";
 import CollapsibleButton from "./CollapsibleSection";
 import TiltCard from "./TiltCard";
+import CitationDisplay from "./CitationDisplay";
 import type { Publication } from "@/data/publications";
 
 type OpenSection = "abstract" | "cite" | null;
@@ -87,7 +88,7 @@ export default function PublicationCard({ publication, priority = false }: Publi
                 href={publication.paper}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-2 inline-flex items-center gap-1 rounded-md bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary transition-colors hover:bg-primary/20"
+                className="mt-2 inline-flex items-center gap-1 rounded-md bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary transition-all hover:bg-primary/20 active:scale-95"
               >
                 <FaFilePdf size={14} />
                 Paper
@@ -107,17 +108,17 @@ export default function PublicationCard({ publication, priority = false }: Publi
               {openSection === "abstract" ? (
                 <p className="text-sm leading-relaxed">{publication.descr}</p>
               ) : (
-                <div className="relative">
+                <div className="relative overflow-x-auto">
+                  <div className="pr-20">
+                    <CitationDisplay citation={publication.cite} />
+                  </div>
                   <button
                     onClick={copyCitation}
-                    className="absolute right-0 top-0 inline-flex items-center gap-1 rounded-md px-2 py-1 text-xs font-medium text-text-muted transition-colors hover:text-text"
+                    className="absolute right-4 bottom-4 inline-flex items-center gap-1 rounded-md px-2 py-1 text-xs font-medium text-text-muted transition-colors hover:text-text active:scale-95"
                     aria-label="Copy citation"
                   >
                     {copied ? <><FaCheck size={12} className="text-green-500" /> Copied</> : <><FaCopy size={12} /> Copy</>}
                   </button>
-                  <pre className="overflow-x-auto whitespace-pre-wrap font-mono text-xs pr-16">
-                    {publication.cite}
-                  </pre>
                 </div>
               )}
             </div>

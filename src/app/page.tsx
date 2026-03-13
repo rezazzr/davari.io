@@ -6,6 +6,7 @@ import { teachingExp } from "@/data/teaching-exp";
 import SkillsRadarChart from "@/components/SkillsRadarChart";
 import Timeline from "@/components/Timeline";
 import ParticleNetwork from "@/components/ParticleNetwork";
+import RevealOnScroll from "@/components/RevealOnScroll";
 
 export default function HomePage() {
   return (
@@ -23,7 +24,7 @@ export default function HomePage() {
               priority
             />
           </div>
-          <div className="mt-6">
+          <RevealOnScroll className="mt-6">
             <h2 className="text-xl font-bold">About</h2>
             <p className="mt-2 leading-relaxed text-text-muted">
               I am a Senior Applied Scientist at{" "}
@@ -48,12 +49,12 @@ export default function HomePage() {
               area and would like a starter, feel free to{" "}
               <a href={`mailto:${siteConfig.email}`} className="text-primary hover:underline">reach out</a> 😊
             </p>
-          </div>
+          </RevealOnScroll>
         </div>
 
-        <div className="lg:w-5/12">
+        <RevealOnScroll className="lg:w-5/12" delay={200}>
           <SkillsRadarChart />
-        </div>
+        </RevealOnScroll>
       </div>
 
       <div className="flex flex-col gap-12 lg:flex-row">

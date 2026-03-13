@@ -36,7 +36,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 rounded-md bg-black/5 dark:bg-white/5 px-3 py-1.5 text-sm font-medium transition-colors hover:bg-black/10 dark:hover:bg-white/10"
+                className="inline-flex items-center gap-1 rounded-md bg-black/5 dark:bg-white/5 px-3 py-1.5 text-sm font-medium transition-all hover:bg-black/10 dark:hover:bg-white/10 active:scale-95"
               >
                 <FaGithub size={14} />
                 GitHub
@@ -47,7 +47,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 href={project.fullReport}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 rounded-md bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary transition-colors hover:bg-primary/20"
+                className="inline-flex items-center gap-1 rounded-md bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary transition-all hover:bg-primary/20 active:scale-95"
               >
                 <FaFileAlt size={14} />
                 Report

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { getAllPosts } from "@/lib/posts";
+import BlogCard from "@/components/BlogCard";
+import { REVEAL_ANIMATION_DELAY_INCREMENT_MS } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -17,38 +18,16 @@ export default function BlogPage() {
       <h1 className="text-2xl font-bold text-heading">Blog</h1>
 
       <div className="mt-8 space-y-6">
-        {posts.map((post) => (
-          <Link
+        {posts.map((post, i) => (
+          <BlogCard
             key={post.slug}
-            href={`/blog/${post.slug}`}
-            className="block rounded-xl border border-black/5 dark:border-white/5 bg-surface p-6 transition-shadow hover:shadow-md"
-          >
-            <h2 className="text-lg font-semibold">{post.title}</h2>
-            <p className="mt-1 text-sm text-text-muted">
-              {new Date(post.date).toLocaleDateString("en-US", {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}
-            </p>
-            {post.tags.length > 0 && (
-              <div className="mt-2 flex flex-wrap gap-2">
-                {post.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="rounded-full bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            )}
-            {post.excerpt && (
-              <p className="mt-3 text-sm leading-relaxed text-text-muted">
-                {post.excerpt}
-              </p>
-            )}
-          </Link>
+            slug={post.slug}
+            title={post.title}
+            date={post.date}
+            tags={post.tags}
+            excerpt={post.excerpt}
+            delay={i * REVEAL_ANIMATION_DELAY_INCREMENT_MS}
+          />
         ))}
 
         {posts.length === 0 && (
