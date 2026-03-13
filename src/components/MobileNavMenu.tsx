@@ -28,14 +28,14 @@ export default function MobileNavMenu() {
   };
 
   return (
-    <div ref={menuRef} className="relative">
+    <div ref={menuRef} className="relative shrink-0">
       <button
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Toggle menu"
         aria-expanded={isOpen}
         className="rounded-lg p-2 text-text-muted transition-colors hover:bg-black/5 dark:hover:bg-white/5"
       >
-        <FaBars size={20} />
+        <FaBars size={18} />
       </button>
 
       {isOpen && (
@@ -47,11 +47,11 @@ export default function MobileNavMenu() {
           />
 
           {/* Dropdown Menu */}
-          <div className="absolute left-0 right-0 top-full z-50 mt-2 rounded-lg border border-black/10 bg-surface dark:border-white/10 dark:bg-surface shadow-lg">
-            <div className="px-2 py-2" onClick={handleNavClick}>
+          <nav className="absolute left-0 top-full z-50 mt-2 w-48 rounded-lg border border-black/10 bg-surface dark:border-white/10 dark:bg-surface shadow-xl">
+            <div className="space-y-1 p-2" onClick={handleNavClick}>
               <NavList />
             </div>
-          </div>
+          </nav>
         </>
       )}
     </div>
