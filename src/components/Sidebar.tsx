@@ -8,7 +8,7 @@ import TypewriterText from "./TypewriterText";
 
 export default function Sidebar() {
   return (
-    <aside className="flex h-full flex-col gap-6 p-6">
+    <aside className="hidden md:flex h-full flex-col gap-6 p-6">
       <div className="flex flex-col items-center gap-3 text-center">
         <Image
           src={siteConfig.owner.avatar}

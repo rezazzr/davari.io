@@ -26,7 +26,11 @@ const socialLinks = [
   },
 ];
 
-export default function SocialLinks() {
+interface SocialLinksProps {
+  size?: number;
+}
+
+export default function SocialLinks({ size = 20 }: SocialLinksProps = {}) {
   return (
     <div className="flex gap-4">
       {socialLinks.map((link) => (
@@ -36,9 +40,9 @@ export default function SocialLinks() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={link.label}
-          className="text-text-muted transition-colors hover:text-primary"
+          className="text-text-muted transition-all hover:text-primary hover:scale-110 active:scale-90"
         >
-          <link.icon size={20} />
+          <link.icon size={size} />
         </a>
       ))}
     </div>

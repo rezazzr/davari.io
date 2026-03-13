@@ -10,7 +10,8 @@ export const skills = {
     "Keras",
     "TypeScript",
     "Java",
+    "BS",
     "JavaScript",
   ],
-  percentages: [55, 95, 95, 95, 80, 80, 80, 80, 75, 80],
+  percentages: [55, 95, 95, 95, 80, 80, 80, 80, 75, 0,80],
 } as const;
