@@ -29,7 +29,7 @@ export default function SkillsRadarChart() {
       datasets: [
         {
           label: skills.label,
-          data: isVisible ? [...skills.percentages] : skills.percentages.map(() => 0),
+          data: isVisible ? skills.percentages : skills.percentages.map(() => 0),
           backgroundColor: "rgba(66, 185, 131, 0.15)",
           borderColor: "#42b983",
           pointBackgroundColor: "#42b983",
@@ -67,10 +67,15 @@ export default function SkillsRadarChart() {
     [textColor, gridColor, isVisible]
   );
 
+  const ariaLabel = useMemo(
+    () => `Skills radar chart: ${skills.aspects.map((s, i) => `${s} ${skills.percentages[i]}%`).join(", ")}`,
+    []
+  );
+
   return (
     <div ref={ref} className="mx-auto max-w-md">
       <h2 className="mb-4 text-xl font-bold">Skills</h2>
-      <div role="img" aria-label={`Skills radar chart: ${skills.aspects.map((s, i) => `${s} ${skills.percentages[i]}%`).join(", ")}`}>
+      <div role="img" aria-label={ariaLabel}>
         <Radar data={data} options={options} />
       </div>
     </div>
