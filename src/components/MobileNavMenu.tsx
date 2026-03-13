@@ -52,8 +52,8 @@ export default function MobileNavMenu() {
             <div className="space-y-1 p-2" onClick={handleNavClick}>
               <NavList />
             </div>
-            <div className="border-t border-black/10 p-3 dark:border-white/10">
-              <SocialLinks />
+            <div className="flex justify-center border-t border-black/10 px-3 py-2 dark:border-white/10">
+              <SocialLinks size={14} />
             </div>
           </nav>
         </>
