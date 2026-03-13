@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import NavList from "./NavList";
+import SocialLinks from "./SocialLinks";
 
 export default function MobileNavMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,6 +51,9 @@ export default function MobileNavMenu() {
           <nav className="absolute left-0 top-full z-50 mt-2 w-48 rounded-lg border border-black/10 bg-surface dark:border-white/10 dark:bg-surface shadow-xl">
             <div className="space-y-1 p-2" onClick={handleNavClick}>
               <NavList />
+            </div>
+            <div className="border-t border-black/10 p-3 dark:border-white/10">
+              <SocialLinks />
             </div>
           </nav>
         </>
