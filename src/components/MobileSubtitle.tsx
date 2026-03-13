@@ -22,8 +22,10 @@ export default function MobileSubtitle() {
 
   return (
     <div
-      className={`sticky top-16 z-40 bg-surface px-4 py-3 border-b border-black/10 dark:border-white/10 dark:bg-surface md:hidden transition-opacity duration-200 ${
-        isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
+      className={`sticky top-16 z-40 bg-surface px-4 py-3 border-b border-black/10 dark:border-white/10 dark:bg-surface md:hidden transition-all duration-300 ease-out ${
+        isVisible
+          ? "opacity-100 translate-y-0"
+          : "opacity-0 -translate-y-2 pointer-events-none"
       }`}
     >
       <p className="text-xs text-text-muted leading-relaxed">
