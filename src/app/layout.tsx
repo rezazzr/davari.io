@@ -3,6 +3,7 @@ import Script from "next/script";
 import { Inter, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
+import MobileHeader from "@/components/MobileHeader";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import PageTransition from "@/components/PageTransition";
@@ -97,7 +98,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
         />
 
         <div className="flex min-h-screen flex-col md:flex-row">
-          <div className="w-full shrink-0 border-b border-black/10 bg-surface dark:border-white/10 md:fixed md:inset-y-0 md:left-0 md:w-64 md:overflow-y-auto md:border-b-0 md:border-r">
+          <MobileHeader />
+          <div className="hidden md:block shrink-0 border-r border-black/10 bg-surface dark:border-white/10 md:fixed md:inset-y-0 md:left-0 md:w-64 md:overflow-y-auto">
             <Sidebar />
           </div>
 
