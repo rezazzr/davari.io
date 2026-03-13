@@ -16,9 +16,10 @@ export default function MobileHeader() {
         <div className="text-xs font-bold text-heading truncate">
           {siteConfig.owner.name}
         </div>
-        <div className="text-xs text-text-muted truncate">
-          Senior Applied Scientist @ Microsoft
-        </div>
+        <div
+          className="text-xs truncate"
+          dangerouslySetInnerHTML={{ __html: siteConfig.owner.job }}
+        />
       </div>
 
       {/* Action Buttons - Right */}
