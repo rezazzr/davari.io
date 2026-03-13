@@ -1,5 +1,6 @@
 "use client";
 
+import { useMemo } from "react";
 import { useTheme } from "@/hooks/useTheme";
 
 interface CitationDisplayProps {
@@ -64,19 +65,26 @@ function parseBibtex(citation: string): {
 export default function CitationDisplay({ citation }: CitationDisplayProps) {
   const { isDark } = useTheme();
 
-  const parsed = parseBibtex(citation);
+  const parsed = useMemo(() => parseBibtex(citation), [citation]);
   if (!parsed) return <pre className="whitespace-pre-wrap">{citation}</pre>;
 
   const { type, key, fields } = parsed;
-  const maxKeyLen = Math.max(...fields.map(([k]) => k.length));
 
-  const colors = {
-    type: isDark ? "#60a5fa" : "#2563eb",
-    citeKey: isDark ? "#22d3ee" : "#0891b2",
-    key: isDark ? "#fbbf24" : "#d97706",
-    punct: isDark ? "rgba(255,255,255,0.5)" : "rgba(0,0,0,0.45)",
-    value: isDark ? "rgba(255,255,255,0.85)" : "rgba(0,0,0,0.8)",
-  };
+  const maxKeyLen = useMemo(
+    () => Math.max(...fields.map(([k]) => k.length)),
+    [fields]
+  );
+
+  const colors = useMemo(
+    () => ({
+      type: isDark ? "#60a5fa" : "#2563eb",
+      citeKey: isDark ? "#22d3ee" : "#0891b2",
+      key: isDark ? "#fbbf24" : "#d97706",
+      punct: isDark ? "rgba(255,255,255,0.5)" : "rgba(0,0,0,0.45)",
+      value: isDark ? "rgba(255,255,255,0.85)" : "rgba(0,0,0,0.8)",
+    }),
+    [isDark]
+  );
 
   return (
     <pre className="whitespace-pre-wrap text-xs leading-relaxed">
