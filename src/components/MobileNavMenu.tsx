@@ -48,7 +48,7 @@ export default function MobileNavMenu() {
           />
 
           {/* Dropdown Menu */}
-          <nav className="absolute left-0 top-full z-50 mt-2 w-40 rounded-lg border border-black/10 bg-surface dark:border-white/10 dark:bg-surface shadow-xl">
+          <nav className="absolute left-0 top-full z-50 mt-2 w-36 rounded-lg border border-black/10 bg-surface dark:border-white/10 dark:bg-surface shadow-xl">
             <div className="space-y-1 p-2" onClick={handleNavClick}>
               <NavList />
             </div>
