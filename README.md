@@ -52,6 +52,12 @@ Push to `master` branch to trigger automatic GitHub Actions deployment to GitHub
 - Timeline components for experience/education
 - Table of contents for blog posts
 
+## Mobile Optimizations
+
+- **Header overflow handling:** Job title abbreviates to "Sr." on mobile and scrolls smoothly with marquee animation when text exceeds container width
+- **Radar chart responsiveness:** Skill labels scale down from 12px to 10px on narrow screens (<400px width) to prevent overlap
+- **Dynamic resize detection:** Components respond to orientation changes and window resizing in real-time
+
 ## License
 
 See [LICENSE.txt](LICENSE.txt) for details.

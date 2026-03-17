@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
   Chart as ChartJS,
   RadialLinearScale,
@@ -19,6 +19,15 @@ ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip);
 export default function SkillsRadarChart() {
   const { isDark } = useTheme();
   const { ref, isVisible } = useRevealOnScroll({ threshold: 0.3 });
+
+  const [labelSize, setLabelSize] = useState(12);
+
+  useEffect(() => {
+    const update = () => setLabelSize(window.innerWidth < 400 ? 10 : 12);
+    update();
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  }, []);
 
   const textColor = isDark ? "rgba(255,255,255,0.7)" : "rgba(0,0,0,0.6)";
   const gridColor = isDark ? "rgba(255,255,255,0.1)" : "rgba(0,0,0,0.1)";
@@ -55,7 +64,7 @@ export default function SkillsRadarChart() {
           min: 0,
           max: 100,
           ticks: { display: false },
-          pointLabels: { font: { size: 12 }, color: textColor },
+          pointLabels: { font: { size: labelSize }, color: textColor },
           grid: { color: gridColor },
           angleLines: { color: gridColor },
         },
@@ -64,7 +73,7 @@ export default function SkillsRadarChart() {
         legend: { display: false },
       },
     }),
-    [textColor, gridColor, isVisible]
+    [textColor, gridColor, isVisible, labelSize]
   );
 
   const ariaLabel = useMemo(

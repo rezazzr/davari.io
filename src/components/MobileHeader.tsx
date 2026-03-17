@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { FaFileDownload } from "react-icons/fa";
 import { siteConfig } from "@/data/site-config";
@@ -7,6 +8,26 @@ import MobileNavMenu from "./MobileNavMenu";
 import ThemeToggle from "./ThemeToggle";
 
 export default function MobileHeader() {
+  const jobRef = useRef<HTMLDivElement>(null);
+  const [scrollDistance, setScrollDistance] = useState(0);
+
+  useEffect(() => {
+    const el = jobRef.current;
+    if (!el) return;
+
+    const measure = () => {
+      const overflow = el.scrollWidth - el.clientWidth;
+      setScrollDistance(overflow > 0 ? -overflow : 0);
+    };
+
+    measure();
+    const observer = new ResizeObserver(measure);
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  const isOverflowing = scrollDistance < 0;
+
   return (
     <header className="sticky top-0 z-50 flex h-16 items-center justify-between gap-2 border-b border-black/10 bg-surface px-2 py-2 dark:border-white/10 dark:bg-surface md:hidden">
       {/* Hamburger Menu - Left */}
@@ -26,10 +47,23 @@ export default function MobileHeader() {
         <div className="text-xs font-bold text-heading truncate">
           {siteConfig.owner.name}
         </div>
-        <div
-          className="text-xs truncate"
-          dangerouslySetInnerHTML={{ __html: siteConfig.owner.job }}
-        />
+        <div className="overflow-hidden">
+          <div
+            ref={jobRef}
+            className="text-xs whitespace-nowrap"
+            style={
+              isOverflowing
+                ? {
+                    animation: "marquee-scroll 6s ease-in-out infinite",
+                    "--scroll-distance": `${scrollDistance}px`,
+                  } as React.CSSProperties
+                : undefined
+            }
+            dangerouslySetInnerHTML={{
+              __html: siteConfig.owner.jobShort,
+            }}
+          />
+        </div>
       </div>
 
       {/* Action Buttons - Right */}

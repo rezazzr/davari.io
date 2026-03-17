@@ -57,6 +57,13 @@ body {
   to { opacity: 1; }
 }
 
+/* Marquee scroll for overflowing text */
+@keyframes marquee-scroll {
+  0%, 15% { transform: translateX(0); }
+  50%, 65% { transform: translateX(var(--scroll-distance)); }
+  100% { transform: translateX(0); }
+}
+
 /* Responsive blog images (for raw <img> tags in MDX) */
 .responsive-img {
   max-width: min(600px, 100%);
