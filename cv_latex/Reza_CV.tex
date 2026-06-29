@@ -29,47 +29,8 @@
 \usepackage[left=0.35in,top=0.6in,right=0.35in,bottom=0.6in]{geometry} % Document margins
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
-
-% \pub{title}{authors + venue text}{short venue} — renders a publication entry
-\newcommand{\pub}[3]{\textbf{#1}\\{\small #2} {\small (\textbf{#3})}}
-
-% \logo{path} — renders a small logo to the left of the next line
+\newcommand{\pub}[3]{\textbf{#1}\\{\small #2} {\small (\textbf{#3})}} %title then authors + venue
 \newcommand{\logo}[1]{\hspace{-1.75em}\includegraphics[height=1.5em]{#1} \vspace{-2em}\\ }
-
-% \begin{company}{logo}{name}{location} ... \end{company}
-% Renders a work experience block with logo, company name, and location header.
-% Use \role{}{} and bullet lines inside.
-\newenvironment{company}[3]{%
-  \vspace{-.25em}%
-  \logo{figures/#1}%
-  \textbf{#2}\hfill {\em #3} \vspace{-0.5em}%
-  \begin{itemize}[label={}, leftmargin=0.6em]%
-}{%
-  \end{itemize}%
-}
-
-% \role{title}{dates} — renders a job title line with dates right-aligned
-\newcommand{\role}[2]{\item \textbf{\small #1} \hfill {\em #2}}
-
-% \edu{logo}{degree}{dates}{institution}{location} — renders an education entry with logo
-\newcommand{\edu}[5]{%
-  \logo{figures/#1}%
-  {\bf #2} \hfill {\em #3}%
-  \\ \hspace*{0.1em} #4 \hfill {\em #5}%
-}
-
-% \detail{text} — renders an indented detail line (no right-aligned info)
-\newcommand{\detail}[1]{\\ \hspace*{0.1em} #1}
-
-% \detailr{text}{right} — renders an indented detail line with right-aligned text in italics
-\newcommand{\detailr}[2]{\\ \hspace*{0.1em} #1 \hfill {\em #2}}
-
-% \teach{logo}{institution}{dates}{subjects}{location} — renders a teaching entry
-\newcommand{\teach}[5]{%
-  \logo{figures/#1}%
-  \textbf{#2} \hfill {\em #3}%
-  \\\hspace*{0.1em} #4 \hfill {\em #5}%
-}
 
 \name{MohammadReza Davari} % Your name
 %\address{156 Kasturi, Balajinagar, Sangli 416416} % Your address
@@ -79,6 +40,17 @@
 \address{davari.mreza@gmail.com \\ +1(425)436-0451 }
 
 \begin{document}
+% %----------------------------------------------------------------------------------------
+% %	RESEARCH
+% %----------------------------------------------------------------------------------------
+
+% \begin{rSection}{Research Interest}
+%     \item NLP tasks such as conversational agents, question answering, summarization
+%     \item Interdisciplinary tasks  
+%     \item Tasks that target both image and text data such as visual question answering
+%     \item Learning rich embeddings/representation for multi-modal tasks
+% \end{rSection}
+
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -86,31 +58,36 @@
 
 \begin{rSection}{Education}
 \logo{figures/concordia.png}
-{\bf PhD of Computer Science: Continual Learning} \hfill {\em Jan 2021 - May 2025} \vspace{0.75em}
+{\bf PhD of Computer Science} \hfill {\em Jan 2021 - May 2025} \vspace{0.75em}
     \\
     \hspace*{-1.75em}\includegraphics[height=1.5em]{figures/mila.png} \vspace{-2.75em}\\
     \hspace*{0.1em} Concordia University and Mila -- Quebec AI Institute\hfill {\em Montreal, Canada}
-    \detail{Supervisor: Dr. Eugene Belilovsky}
-    \detail{GPA: 4.00}
-    \detail{Scholarships:}
-    \detailr{- Concordia Merit Scholarship}{2021}
-    \detailr{- Graduate Doctoral Incentive Fellowship}{2021}
-    \detailr{- Concordia University Conference and Exposition Award}{2022}
+    \\ \hspace*{0.1em} Supervisor: Dr. Eugene Belilovsky
+    \\ \hspace*{0.1em} GPA: 4.00
+    \\ \hspace*{0.1em} Scholarships: 
+    \\ \hspace*{0.1em} - Graduate Doctoral Incentive Fellowship \hfill {\em 2021}
+    \\ \hspace*{0.1em} - Concordia University Conference and Exposition Award \hfill {\em 2022}
 
-\edu{concordia.png}{Master of Computer Science}{Sep 2017 - May 2020}{Concordia University}{Montreal, Canada}
-    \detail{Supervisors: Dr. Leila Kosseim and Dr. Tien Bui}
-    \detailr{Thesis: Neural Network Approaches to Medical Toponym Recognition}{Nominated for the best thesis award}
-    \detail{GPA: 3.95}
-    \detail{Scholarships:}
-    \detailr{- Concordia Merit Scholarship}{2018, 2019}
-    \detailr{- Concordia University Conference and Exposition Award}{2019}
-    \detailr{- IVADO Student Grant}{2020}
+\logo{figures/concordia.png}
+{\bf Master of Computer Science} \hfill {\em Sep 2017 - May 2020} 
+    \\ \hspace*{0.1em} Concordia University \hfill {\em Montreal, Canada}
+    \\ \hspace*{0.1em} Supervisors: Dr. Leila Kosseim and Dr. Tien Bui
+    \\ \hspace*{0.1em} Thesis: Neural Network Approaches to Medical Toponym Recognition \hfill {\em Nominated for the best thesis award}
+    \\ \hspace*{0.1em} GPA: 3.95
+    \\ \hspace*{0.1em} Scholarships: 
+    \\ \hspace*{0.1em} - Concordia Merit Scholarship  \hfill {\em 2018, 2019}
+    \\ \hspace*{0.1em} - Concordia University Conference and Exposition Award \hfill {\em 2019}
+    \\ \hspace*{0.1em} - IVADO Student Grant \hfill {\em 2020}
 
-\edu{mcgill.png}{Bachelor of Science: Double Major in Mathematics and Computer Science}{Sep 2013 - Dec 2016}{McGill University}{Montreal, Canada}
-\detail{Represented McGill University in Putnam Mathematical Competition in both 2014 and 2015}
+\logo{figures/mcgill.png}
+{\bf Bachelor of Science: Mathematics and Computer Science} \hfill {\em Sep 2013 - Dec 2016} 
+\\ \hspace*{0.1em} McGill University \hfill {\em Montreal, Canada}
+\\ \hspace*{0.1em} Represented McGill University in Putnam Mathematical Competition in both 2014 and 2015 \hfill
 
-\edu{dawson.png}{College Diploma (DEC) in Pure and Applied Science}{Sep 2011 - May 2013}{Dawson College}{Montreal, Canada}
-\detail{Dawson Mathematics Competition: $1^{\text{st}}$ place in 2012 and $2^{\text{nd}}$ place in 2011}
+\logo{figures/dawson.png}
+{\bf College Diploma (DEC) in Pure and Applied Science} \hfill {\em Sep 2011 - May 2013} 
+\\ \hspace*{0.1em} Dawson College \hfill {\em Montreal, Canada}
+\\ \hspace*{0.1em} Dawson Mathematics Competition: $1^{\text{st}}$ place in 2012 and $2^{\text{nd}}$ place in 2011  
 \end{rSection}
 
 
@@ -119,62 +96,85 @@
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Work Experience}
 
-\begin{company}{msft_logo.png}{Microsoft}{Redmond, USA}
-\role{Senior Applied Scientist}{Aug 2025 - Present}
-\\ - Developing evaluation metrics and framework for agentic workflows
-\\ - Implanting agentic approaches for information retrieval, document interaction, and context management
-\\ - Analyzing and optimizing agentic flows
+\logo{figures/msft_logo.png}
+\textbf{Microsoft}\hfill {\em Redmond, USA} \vspace{-0.5em}
+\begin{itemize}[label={}, leftmargin=0.6em]
+\item \textbf{\small Senior Applied Scientist} \hfill {\em Aug 2025 - Present}
+\\ - Built agentic evaluation pipelines for end-task product assessment, combining synthetic data generation, deterministic metrics, and LLM-as-judge evaluation to identify product-improvement opportunities
+\\ - Developed long-context and multimodal judge systems that ground evaluations in relevant document evidence, including agentic selection of only the pages/images actually used by product agents
+\\ - Shipped reusable internal judge SDK and reporting modules that convert evaluation results, telemetry, and logs into hierarchical failure analyses, root-cause insights, and actionable recommendations
 
-    \role{Applied Scientist Intern}{Jun 2024 - Aug 2024}
+    \item \textbf{\small Applied Scientist Intern} \hfill {\em Jun 2024 - Aug 2024}
 \\ - Developed a novel method for LLM system prompt migration and optimization, achieving SOTA on multiple NLP benchmarks
 \\ - Implemented automatic LLM-based metric creation and metric evaluation given a target feature
 \\ - Observed product lift for prompt migration, reducing manual migration time
-\end{company}
+\end{itemize}
 
-\begin{company}{concordia.png}{Concordia Applied AI Institute}{Montreal, Canada}
-    \role{Data Scientist}{Nov 2023 - May 2024}
+\vspace{-.25em}
+\logo{figures/concordia.png}
+\textbf{Concordia Applied AI Institute}\hfill {\em Montreal, Canada} \vspace{-0.5em}
+\begin{itemize}[label={}, leftmargin=0.6em]
+    \item \textbf{\small Data Scientist} \hfill {\em Nov 2023 - May 2024}
     \\- Developed and helped deploy an NLP solution using BERT to automatically populate evaluation forms of long complex legal government contracts
     \\- Implemented content highlighting to help users verify the context used by the model to reach a decision for each evaluation criterion
     \\- Contributed to scoping new projects and writing NLP project proposals for new clients and feature requests
-\end{company}
+\end{itemize}
 \newpage
-
-\begin{company}{EiffelMedTech.png}{Eiffel MedTech}{Montreal, Canada}
-    \role{Machine Learning Project Contractor}{Mar 2023 - Oct 2023}
+% \vspace{-.25em}
+\logo{figures/EiffelMedTech.png}
+\textbf{Eiffel MedTech}\hfill {\em Montreal, Canada} \vspace{-0.5em}
+\begin{itemize}[label={}, leftmargin=0.6em]
+    \item \textbf{\small Machine Learning Project Contractor} \hfill {\em Mar 2023 - Oct 2023}
     \\ - Developed an EOS X-ray image processing pipeline for 3D lower limb point cloud reconstruction, including bone and prosthetic segmentation
     \\ - Implemented fine-tuned Segment Anything Model (SAM) with manually labelled data for precise segmentation
     \\ - Created a Transformer-based neural network for 3D bone reconstruction from DRR and CT scan pairs. Deployed the pipeline on local servers for practical use
-\end{company}
+\end{itemize}
 
-\begin{company}{amazon_science.png}{Amazon -- Science}{Vancouver, Canada}
-    \role{Applied Research Scientist Intern}{Jun 2022 - Sep 2022}
+\vspace{-.25em}
+\logo{figures/amazon_science.png}
+\textbf{Amazon -- Science}\hfill {\em Vancouver, Canada} \vspace{-0.5em}
+\begin{itemize}[label={}, leftmargin=0.6em]
+    \item \textbf{\small Applied Research Scientist Intern} \hfill {\em Jun 2022 - Sep 2022}
     \\ - Developed a novel method based on contrastive learning and self-prediction to learn universal user embeddings
     \\ - Applied the proposed user embedding to in-production downstream tasks and observed boost in performance
     \\ - The results were published in AMLC (Amazon internal Machine Learning Conference)
-\end{company}
-
-\begin{company}{ericsson.png}{Ericsson}{Montreal, Canada}
-    \role{Machine Learning Technical Support Specialist}{Sep 2021 - Feb 2022}
+\end{itemize}
+\vspace{-.25em}
+\logo{figures/ericsson.png}
+\textbf{Ericsson}\hfill {\em Montreal, Canada} \vspace{-0.5em}
+\begin{itemize}[label={}, leftmargin=0.6em]
+    \item \textbf{\small Machine Learning Technical Support Specialist} \hfill {\em Sep 2021 - Feb 2022}
     \\ - Led the ML technical support of three projects: customer service chatbot, Python code completion, and sensitive log detection
     \\ - Carried out a series of NLP tutorials on the industrial applications of large scale language models
     \\ - Conducted workshops on data ingestion, processing, and visualisation
-\end{company}
+\end{itemize}
 
-\begin{company}{ubisoft.png}{Ubisoft Divertissements Inc.}{Montreal, Canada}
-    \role{Data Scientist Intern}{Sep 2021 - Feb 2022}
+
+% \newpage
+
+
+\logo{figures/ubisoft.png}
+\textbf{Ubisoft Divertissements Inc.}\hfill {\em Montreal, Canada} \vspace{-0.5em}
+\begin{itemize}[label={}, leftmargin=0.6em]
+    \item \textbf{\small Data Scientist Intern} \hfill {\em Sep 2021 - Feb 2022}
     \\ - Implemented hierarchical span-based toxicity detection model on in-game chat data
     \\ - Collaborated on implementing data annotation procedures
-\end{company}
-
-\begin{company}{coveo.png}{Coveo Solutions Inc.}{Montreal, Canada}
-    \role{Machine Learning Team Lead}{Sep 2020 - Jun 2021}
+\end{itemize}
+% ###########################################
+% #             NEW PAGE ADDED              #
+% ###########################################
+\vspace{-.25em}
+\logo{figures/coveo.png}
+\textbf{Coveo Solutions Inc.}\hfill {\em Montreal, Canada} \vspace{-0.5em}
+\begin{itemize}[label={}, leftmargin=0.6em]
+    \item \textbf{\small Machine Learning Team Lead} \hfill {\em Sep 2020 - Jun 2021}
         \\ - Led a group of 6 ML Scientist and Engineers on several NLP projects
         \\- Collaborated with the product managers to plan road maps and communicate with customers/stakeholders
         \\- Researched and implemented multi-task learning models to improve information flow between tasks and reduce resource consumption
         \\- Researched and implemented an extractive Question Answering system for clients with minimally labelled data
         \\- Adapted Continual Learning techniques to mitigate catastrophic forgetting and reduce training costs
         \vspace{-.25em}
-    \role{Machine Learning Scientist}{Sep 2019 - Sep 2020}
+    \item \textbf{\small Machine Learning Scientist} \hfill {\em Sep 2019 - Sep 2020}
         \\- Served ML models using TorchServe on Docker images in EMR
         \\- Quantized and pruned the ML models to minimize the resources used and maximize throughput
         \\- Implemented parallel and distributed model training on GPU
@@ -185,10 +185,10 @@
         \\- Initiated and organized \textit{paper club}, a bi-weekly workshop on the recent developments in ML
         \\- Represented Coveo at NLP events such as RALI, MILA, MTL-NLP, etc.
         \vspace{-.25em}
-    \role{Machine Learning Developer Intern}{May 2019 - Sep 2019}
+    \item \textbf{\small Machine Learning Developer Intern} \hfill {\em May 2019 - Sep 2019}
         \\- Implemented parallel model building on EMR clusters
         \\- Implemented bigram and trigram model for product recommendation: frequently bought together recommender
-\end{company}
+\end{itemize}
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
@@ -196,15 +196,26 @@
 %----------------------------------------------------------------------------------------
 \newpage
 \begin{rSection}{Teaching Experience}
-\teach{concordia.png}{Concordia University, Department of Computer Science}{May 2018 - May 2019}{Teaching Assistant for: Artificial Intelligence, Combinatorics,}{Montreal, Canada}
-\detail{Theoretical Computer Science, Discrete Structures and Formal Languages}
+\logo{figures/concordia.png}
+\textbf{Concordia University, Department of Computer Science} \hfill {\em May 2018 - May 2019}
+\\
+\hspace*{0.1em}
+Teaching Assistant for: Artificial Intelligence, Combinatorics,  \hfill {\em Montreal, Canada}
+\\ \hspace*{0.1em} Theoretical Computer Science, Discrete Structures and Formal Languages
 
-\teach{mcgill.png}{McGill University, Department of Mathematics}{Sep 2015 - May 2016}{Teaching Assistant for: Analysis 1 and 2}{Montreal, Canada}
 
-\teach{dawson.png}{Dawson College}{Sep 2011 - May 2016}{Teaching Assistant for: Linear Algebra, Probability and Statistics, Calculus 1, 2, and 3}{Montreal, Canada}
+\logo{figures/mcgill.png}
+\textbf{McGill University, Department of Mathematics} \hfill {\em Sep 2015 - May 2016}
+\\\hspace*{0.1em} Teaching Assistant for: Analysis 1 and 2 \hfill {\em Montreal, Canada}
 
-\teach{liberty.png}{Liberty Tutoring}{Sep 2013 - May 2016}{Private Tutor for: Linear Algebra, Probability and Statistics, Calculus 1, 2, and 3}{Montreal, Canada}
-\detail{Waves and Optics, Mechanics, Electricity and Magnetism}
+\logo{figures/dawson.png}
+\textbf{Dawson College} \hfill {\em Sep 2011 - May 2016}
+\\\hspace*{0.1em} Teaching Assistant for: Linear Algebra, Probability and Statistics, Calculus 1, 2, and 3 \hfill {\em Montreal, Canada}
+
+\logo{figures/liberty.png}
+\textbf{Liberty Tutoring} \hfill {\em Sep 2013 - May 2016}
+\\\hspace*{0.1em} Private Tutor for: Linear Algebra, Probability and Statistics, Calculus 1, 2, and 3\hfill {\em Montreal, Canada}\\\hspace*{0.1em} 
+Waves and Optics, Mechanics, Electricity and Magnetism
 
 \end{rSection}
 
@@ -240,9 +251,7 @@
 \begin{rSection}{Publications}
 \begin{enumerate}[leftmargin=0.0em]
     \item \pub{Model breadcrumbs: Scaling multi-task model merging with sparse masks}{MohammadReza Davari and Eugene Belilovsky, In European Conference on Computer Vision}{ECCV 2024}
-
-    \item \pub{CLaC at SemEval-2024 Task 2: Faithful Clinical Trial Inference}{Jennifer Marks, MohammadReza Davari, and Leila Kosseim, In Proceedings of the International Workshop on Semantic Evaluation}{SemEval 2024}
-
+    
     \item \pub{Scalable Upcycling of Finetuned Foundation Models via Sparse Task Vectors Merging}{MohammadReza Davari and Eugene Belilovsky, In Foundation Models in the Wild Workshop}{ICML 2024 FM-Wild Workshop}
         
     \item \pub{Prototype-Sample Relation Distillation: Towards Replay-Free Continual Learning}{Nader Asadi, MohammadReza Davari, Sudhir Mudur, Rahaf Aljundi and Eugene Belilovsky, In Proceedings of the International Conference on Machine Learning}{ICML 2023}
