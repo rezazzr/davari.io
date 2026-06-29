@@ -8,9 +8,9 @@ export const careers: TimelineItem[] = [
     job: "Senior Applied Scientist",
     descr: `<br>
     <ul>
-    <li>Developing evaluation metrics and framework for agentic workflows</li>
-    <li>Implementing agentic approaches for information retrieval, document interaction, and context management</li>
-    <li>Analyzing and optimizing agentic flows</li>
+    <li>Built agentic evaluation pipelines for end-task product assessment, combining synthetic data generation, deterministic metrics, and LLM-as-judge evaluation to identify product-improvement opportunities</li>
+    <li>Developed long-context and multimodal judge systems that ground evaluations in relevant document evidence, including agentic selection of only the pages/images actually used by product agents</li>
+    <li>Shipped reusable internal judge SDK and reporting modules that convert evaluation results, telemetry, and logs into hierarchical failure analyses, root-cause insights, and actionable recommendations</li>
     </ul>`,
     logoFile: "msft_logo.png",
   },
