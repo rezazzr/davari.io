@@ -19,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/teaching/comp335",
     "/teaching/comp5361",
     "/faq",
-    "/baby-fund",
+    "/baby",
   ].map((route) => ({
     url: `${siteConfig.url}${route}`,
     lastModified: new Date(),

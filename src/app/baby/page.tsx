@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Baby Fund",
   description:
     "We're expecting! A little corner to share the news and, if you'd like to help, an easy way to send some love our way.",
-  alternates: { canonical: "/baby-fund" },
+  alternates: { canonical: "/baby" },
   icons: {
     icon: [
       { url: "/assets/img/milk_bottle.svg", type: "image/svg+xml" },
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "/baby-fund",
+    url: "/baby",
     siteName: siteConfig.title,
     title: "Baby Fund | Reza Davari",
     description:

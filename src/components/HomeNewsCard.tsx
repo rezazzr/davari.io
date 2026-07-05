@@ -9,7 +9,7 @@ export default function HomeNewsCard() {
   return (
     <RevealOnScroll>
       <Link
-        href="/baby-fund"
+        href="/baby"
         className="group block rounded-2xl border border-black/5 bg-linear-to-br from-primary/10 via-secondary/5 to-transparent p-5 transition-all hover:shadow-md dark:border-white/10"
       >
         <div className="flex items-center gap-4">
