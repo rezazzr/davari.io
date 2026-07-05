@@ -126,8 +126,10 @@ focus on the encoder-decoder architecture that was proposed by [Bahdanau et al. 
 Assume, that we have a source sequence $x$ of length $T$, and the target sequence $y$ of length $M$:
 
 $$
-x = \left[x_1, x_2, \dots, x_T \right] \\
-y = \left[y_1, y_2, \dots, y_M \right]
+\begin{aligned}
+x &= \left[x_1, x_2, \dots, x_T \right] \\
+y &= \left[y_1, y_2, \dots, y_M \right]
+\end{aligned}
 $$
 
 The encoder will receive the source sequence $x$ and will produce hidden state representations $h_i$ at time step $i$.
