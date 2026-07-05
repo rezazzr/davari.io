@@ -1,8 +1,10 @@
 export interface PaymentMethod {
   /** e.g. "Zelle" */
   label: string;
-  /** flag emoji, e.g. "🇺🇸" */
-  flag: string;
+  /** path to a small flag image (renders consistently across all OSes, unlike flag emoji) */
+  flagSrc: string;
+  /** alt text for the flag image */
+  flagAlt: string;
   /** short audience line, e.g. "For friends & family in the US" */
   region: string;
   /** the email the transfer is sent to */
@@ -77,14 +79,16 @@ export const babyFund = {
   paymentMethods: [
     {
       label: "Zelle",
-      flag: "🇺🇸",
+      flagSrc: "/assets/img/flag-us.png",
+      flagAlt: "United States flag",
       region: "For friends & family in the US",
       email: "davari.reza@gmail.com",
       note: "Just send to this email and it will come straight to us.",
     },
     {
       label: "Interac e-Transfer",
-      flag: "🇨🇦",
+      flagSrc: "/assets/img/flag-ca.png",
+      flagAlt: "Canadian flag",
       region: "For friends & family in Canada",
       email: "reza.davari.93@gmail.com",
       note: "Autodeposit is on, so it lands automatically with no security question needed.",

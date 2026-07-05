@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Image from "next/image";
 import { babyFund } from "@/data/baby-fund";
 import { siteConfig } from "@/data/site-config";
 import RevealOnScroll from "@/components/RevealOnScroll";
@@ -188,9 +189,13 @@ export default function BabyFundPage() {
                 >
                   <div className="h-full rounded-xl border border-black/5 dark:border-white/5 bg-surface p-6">
                     <div className="flex items-center gap-3">
-                      <span className="text-2xl" aria-hidden>
-                        {method.flag}
-                      </span>
+                      <Image
+                        src={method.flagSrc}
+                        alt={method.flagAlt}
+                        width={89}
+                        height={84}
+                        className="h-7 w-auto shrink-0"
+                      />
                       <div>
                         <h3 className="font-semibold">{method.label}</h3>
                         <p className="text-xs text-text-muted">{method.region}</p>
