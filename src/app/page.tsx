@@ -7,10 +7,19 @@ import SkillsRadarChart from "@/components/SkillsRadarChart";
 import Timeline from "@/components/Timeline";
 import ParticleNetwork from "@/components/ParticleNetwork";
 import RevealOnScroll from "@/components/RevealOnScroll";
+import HomeNewsCard from "@/components/HomeNewsCard";
+import PrefetchImages from "@/components/PrefetchImages";
+import { babyFund } from "@/data/baby-fund";
 
 export default function HomePage() {
+  const babyPhotoSrcs = babyFund.gallery.photos
+    .map((p) => p.src)
+    .filter((src): src is string => Boolean(src));
+
   return (
     <div className="space-y-12">
+      <PrefetchImages srcs={babyPhotoSrcs} />
+      <HomeNewsCard />
       <div className="flex flex-col gap-8 lg:flex-row">
         <div className="flex flex-col items-center lg:w-7/12">
           <div className="relative inline-block">

@@ -10,4 +10,5 @@ export const navItems: NavItem[] = [
   { label: "FAQ", path: "/faq" },
   { label: "Blog", path: "/blog" },
   { label: "Projects", path: "/projects" },
+  { label: "Baby Fund", path: "/baby-fund" },
 ];
