@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { babyFund } from "@/data/baby-fund";
 import { siteConfig } from "@/data/site-config";
 import RevealOnScroll from "@/components/RevealOnScroll";
@@ -11,12 +11,46 @@ export const metadata: Metadata = {
   description:
     "We're expecting! A little corner to share the news and, if you'd like to help, an easy way to send some love our way.",
   alternates: { canonical: "/baby-fund" },
+  icons: {
+    icon: [
+      { url: "/assets/img/milk_bottle.svg", type: "image/svg+xml" },
+      { url: "/assets/img/milk_bottle_512.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: [{ url: "/assets/img/milk_bottle_180.png", sizes: "180x180" }],
+    shortcut: ["/assets/img/milk_bottle_512.png"],
+  },
+  appleWebApp: { title: "Baby Fund" },
   openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "/baby-fund",
+    siteName: siteConfig.title,
     title: "Baby Fund | Reza Davari",
     description:
       "We're expecting! Share the news and, if you'd like, chip in to the baby fund.",
-    url: "/baby-fund",
+    images: [
+      {
+        url: "/assets/img/baby/share-card.png",
+        width: 1200,
+        height: 630,
+        alt: "We're expecting! Baby Davari, due the end of August.",
+      },
+    ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Baby Fund | Reza Davari",
+    description:
+      "We're expecting! Share the news and, if you'd like, chip in to the baby fund.",
+    images: ["/assets/img/baby/share-card.png"],
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f3f0fb" },
+    { media: "(prefers-color-scheme: dark)", color: "#1e293b" },
+  ],
 };
 
 export default function BabyFundPage() {
@@ -37,16 +71,18 @@ export default function BabyFundPage() {
     <div className="mx-auto max-w-3xl space-y-14">
       {/* Hero */}
       <RevealOnScroll>
-        <p className="text-sm font-semibold uppercase tracking-wide text-primary">
-          {hero.eyebrow}
-        </p>
-        <h1 className="mt-2 text-3xl font-bold text-heading sm:text-4xl">
-          {hero.title}
-        </h1>
-        <div className="mt-4 space-y-3 leading-relaxed text-text-muted">
-          {hero.paragraphs.map((p, i) => (
-            <p key={i}>{p}</p>
-          ))}
+        <div className="rounded-3xl bg-linear-to-br from-primary/10 via-secondary/10 to-transparent p-8 sm:p-10">
+          <p className="text-sm font-semibold uppercase tracking-wide text-primary">
+            {hero.eyebrow}
+          </p>
+          <h1 className="mt-2 text-3xl font-bold text-heading sm:text-4xl">
+            {hero.title}
+          </h1>
+          <div className="mt-4 space-y-3 leading-relaxed text-text-muted">
+            {hero.paragraphs.map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
+          </div>
         </div>
       </RevealOnScroll>
 
