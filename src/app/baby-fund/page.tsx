@@ -33,16 +33,30 @@ export const metadata: Metadata = {
         url: "/assets/img/baby/share-card.png",
         width: 1200,
         height: 630,
+        type: "image/png",
+        alt: "We're expecting! Baby Davari, due the end of August.",
+      },
+      {
+        url: "/assets/img/baby/share-card-square.png",
+        width: 1200,
+        height: 1200,
+        type: "image/png",
         alt: "We're expecting! Baby Davari, due the end of August.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
+    creator: `@${siteConfig.social.twitter}`,
     title: "Baby Fund | Reza Davari",
     description:
       "We're expecting! Share the news and, if you'd like, chip in to the baby fund.",
-    images: ["/assets/img/baby/share-card.png"],
+    images: [
+      {
+        url: "/assets/img/baby/share-card.png",
+        alt: "We're expecting! Baby Davari, due the end of August.",
+      },
+    ],
   },
 };
 
