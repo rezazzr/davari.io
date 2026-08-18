@@ -82,7 +82,7 @@ export const babyFund = {
       flagSrc: "/assets/img/flag-us.png",
       flagAlt: "United States flag",
       region: "For friends & family in the US",
-      email: "davari.reza@gmail.com",
+      email: "davari.mreza@gmail.com",
       note: "Just send to this email and it will come straight to us.",
     },
     {
